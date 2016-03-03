@@ -1,8 +1,5 @@
 # Uniform
-An experimental responsive design strategy.
-
-## Eh?
-We eschew the unpredictable squishiness of "liquid layout". Uniform takes another approach. Design specific layouts at each breakpoint, and the entire design scales *proportionally* to fit the viewport.
+This is an experimental responsive design strategy. We eschew the unpredictable squishiness of "liquid layout". Uniform takes another approach. Design specific layouts at each breakpoint, and the entire design scales *proportionally* to fit the viewport.
 
 ## Setup
 
