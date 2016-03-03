@@ -38,7 +38,10 @@ A: You can customize them, but there are a few reasons the defaults were chosen.
 ###### Q: Why use `rem` units like pixels? Aren't they supposed to be used for font size?
 A: Yes, it's kind of a hack. But in terms of design-to-code workflow, it's a hell of a lot easier and readable to convert `200px` to `200rem` than it is to divide by the root font size.
 
-###### Q: How does it work?
+###### Q: Should `rem` units be used for everything?
+A: Mostly, if you want things to behave in the "Uniform way". Proportional units like `vw` and `%` are still quite useful. You *can* even use `px` on elements, just know that those elements will be following different rules from the `rem` based elements (they *wont* scale the same way), so use them sparingly, and only with specific intentions.
+
+###### Q: How does Uniform work?
 A: It's simpler than you might think. At each breakpoint, we set a document font size in `vw` units at a particular value. This makes `rem` units act like pixels that scale up and down, in the same way an image does when it scales-to-fits to the window.
 
 ###### Q: What's wrong with liquid layout?
