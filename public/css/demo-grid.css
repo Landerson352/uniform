@@ -56,12 +56,10 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 20rem;
 }
 .component {
-  width: 280rem;
+  width: 320rem;
   height: 180rem;
-  margin: 0 10rem 20rem;
   padding: 20rem;
-  background: rgba(0, 0, 0, 0.1);
+  border: 2rem solid black;
 }
