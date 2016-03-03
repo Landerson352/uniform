@@ -36,7 +36,7 @@ Then open the site at http://localhost.com:3000
 A: You can customize them, but there are a few reasons the defaults were chosen. For one, they are all multiples of 320, which means you can easily make responsive grids out of blocks that are 320 wide (2 column, 4 column, etc.). Also, the breakpoints are all close to the big spikes in market usage of screen sizes. (iPhone, iPad, desktop, etc.) There is an infinite spectrum of devices out there, but these common breakpoints dominate 80% of the market.
 
 ###### Q: Why use `rem` units like pixels? Aren't they supposed to be used for font size?
-A: Yes, it's kind of a hack. But in terms of design-to-code workflow, it's a hell of a lot easer to convert `200px` to `200rem` than it is to divide by the root font size (16).
+A: Yes, it's kind of a hack. But in terms of design-to-code workflow, it's a hell of a lot easier and readable to convert `200px` to `200rem` than it is to divide by the root font size.
 
 ###### Q: How does it work?
 A: It's simpler than you might think. At each breakpoint, we set a document font size in `vw` units at a particular value. This makes `rem` units act like pixels that scale up and down, in the same way an image does when it scales-to-fits to the window.
