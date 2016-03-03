@@ -1,0 +1,24 @@
+{
+  "name": "uniform",
+  "version": "1.0.0",
+  "description": "An experimental responsive design strategy.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Landerson352/uniform.git"
+  },
+  "author": "Lincoln Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Landerson352/uniform/issues"
+  },
+  "homepage": "https://github.com/Landerson352/uniform#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-serve": "^1.2.0",
+    "gulp-watch": "^4.3.5"
+  }
+}
