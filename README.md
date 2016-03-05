@@ -13,7 +13,7 @@ Run whenever you work on the site:
 gulp
 ```
 
-Then open the site at http://localhost.com:3000
+Then open the site at http://localhost:3000
 
 ## Making a new demo page
 
