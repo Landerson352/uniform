@@ -137,12 +137,19 @@ h2 em {
   border-bottom: 285rem solid white;
   border-left-width: 480rem;
 }
+.runner-2 img {
+  position: absolute;
+  right: 0;
+  top: -60rem;
+  width: 450rem;
+  height: auto;
+}
 .shoes {
   position: relative;
   z-index: 40;
   background: #c76591;
   padding-top: 1px;
-  margin-top: 820rem;
+  margin-top: 790rem;
 }
 .shoes:before {
   content: "";
@@ -191,9 +198,25 @@ h2 em {
   color: white;
   transform: translate(0, 210rem);
 }
+.shoes .copy .shape {
+  content: "";
+  display: block;
+  width: 170rem;
+  height: 330rem;
+  float: right;
+  -webkit-shape-outside: ellipse(170rem 90rem at 100% 210rem);
+          shape-outside: ellipse(170rem 90rem at 100% 210rem);
+}
 .shoes .copy p {
   margin: 0;
   padding: 0 0 26rem;
   font-size: 16rem;
   line-height: 26rem;
+}
+.shoes .copy img {
+  position: absolute;
+  width: 1010rem;
+  height: auto;
+  top: -150rem;
+  left: 160rem;
 }

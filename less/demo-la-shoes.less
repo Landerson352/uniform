@@ -121,14 +121,20 @@ h1, h2 {
 		border-left-width: 480rem;
 	}
 
-	img {}
+	img {
+		position:absolute;
+		right:0;
+		top:-60rem;
+		width:450rem;
+		height:auto;
+	}
 }
 .shoes {
 	position: relative;
 	z-index: 40;
 	background: @dk-pink;
 	padding-top: 1px;
-	margin-top: 820rem;
+	margin-top: 790rem;
 
 	&:before {
 		.pseudo-box-top();
@@ -161,11 +167,28 @@ h1, h2 {
 		color: white;
 		transform: translate(0, 210rem);
 
+		.shape {
+			content:"";
+			display:block;
+			width:170rem;
+			height:330rem;
+			float: right;
+			shape-outside: ellipse(170rem 90rem at 100% 210rem);
+		}
+
 		p {
 			margin: 0;
 			padding: 0 0 26rem;
 			font-size: 16rem;
 			line-height: 26rem;
+		}
+
+		img {
+			position: absolute;
+			width: 1010rem;
+			height: auto;
+			top: -150rem;
+			left: 160rem;
 		}
 	}
 }
