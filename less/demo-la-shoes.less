@@ -1,22 +1,30 @@
 @import "imports/uniform.less";
 
-// While designing, disable all sizes except "md"
+
+
+// Design-time overrides
+// By overriding these variables, you can control when (or if) each media query kicks in.
 @xs: ~"(max-width:0px)";
 @sm: ~"(max-width:0px)";
 @md: ~"all";
 @lg: ~"(max-width:0px)";
 @xl: ~"(max-width:0px)";
 
+
+
+// Variables
 @purple: #7B2F9F;
 @pink: #C43374;
 @lt-pink: mix(@pink, white, 45%);
 @dk-pink: mix(@pink, #ccc, 67%);
-
 @font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @heading-font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @extrabold: 700;
 @semibold: 600;
 
+
+
+// Mixins
 .heading-style() {
 	font-family: @heading-font-family;
 	text-transform: uppercase;
@@ -48,6 +56,9 @@
 	transform: translate(0, 100%);
 }
 
+
+
+// Styles
 html {
 	font-family: @font-family;
 	color:white;
