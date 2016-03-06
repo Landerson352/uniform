@@ -14,11 +14,10 @@
 
 @font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @heading-font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial,sans-serif;
+@extrabold: 700;
+@semibold: 600;
 
-html {
-	font-family: @font-family;
-}
-h1, h2 {
+.heading-style() {
 	font-family: @heading-font-family;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
@@ -27,7 +26,6 @@ h1, h2 {
 		font-style: normal;
 	}
 }
-
 .pseudo-box() {
 	content: "";
 	position: absolute;
@@ -50,6 +48,13 @@ h1, h2 {
 	transform: translate(0, 100%);
 }
 
+html {
+	font-family: @font-family;
+	color:white;
+}
+h1, h2 {
+	.heading-style();
+}
 .runner-1 {
 	position: absolute;
 	z-index: 10;
@@ -85,21 +90,19 @@ h1, h2 {
 		left: 40rem;
 		color: @purple;
 		font-size: 100rem;
-		font-weight: 600;
+		font-weight: @semibold;
 		line-height: 1em;
 
 		em {
 			position: relative;
 			left:-3rem;
-			font-weight: 700;
+			font-weight: @extrabold;
 			display:block;
 			font-size: 170rem;
 			margin-top: 10rem;
 		}
 	}
 	.copy {
-		color: white;
-
 		p {
 			margin: 0;
 			padding: 0 0 28rem;
@@ -153,9 +156,8 @@ h1, h2 {
 	h2 {
 		position: absolute;
 		margin: 0;
-		color: white;
 		font-size: 350rem;
-		font-weight: 700;
+		font-weight: @extrabold;
 		left: -50rem;
 		top: -655rem;
 	}
@@ -164,7 +166,6 @@ h1, h2 {
 		position: relative;
 		margin: -520rem 0 0 130rem;
 		width: 320rem;
-		color: white;
 		transform: translate(0, 210rem);
 
 		.shape {
@@ -193,11 +194,51 @@ h1, h2 {
 	}
 }
 .runner-3 {
-	img {}
+	position:relative;
+	padding-bottom: 130rem; 
+
+	img {
+		width:100%;
+	}
 	.quote {
-		.line {
-			em {}
+		position: absolute;
+		z-index: 60;
+		top: 370rem;
+		left: 130rem;
+		font-size: 19rem;
+		text-align: right;
+		.heading-style();
+
+		* {
+			line-height: 1em;
 		}
-		.author {}
+
+		.line {
+
+			&:nth-child(1) {
+				font-weight: @semibold;
+				font-size: 3.15em;
+			}
+			&:nth-child(2) {
+				font-weight: @semibold;
+				font-size: 2.6em;
+			}
+			&:nth-child(3) {
+				font-size: 2.4em;
+			}
+			&:nth-child(4) {
+				font-size: 2em;
+
+				em {
+					font-size: 1.5em;
+					font-style: normal;
+					font-weight: @extrabold;
+				}
+			}
+		}
+		.author {
+			font-size: 1em;
+			text-transform: none;
+		}
 	}
 }

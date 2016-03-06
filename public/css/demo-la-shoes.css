@@ -43,6 +43,7 @@ body {
 }
 html {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
 }
 h1,
 h2 {
@@ -106,9 +107,6 @@ h2 em {
   display: block;
   font-size: 170rem;
   margin-top: 10rem;
-}
-.introduction .copy {
-  color: white;
 }
 .introduction .copy p {
   margin: 0;
@@ -185,7 +183,6 @@ h2 em {
 .shoes h2 {
   position: absolute;
   margin: 0;
-  color: white;
   font-size: 350rem;
   font-weight: 700;
   left: -50rem;
@@ -195,7 +192,6 @@ h2 em {
   position: relative;
   margin: -520rem 0 0 130rem;
   width: 320rem;
-  color: white;
   transform: translate(0, 210rem);
 }
 .shoes .copy .shape {
@@ -219,4 +215,51 @@ h2 em {
   height: auto;
   top: -150rem;
   left: 160rem;
+}
+.runner-3 {
+  position: relative;
+  padding-bottom: 130rem;
+}
+.runner-3 img {
+  width: 100%;
+}
+.runner-3 .quote {
+  position: absolute;
+  z-index: 60;
+  top: 370rem;
+  left: 130rem;
+  font-size: 19rem;
+  text-align: right;
+  font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+.runner-3 .quote em {
+  font-style: normal;
+}
+.runner-3 .quote * {
+  line-height: 1em;
+}
+.runner-3 .quote .line:nth-child(1) {
+  font-weight: 600;
+  font-size: 3.15em;
+}
+.runner-3 .quote .line:nth-child(2) {
+  font-weight: 600;
+  font-size: 2.6em;
+}
+.runner-3 .quote .line:nth-child(3) {
+  font-size: 2.4em;
+}
+.runner-3 .quote .line:nth-child(4) {
+  font-size: 2em;
+}
+.runner-3 .quote .line:nth-child(4) em {
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+}
+.runner-3 .quote .author {
+  font-size: 1em;
+  text-transform: none;
 }
