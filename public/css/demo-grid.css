@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-size: 14rem;
 }
 html,
 body {
@@ -40,6 +39,7 @@ body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-size: 14rem;
 }
 .perimeter {
   min-height: 100%;
