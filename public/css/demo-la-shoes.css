@@ -77,10 +77,9 @@ h2 em {
   top: 0;
   left: 0;
   transform: translate(0, -100%);
-  border-top-width: 13.02083333vw;
-  border-right: 21.875vw solid #e4a3c0;
-  border-bottom: 13.02083333vw solid #e4a3c0;
-  border-left-width: 21.875vw;
+  border-right-color: #e4a3c0;
+  border-bottom-color: #e4a3c0;
+  border-width: 13.02083333vw 21.875vw;
 }
 .introduction h1 {
   position: absolute;
@@ -122,10 +121,9 @@ h2 em {
   left: 0;
   transform: translate(0, -100%);
   top: 33.33333333vw;
-  border-top-width: 29.6875vw;
-  border-right: 50vw solid white;
-  border-bottom: 29.6875vw solid white;
-  border-left-width: 50vw;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-width: 29.6875vw 50vw;
 }
 .runner-2 img {
   position: absolute;
@@ -166,10 +164,9 @@ h2 em {
   bottom: 0;
   left: 0;
   transform: translate(0, 100%);
-  border-top: 28.64583333vw solid #c76591;
-  border-right-width: 50vw;
-  border-bottom-width: 28.64583333vw;
-  border-left: 50vw solid #c76591;
+  border-top-color: #c76591;
+  border-left-color: #c76591;
+  border-width: 28.64583333vw 50vw;
 }
 .shoes h2 {
   position: absolute;
