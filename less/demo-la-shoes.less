@@ -53,8 +53,12 @@ html {
 	font-family: @font-family;
 	color:white;
 }
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
 	.heading-style();
+	margin: 0;
+}
+p {
+	margin:0;
 }
 .runner-1 {
 	img {
@@ -78,7 +82,6 @@ h1, h2 {
 
 	h1 {
 		position: absolute;
-		margin: 0;
 		top: -230*@p;
 		left: 40*@p;
 		color: @purple;
@@ -97,8 +100,7 @@ h1, h2 {
 	}
 	.copy {
 		p {
-			margin: 0;
-			padding: 0 0 28*@p;
+			padding-bottom: 28*@p;
 			font-size: 18*@p;
 			line-height: 28*@p;
 		}
@@ -154,7 +156,8 @@ h1, h2 {
 
 	.copy {
 		position: relative;
-		margin: -520*@p 0 0 130*@p;
+		margin-top: -520*@p;
+		margin-left: 130*@p;
 		width: 320*@p;
 		transform: translate(0, 210*@p);
 
@@ -168,8 +171,7 @@ h1, h2 {
 		}
 
 		p {
-			margin: 0;
-			padding: 0 0 26*@p;
+			padding-bottom: 26*@p;
 			font-size: 16*@p;
 			line-height: 26*@p;
 		}

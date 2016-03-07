@@ -46,14 +46,26 @@ html {
   color: white;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 h1 em,
-h2 em {
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
   font-style: normal;
+}
+p {
+  margin: 0;
 }
 .runner-1 img {
   width: 100%;
@@ -83,7 +95,6 @@ h2 em {
 }
 .introduction h1 {
   position: absolute;
-  margin: 0;
   top: -23.95833333vw;
   left: 4.16666667vw;
   color: #7B2F9F;
@@ -100,8 +111,7 @@ h2 em {
   margin-top: 1.04166667vw;
 }
 .introduction .copy p {
-  margin: 0;
-  padding: 0 0 2.91666667vw;
+  padding-bottom: 2.91666667vw;
   font-size: 1.875vw;
   line-height: 2.91666667vw;
 }
@@ -178,7 +188,8 @@ h2 em {
 }
 .shoes .copy {
   position: relative;
-  margin: -54.16666667vw 0 0 13.54166667vw;
+  margin-top: -54.16666667vw;
+  margin-left: 13.54166667vw;
   width: 33.33333333vw;
   transform: translate(0, 21.875vw);
 }
@@ -192,8 +203,7 @@ h2 em {
           shape-outside: ellipse(17.70833333vw 9.375vw at 100% 21.875vw);
 }
 .shoes .copy p {
-  margin: 0;
-  padding: 0 0 2.70833333vw;
+  padding-bottom: 2.70833333vw;
   font-size: 1.66666667vw;
   line-height: 2.70833333vw;
 }
