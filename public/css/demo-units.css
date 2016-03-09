@@ -41,24 +41,27 @@ body {
           text-size-adjust: 100%;
   font-size: 14rem;
 }
-.perimeter {
-  min-height: 100%;
+.pixel-based {
+  font-size: 16px;
+  width: 320px;
+  padding: 20px;
+  border: 2px solid black;
 }
-.screenlayout {
-  padding: 2vw;
-  font-size: 4vw;
-  text-align: center;
-  background: black;
-  color: white;
+.liquid {
+  font-size: 16px;
+  width: 33.33333%;
+  padding: 20px;
+  border: 2px solid black;
 }
-.grid {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.uniform-layout {
+  font-size: 1.66666667vw;
+  width: 33.33333333vw;
+  padding: 2.08333333vw;
+  border: 0.20833333vw solid black;
 }
-.component {
+.uniform-component {
+  font-size: 16rem;
   width: 320rem;
-  height: 180rem;
   padding: 20rem;
   border: 2rem solid black;
 }

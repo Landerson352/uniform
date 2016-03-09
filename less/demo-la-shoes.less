@@ -2,16 +2,6 @@
 
 
 
-// Design-time overrides
-// By overriding these variables, you can control when (or if) each media query kicks in.
-@xs: ~"(max-width:0px)";
-@sm: ~"(max-width:0px)";
-@md: ~"all";
-@lg: ~"(max-width:0px)";
-@xl: ~"(max-width:0px)";
-
-
-
 // Variables
 @purple: #7B2F9F;
 @pink: #C43374;
@@ -63,8 +53,12 @@ html {
 	font-family: @font-family;
 	color:white;
 }
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
 	.heading-style();
+	margin: 0;
+}
+p {
+	margin:0;
 }
 .runner-1 {
 	img {
@@ -74,44 +68,41 @@ h1, h2 {
 .introduction {
 	position: relative;
 	z-index: 20;
-	width: 420rem;
-	margin: -675rem 0 0 auto;
-	padding: 10rem 75rem 160rem 45rem;
+	width: 420*@p;
+	margin: -675*@p 0 0 auto;
+	padding: 10*@p 75*@p 160*@p 45*@p;
 	background: @lt-pink;
 
 	&:before {
 		.pseudo-box-top();
-		border-top-width: 125rem;
-		border-right: 210rem solid @lt-pink;
-		border-bottom: 125rem solid @lt-pink;
-		border-left-width: 210rem;
+		border-right-color: @lt-pink;
+		border-bottom-color: @lt-pink;
+		border-width: 125*@p 210*@p;
 	}
 
 	h1 {
 		position: absolute;
-		margin: 0;
-		top: -230rem;
-		left: 40rem;
+		top: -230*@p;
+		left: 40*@p;
 		color: @purple;
-		font-size: 100rem;
+		font-size: 100*@p;
 		font-weight: @semibold;
 		line-height: 1em;
 
 		em {
 			position: relative;
-			left:-3rem;
+			left:-3*@p;
 			font-weight: @extrabold;
 			display:block;
-			font-size: 170rem;
-			margin-top: 10rem;
+			font-size: 170*@p;
+			margin-top: 10*@p;
 		}
 	}
 	.copy {
 		p {
-			margin: 0;
-			padding: 0 0 28rem;
-			font-size: 18rem;
-			line-height: 28rem;
+			padding-bottom: 28*@p;
+			font-size: 18*@p;
+			line-height: 28*@p;
 		}
 	}
 }
@@ -121,18 +112,17 @@ h1, h2 {
 
 	&:before {
 		.pseudo-box-top();
-		top:320rem;
-		border-top-width: 285rem;
-		border-right: 480rem solid white;
-		border-bottom: 285rem solid white;
-		border-left-width: 480rem;
+		top:320*@p;
+		border-right-color: white;
+		border-bottom-color: white;
+		border-width: 285*@p 480*@p;
 	}
 
 	img {
 		position:absolute;
 		right:0;
-		top:-60rem;
-		width:450rem;
+		top:-60*@p;
+		width:450*@p;
 	}
 }
 .shoes {
@@ -140,64 +130,63 @@ h1, h2 {
 	z-index: 40;
 	background: @dk-pink;
 	padding-top: 1px;
-	margin-top: 790rem;
+	margin-top: 790*@p;
 
 	&:before {
 		.pseudo-box-top();
-		border-width: 480rem;
+		border-width: 480*@p;
 		border-bottom-color: @dk-pink;
 		border-left-color: @dk-pink;
 	}
 	&:after {
 		.pseudo-box-bottom();
-		border-top: 275rem solid @dk-pink;
-		border-right-width: 480rem;
-		border-bottom-width: 275rem;
-		border-left: 480rem solid @dk-pink;
+		border-top-color: @dk-pink;
+		border-left-color: @dk-pink;
+		border-width: 275*@p 480*@p;
 	}
 
 	h2 {
 		position: absolute;
 		margin: 0;
-		font-size: 350rem;
+		font-size: 350*@p;
 		font-weight: @extrabold;
-		left: -50rem;
-		top: -655rem;
+		left: -50*@p;
+		top: -655*@p;
 	}
 
 	.copy {
 		position: relative;
-		margin: -520rem 0 0 130rem;
-		width: 320rem;
-		transform: translate(0, 210rem);
+		margin-top: -520*@p;
+		margin-left: 130*@p;
+		width: 320*@p;
+		transform: translate(0, 210*@p);
 
 		.shape {
 			content:"";
 			display:block;
-			width:170rem;
-			height:330rem;
+			width:170*@p;
+			height:330*@p;
 			float: right;
-			shape-outside: ellipse(170rem 90rem at 100% 210rem);
+			shape-outside: ellipse(170*@p 90*@p at 100% 210*@p);
 		}
 
 		p {
-			margin: 0;
-			padding: 0 0 26rem;
-			font-size: 16rem;
-			line-height: 26rem;
+			padding-bottom: 26*@p;
+			font-size: 16*@p;
+			line-height: 26*@p;
 		}
 
 		img {
 			position: absolute;
-			width: 1010rem;
-			top: -150rem;
-			left: 160rem;
+			width: 1010*@p;
+			top: -150*@p;
+			left: 160*@p;
 		}
 	}
 }
 .runner-3 {
 	position:relative;
-	padding-bottom: 130rem;
+	padding-bottom: 130*@p;
 
 	img {
 		width:100%;
@@ -205,9 +194,9 @@ h1, h2 {
 	.quote {
 		position: absolute;
 		z-index: 60;
-		top: 370rem;
-		left: 130rem;
-		font-size: 19rem;
+		top: 370*@p;
+		left: 130*@p;
+		font-size: 19*@p;
 		text-align: right;
 		.heading-style();
 

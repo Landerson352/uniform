@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-size: 14rem;
 }
 html,
 body {
@@ -11,27 +10,27 @@ html {
   width: 100vw;
   overflow-x: hidden;
 }
-@media (max-width:0px) {
+@media screen and (max-width:639px) {
   html {
     font-size: 0.3125vw;
   }
 }
-@media (max-width:0px) {
+@media screen and (min-width:640px) and (max-width:959px) {
   html {
     font-size: 0.15625vw;
   }
 }
-@media all {
+@media screen and (min-width:960px) and (max-width:1279px) {
   html {
     font-size: 0.10416667vw;
   }
 }
-@media (max-width:0px) {
+@media screen and (min-width:1280px) and (max-width:1919px) {
   html {
     font-size: 0.078125vw;
   }
 }
-@media (max-width:0px) {
+@media screen and (min-width:1920px) {
   html {
     font-size: 0.05208333vw;
   }
@@ -40,20 +39,33 @@ body {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
+  font-size: 14rem;
 }
 html {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
 }
 h1,
-h2 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 h1 em,
-h2 em {
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
   font-style: normal;
+}
+p {
+  margin: 0;
 }
 .runner-1 img {
   width: 100%;
@@ -61,9 +73,9 @@ h2 em {
 .introduction {
   position: relative;
   z-index: 20;
-  width: 420rem;
-  margin: -675rem 0 0 auto;
-  padding: 10rem 75rem 160rem 45rem;
+  width: 43.75vw;
+  margin: -70.3125vw 0 0 auto;
+  padding: 1.04166667vw 7.8125vw 16.66666667vw 4.6875vw;
   background: #e4a3c0;
 }
 .introduction:before {
@@ -77,34 +89,31 @@ h2 em {
   top: 0;
   left: 0;
   transform: translate(0, -100%);
-  border-top-width: 125rem;
-  border-right: 210rem solid #e4a3c0;
-  border-bottom: 125rem solid #e4a3c0;
-  border-left-width: 210rem;
+  border-right-color: #e4a3c0;
+  border-bottom-color: #e4a3c0;
+  border-width: 13.02083333vw 21.875vw;
 }
 .introduction h1 {
   position: absolute;
-  margin: 0;
-  top: -230rem;
-  left: 40rem;
+  top: -23.95833333vw;
+  left: 4.16666667vw;
   color: #7B2F9F;
-  font-size: 100rem;
+  font-size: 10.41666667vw;
   font-weight: 600;
   line-height: 1em;
 }
 .introduction h1 em {
   position: relative;
-  left: -3rem;
+  left: -0.3125vw;
   font-weight: 700;
   display: block;
-  font-size: 170rem;
-  margin-top: 10rem;
+  font-size: 17.70833333vw;
+  margin-top: 1.04166667vw;
 }
 .introduction .copy p {
-  margin: 0;
-  padding: 0 0 28rem;
-  font-size: 18rem;
-  line-height: 28rem;
+  padding-bottom: 2.91666667vw;
+  font-size: 1.875vw;
+  line-height: 2.91666667vw;
 }
 .runner-2 {
   position: relative;
@@ -121,24 +130,23 @@ h2 em {
   top: 0;
   left: 0;
   transform: translate(0, -100%);
-  top: 320rem;
-  border-top-width: 285rem;
-  border-right: 480rem solid white;
-  border-bottom: 285rem solid white;
-  border-left-width: 480rem;
+  top: 33.33333333vw;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-width: 29.6875vw 50vw;
 }
 .runner-2 img {
   position: absolute;
   right: 0;
-  top: -60rem;
-  width: 450rem;
+  top: -6.25vw;
+  width: 46.875vw;
 }
 .shoes {
   position: relative;
   z-index: 40;
   background: #c76591;
   padding-top: 1px;
-  margin-top: 790rem;
+  margin-top: 82.29166667vw;
 }
 .shoes:before {
   content: "";
@@ -151,7 +159,7 @@ h2 em {
   top: 0;
   left: 0;
   transform: translate(0, -100%);
-  border-width: 480rem;
+  border-width: 50vw;
   border-bottom-color: #c76591;
   border-left-color: #c76591;
 }
@@ -166,49 +174,48 @@ h2 em {
   bottom: 0;
   left: 0;
   transform: translate(0, 100%);
-  border-top: 275rem solid #c76591;
-  border-right-width: 480rem;
-  border-bottom-width: 275rem;
-  border-left: 480rem solid #c76591;
+  border-top-color: #c76591;
+  border-left-color: #c76591;
+  border-width: 28.64583333vw 50vw;
 }
 .shoes h2 {
   position: absolute;
   margin: 0;
-  font-size: 350rem;
+  font-size: 36.45833333vw;
   font-weight: 700;
-  left: -50rem;
-  top: -655rem;
+  left: -5.20833333vw;
+  top: -68.22916667vw;
 }
 .shoes .copy {
   position: relative;
-  margin: -520rem 0 0 130rem;
-  width: 320rem;
-  transform: translate(0, 210rem);
+  margin-top: -54.16666667vw;
+  margin-left: 13.54166667vw;
+  width: 33.33333333vw;
+  transform: translate(0, 21.875vw);
 }
 .shoes .copy .shape {
   content: "";
   display: block;
-  width: 170rem;
-  height: 330rem;
+  width: 17.70833333vw;
+  height: 34.375vw;
   float: right;
-  -webkit-shape-outside: ellipse(170rem 90rem at 100% 210rem);
-          shape-outside: ellipse(170rem 90rem at 100% 210rem);
+  -webkit-shape-outside: ellipse(17.70833333vw 9.375vw at 100% 21.875vw);
+          shape-outside: ellipse(17.70833333vw 9.375vw at 100% 21.875vw);
 }
 .shoes .copy p {
-  margin: 0;
-  padding: 0 0 26rem;
-  font-size: 16rem;
-  line-height: 26rem;
+  padding-bottom: 2.70833333vw;
+  font-size: 1.66666667vw;
+  line-height: 2.70833333vw;
 }
 .shoes .copy img {
   position: absolute;
-  width: 1010rem;
-  top: -150rem;
-  left: 160rem;
+  width: 105.20833333vw;
+  top: -15.625vw;
+  left: 16.66666667vw;
 }
 .runner-3 {
   position: relative;
-  padding-bottom: 130rem;
+  padding-bottom: 13.54166667vw;
 }
 .runner-3 img {
   width: 100%;
@@ -216,9 +223,9 @@ h2 em {
 .runner-3 .quote {
   position: absolute;
   z-index: 60;
-  top: 370rem;
-  left: 130rem;
-  font-size: 19rem;
+  top: 38.54166667vw;
+  left: 13.54166667vw;
+  font-size: 1.97916667vw;
   text-align: right;
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
