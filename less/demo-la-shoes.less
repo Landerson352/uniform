@@ -73,11 +73,21 @@ p {
 	padding: 10*@p 75*@p 160*@p 45*@p;
 	background: @lt-pink;
 
+	@media @xs {
+		width: auto;
+		margin: -70*@xsp 0 0 auto;
+		padding: 10*@xsp 30*@xsp 100*@xsp 30*@xsp;
+	}
+
 	&:before {
 		.pseudo-box-top();
 		border-right-color: @lt-pink;
 		border-bottom-color: @lt-pink;
 		border-width: 125*@p 210*@p;
+
+		@media @xs {
+			border-width: 100*@xsp 160*@xsp;
+		}
 	}
 
 	h1 {
@@ -89,13 +99,19 @@ p {
 		font-weight: @semibold;
 		line-height: 1em;
 
+		@media @xs {
+			left: 27*@xsp;
+			top: -180*@xsp;
+			font-size: 80*@xsp;
+		}
+
 		em {
 			position: relative;
-			left:-3*@p;
+			left:-0.02em;
 			font-weight: @extrabold;
 			display:block;
-			font-size: 170*@p;
-			margin-top: 10*@p;
+			font-size: 1.7em;
+			margin-top: 0.05em;
 		}
 	}
 	.copy {
@@ -103,12 +119,22 @@ p {
 			padding-bottom: 28*@p;
 			font-size: 18*@p;
 			line-height: 28*@p;
+
+			@media @xs {
+				padding-bottom: 26*@xsp;
+				font-size: 16*@xsp;
+				line-height: 26*@xsp;
+			}
 		}
 	}
 }
 .runner-2 {
 	position: relative;
 	z-index: 30;
+
+	@media @xs {
+		margin-top:-50*@xsp;
+	}
 
 	&:before {
 		.pseudo-box-top();
@@ -152,6 +178,12 @@ p {
 		font-weight: @extrabold;
 		left: -50*@p;
 		top: -655*@p;
+
+		@media @xs {
+			font-size: 140*@xsp;
+			left: -10*@xsp;
+			top: -190*@xsp;
+		}
 	}
 
 	.copy {
@@ -161,6 +193,12 @@ p {
 		width: 320*@p;
 		transform: translate(0, 210*@p);
 
+		@media @xs {
+			margin-top: -30*@xsp;
+			margin-left: 30*@xsp;
+			width: 260*@xsp;
+		}
+
 		.shape {
 			content:"";
 			display:block;
@@ -168,12 +206,22 @@ p {
 			height:330*@p;
 			float: right;
 			shape-outside: ellipse(170*@p 90*@p at 100% 210*@p);
+		
+			@media @xs {
+				display:none;
+			}
 		}
 
 		p {
 			padding-bottom: 26*@p;
 			font-size: 16*@p;
 			line-height: 26*@p;
+
+			@media @xs {
+				padding-bottom: 26*@xsp;
+				font-size: 16*@xsp;
+				line-height: 26*@xsp;
+			}
 		}
 
 		img {
@@ -181,6 +229,10 @@ p {
 			width: 1010*@p;
 			top: -150*@p;
 			left: 160*@p;
+
+			@media @xs {
+				top: -180*@xsp;
+			}
 		}
 	}
 }
