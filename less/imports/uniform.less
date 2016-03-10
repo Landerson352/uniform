@@ -17,12 +17,10 @@
 	box-sizing: border-box;
 }
 html, body {
-	min-height: 100% !important;
 	height: 100%;
 }
 html {
     width: 100vw;
-    overflow-x: hidden;
 
 	@media @xs { font-size: 100vw/320; }
 	@media @sm { font-size: 100vw/640; }
@@ -31,6 +29,17 @@ html {
 	@media @xl { font-size: 100vw/1920; }
 }
 body {
+	min-height: 100%;
+	overflow-x: hidden;
+
 	text-size-adjust: 100%;
-	font-size: 14rem;
+	font-size: 16rem;
+}
+
+#uniform {
+	> .page() {
+		height:100%;
+		overflow-x: hidden;
+		-webkit-overflow-scrolling: touch;
+	}
 }

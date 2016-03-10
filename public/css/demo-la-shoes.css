@@ -3,12 +3,10 @@
 }
 html,
 body {
-  min-height: 100% !important;
   height: 100%;
 }
 html {
   width: 100vw;
-  overflow-x: hidden;
 }
 @media screen and (max-width:639px) {
   html {
@@ -36,10 +34,12 @@ html {
   }
 }
 body {
+  min-height: 100%;
+  overflow-x: hidden;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
           text-size-adjust: 100%;
-  font-size: 14rem;
+  font-size: 16rem;
 }
 html {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -66,6 +66,11 @@ h6 em {
 }
 p {
   margin: 0;
+}
+.page {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 .runner-1 img {
   width: 100%;
