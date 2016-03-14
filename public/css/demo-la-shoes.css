@@ -70,6 +70,23 @@ p {
 .runner-1 img {
   width: 100%;
 }
+.shoe-print {
+  position: relative;
+  z-index: 50;
+}
+.shoe-print img {
+  position: absolute;
+  width: 36.45833333vw;
+  top: -105.20833333vw;
+  left: -12.5vw;
+}
+@media screen and (max-width:639px) {
+  .shoe-print img {
+    width: 20.83333333vw;
+    top: -115.625vw;
+    left: -9.375vw;
+  }
+}
 .introduction {
   position: relative;
   z-index: 20;
@@ -280,7 +297,15 @@ p {
   padding-bottom: 13.54166667vw;
 }
 .runner-3 img {
-  width: 100%;
+  position: absolute;
+  width: 105.20833333vw;
+}
+@media screen and (max-width:639px) {
+  .runner-3 img {
+    width: 208.33333333vw;
+    left: -68.75vw;
+    top: -26.04166667vw;
+  }
 }
 .runner-3 .quote {
   position: absolute;
@@ -289,9 +314,16 @@ p {
   left: 13.54166667vw;
   font-size: 1.97916667vw;
   text-align: right;
+  width: 43.75vw;
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote {
+    top: 59.375vw;
+    left: 7.29166667vw;
+  }
 }
 .runner-3 .quote em {
   font-style: normal;
@@ -303,15 +335,36 @@ p {
   font-weight: 600;
   font-size: 3.15em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(1) {
+    font-size: 6.15em;
+    line-height: .8em;
+  }
+}
 .runner-3 .quote .line:nth-child(2) {
   font-weight: 600;
   font-size: 2.6em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(2) {
+    font-size: 2.9em;
+  }
+}
 .runner-3 .quote .line:nth-child(3) {
   font-size: 2.4em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(3) {
+    font-size: 3em;
+  }
+}
 .runner-3 .quote .line:nth-child(4) {
   font-size: 2em;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(4) {
+    font-size: 2.5em;
+  }
 }
 .runner-3 .quote .line:nth-child(4) em {
   font-size: 1.5em;
@@ -321,4 +374,9 @@ p {
 .runner-3 .quote .author {
   font-size: 1em;
   text-transform: none;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote .author {
+    font-size: 2em;
+  }
 }
