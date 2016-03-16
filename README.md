@@ -10,10 +10,10 @@ npm i
 
 Run whenever you work on the site:
 ```
-gulp
+gulp --open
 ```
 
-Then open the site at http://localhost:3000
+This will the site at http://localhost:3000/public. Omit the `--open` flag to skip opening the browser window.
 
 ## Making a new demo page
 
