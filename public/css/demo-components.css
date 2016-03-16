@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  width: 100vw;
+}
+@media screen and (max-width:639px) {
+  html {
+    font-size: 0.3125vw;
+  }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+  html {
+    font-size: 0.15625vw;
+  }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+  html {
+    font-size: 0.10416667vw;
+  }
+}
+@media screen and (min-width:1280px) and (max-width:1919px) {
+  html {
+    font-size: 0.078125vw;
+  }
+}
+@media screen and (min-width:1920px) {
+  html {
+    font-size: 0.05208333vw;
+  }
+}
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-size: 16rem;
+}
+@regular :100 @semibold: 300;
+html {
+  font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 100;
+  margin: 0;
+}
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+  font-style: normal;
+}
+p {
+  margin: 0;
+}
+.page {
+  min-height: 100%;
+  overflow-x: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.section-01 .number {
+  display: inline-block;
+  position: relative;
+  font-weight: 100;
+  color: #fbd240;
+  font-size: 54.375vw;
+  letter-spacing: -0.05em;
+  margin-left: -15.625vw;
+  top: 10.72916667vw;
+}
+.section-01 .section-content {
+  display: inline-block;
+  position: relative;
+  top: -10.41666667vw;
+  left: -5.20833333vw;
+}
+.section-01 .section-content h1 {
+  display: inline-block;
+  font-size: 3.125vw;
+}
+.section-01 .section-content h1 em {
+  display: block;
+  font-size: 9.89583333vw;
+  font-weight: 500;
+  margin-top: -2.52604167vw;
+  margin-bottom: -1.04166667vw;
+  margin-left: -0.10416667vw;
+}
+.section-01 .section-content .copy {
+  max-width: 59.79166667vw;
+  margin-top: -1.04166667vw;
+  font-size: 2.1875vw;
+  line-height: 3.64583333vw;
+}
+.handwritten1 {
+  position: relative;
+  top: -7.41666667vw;
+  right: -33.9375vw;
+}
+.handwritten1 img {
+  position: relative;
+  z-index: -1;
+  width: 65.125vw;
+  height: auto;
+}
+.section-02 {
+  position: relative;
+  left: 29.0625vw;
+  top: -11vw;
+}
+.section-02 .number {
+  display: inline-block;
+  position: relative;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #000;
+  font-size: 33.85416667vw;
+  letter-spacing: -0.08em;
+  transform: rotate(-90deg);
+}
+.section-02 .section-content {
+  max-width: 39.0625vw;
+  display: inline-block;
+  margin-left: -4.6vw;
+}
+.section-02 .section-content .copy {
+  width: 30.52083333vw;
+}
+.section-02 .section-content .line:nth-child(1) {
+  font-size: 3.64583333vw;
+}
+.section-02 .section-content .line:nth-child(2) {
+  font-size: 9.27083333vw;
+  margin-top: -2.00416667vw;
+}
+.section-02 .section-content .line:nth-child(3) {
+  font-size: 5.20833333vw;
+  margin-top: -2.30416667vw;
+}
+.section-02 .section-content .line:nth-child(4) {
+  font-size: 4.2vw;
+  margin-top: -1.40416667vw;
+}
+.section-02 .section-content .line:nth-child(4) em {
+  font-size: 1.5em;
+}
+.section-03 .number {
+  display: inline-block;
+  position: relative;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  color: #fff;
+  font-size: 38.54166667vw;
+  letter-spacing: -0.08em;
+  margin-left: -15.625vw;
+  background-image: url("../img/3-bg.png");
+  background-size: 33.5vw 30 0.52083333vw;
+  background-repeat: no-repeat;
+  background-position: 9.125vw 3.33333333vw;
+  padding-right: 60px;
+}
+.copy {
+  font-size: 1.66666667vw;
+  line-height: 2.60416667vw;
+}
+.component {
+  width: 320rem;
+}
+.quote {
+  font-size: 25rem;
+  line-height: 32rem;
+  text-align: center;
+}
+.quote .quotation {
+  position: relative;
+  z-index: -1;
+  text-align: left;
+  margin-left: 10rem;
+}
+.quote .quotation img {
+  width: 237rem;
+  height: auto;
+}
+.quote .section-content {
+  position: relative;
+  width: 260rem;
+  top: -145rem;
+  left: 40rem;
+  font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.quote .author {
+  font-size: 12rem;
+  line-height: 15rem;
+  text-align: right;
+  margin-top: 20rem;
+}
