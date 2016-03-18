@@ -1,8 +1,8 @@
 @import "imports/uniform.less"; // Variables
 @yellow: #fbd240;
+@dk-yellow: #deab11;
 @gray: #333;
 @lt-yellow: mix(@yellow, white, 45%);
-@dk-yellow: mix(@yellow, @gray, 67%);
 @font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @heading-font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @regular:100 @semibold: 300;
@@ -18,31 +18,13 @@
     font-style: normal;
   }
 }
-.pseudo-box() {
-	content: "";
-	position: absolute;
-	z-index:-1;
-	display:block;
-	width:0;
-	height:0;
-	border: 0 solid transparent;
-}
-.pseudo-box-top() {
-	.pseudo-box();
-	top: 0;
-	left: 0;
-	transform: translate(0, -100%);
-}
-.pseudo-box-bottom() {
-	.pseudo-box();
-	bottom: 0;
-	left: 0;
-	transform: translate(0, 100%);
-}
 
 //Styles
 html {
   font-family: @font-family;
+}
+* {
+  border: none;
 }
 h1,
 h2,
@@ -56,9 +38,26 @@ h6 {
 p {
   margin: 0;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+  :hover{
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.yellow-btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: @yellow;
+  transition: all .18s ease-out;
+  &:hover{
+    background-color: @dk-yellow;
+  }
+}
 .page {
   #uniform>.page();
-  // background-image: url("../img/Uniform-Lyt-2-Components.jpg");
+  background-image: url("../img/Uniform-Lyt-2-Components.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top;
@@ -71,14 +70,16 @@ p {
     color: @yellow;
     font-size: 522*@p;
     letter-spacing: -0.05em;
-    margin-left: -150*@p;
+    left: -113.52*@p;
     top: 103*@p;
   }
+
   .section-content {
     display: inline-block;
     position: relative;
-    top: -100*@p;
-    left: -50*@p;
+    float: right;
+    top: -525*@p;
+    left: -50.9*@p;
     h1 {
       display: inline-block;
       font-size: 30*@p;
@@ -110,6 +111,40 @@ p {
     height: auto;
     // right: -489*@p;
     // top: -100*@p;
+  }
+}
+.login{
+  h2{
+    font: @heading-font-family;
+    font-size: 60rem;
+    font-weight: 500;
+    text-transform: lowercase;
+  }
+  form {
+    margin-top: -5rem;
+    margin-left: 20rem;
+  }
+  input[type="text"] {
+    border-bottom: 2px solid #a1a1a1;
+    background-color: rgba(255, 255, 255, 0);;
+    margin-bottom: 2rem;
+    margin-top: 17rem;
+  }
+  input::input-placeholder {
+    color: #000;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    background-color: @yellow;
+    color: #fff;
+    padding: 6px 16px;
+    position: relative;
+    top: 11rem;
+    left: 20rem;
+  }
+  .sign-up {
+    display: inline-block;
+    margin-top: 10rem;
   }
 }
 .section-02 {
@@ -156,45 +191,67 @@ p {
   }
 }
 .section-03 {
-
+  display: flex;
+  .shrt-bar-03{
+    img {
+      width: 323*@p;
+      height: 361*@p;
+    }
+  }
   .number {
-    display: inline-block;
     position: relative;
+    z-index: 1;
     font-family: @heading-font-family;
     font-weight: 100;
     color: #fff;
-    font-size: 370*@p;
+    font-size: 418*@p;
     letter-spacing: -0.08em;
-    margin-left: -150*@p;
-    background-image: url("../img/3-bg.png");
-    background-size: 321.6*@p 30
-    5*@p;
-    background-repeat: no-repeat;
-    background-position: 87.6*@p 32*@p;
-    padding-right: 60px;
-
-    // &:before {
-  	// 	.pseudo-box-top();
-  	// 	border-right-color: @lt-yellow;
-  	// 	border-bottom-color: @lt-yellow;
-  	// 	border-width: 125*@p 210*@p;
-  	// }
-    // &:after {
-    //   .pseudo-box-bottom();
-    //   border-left-color: @lt-yellow;
-    //   border-bottom-color: @lt-yellow;
-    //   border-width: 275*@p 480*@p;
-    // }
+    margin-left: -460*@p;
+    margin-top: -26.4*@p;
+    // background-image: url("../img/3-shrt-bar.svg");
+    // background-size: 321.6*@p 305*@p;
+    // background-repeat: no-repeat;
+    // background-position: 87.6*@p 32*@p;
+    // padding-right: 60px;
   }
+  .lng-bar-03 {
+    position: relative;
+    z-index: 2;
+    margin-left: -460*@p;
+    img {
+      width: auto;
+      height: 361*@p;
+      margin-left: 364.8*@p;
+    }
+  }
+}
+.card {
+  font-size: 25rem;
+  line-height: 32rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  right: -411.6*@p;
+  top: -273.2*@p;
+  // margin: 0px auto;
 
+  .title{
+
+  }
+  .copy{
+    font-size: 16rem;
+    line-height: 25rem;
+  }
 }
 .section-04 {}
 .copy {
   font-size: 16*@p;
   line-height: 25*@p;
+  margin-bottom: 20px;
 }
 .component {
-  width: 320rem;
+  width: 300rem;
+  // margin: 0px auto;
   // background-color: rgb(133, 242, 22)
 }
 .quote{
