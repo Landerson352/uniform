@@ -24,9 +24,7 @@ gulp.task('less', function(done) {
 		.pipe(less({
 			plugins: [autoprefix]
 		}))
-		.pipe(cleanCSS({
-			keepBreaks: true
-		}))
+		//.pipe(cleanCSS())
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./public/css'));
 });
