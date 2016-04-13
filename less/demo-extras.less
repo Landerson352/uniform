@@ -35,6 +35,12 @@ html {
 
 	font-size: 48 *@p;
 	letter-spacing: 0.5em;
+
+	&:before {
+		.sudo-triangle(bottomleft, 8 *@p, #FBF59D);
+		.anchor(0, 1);
+		.position(0.86, 0.1);
+	}
 }
 .hero-profile {
 	// The following aligns the center of the profile with the bottom center point of the hero.
@@ -62,20 +68,38 @@ html {
 	min-height: 160rem;
 	padding: 20rem;
 
-	border:2rem solid black;
+	border:2rem solid white;
+	background: #eee;
 }
 .even-grid-demo {
+	.background-fill("../img/hero1.png", black);
 	margin: 40rem 0;
 
 	&, * {
-		outline-offset: -4rem;
-		outline: 4rem solid black;
+		outline-offset: -1rem;
+		outline: 1rem solid white;
 		min-height: 90 *@p;
-	}
 
-	@media @sm-down {
-		&, * {
+		@media @xs {
 			display:block;
+			min-height: 40 *@xsp;
 		}
+	}
+	.color-1 { background: fade(#FBF59D, 80%); }
+	.color-2 { background: fade(white, 10%); }
+	.color-3 { background: fade(white, 30%); }
+	.color-4 { background: fade(white, 100%); }
+
+	.color-2,
+	.color-3,
+	.color-5 {
+		color: white;
+	}
+	.color-1,
+	.color-2,
+	.color-3,
+	.color-4,
+	.color-5 {
+		padding:8rem;
 	}
 }
