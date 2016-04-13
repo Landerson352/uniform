@@ -53,3 +53,29 @@ html {
 	position: relative; // kick z-indexing
 	margin: 0 auto;
 }
+.flex-grid-demo {
+	margin: 40rem 0;
+}
+.component {
+	// This component is internally consistent on each screen size. 
+	width: 320rem;
+	min-height: 160rem;
+	padding: 20rem;
+
+	border:2rem solid black;
+}
+.even-grid-demo {
+	margin: 40rem 0;
+
+	&, * {
+		outline-offset: -4rem;
+		outline: 4rem solid black;
+		min-height: 90 *@p;
+	}
+
+	@media @sm-down {
+		&, * {
+			display:block;
+		}
+	}
+}
