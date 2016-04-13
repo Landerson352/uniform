@@ -1,5 +1,6 @@
 var batch = require('gulp-batch');
 var browsersync = require('browser-sync');
+var cleanCSS = require('gulp-clean-css');
 var gulp = require('gulp');
 var less = require('gulp-less');
 var lessplugin_autoprefix = require('less-plugin-autoprefix');
@@ -23,6 +24,9 @@ gulp.task('less', function(done) {
 		.pipe(less({
 			plugins: [autoprefix]
 		}))
+		.pipe(cleanCSS({
+			keepBreaks: true
+		}))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./public/css'));
 });
@@ -43,6 +47,8 @@ gulp.task('watch', function() {
 	}));
 });
 
-gulp.task('dev', ['less', 'browser-sync', 'watch']);
+gulp.task('build', ['less']);
+
+gulp.task('dev', ['build', 'browser-sync', 'watch']);
 
 gulp.task('default', ['dev']);

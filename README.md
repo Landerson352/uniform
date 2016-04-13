@@ -10,10 +10,10 @@ npm i
 
 Run whenever you work on the site:
 ```
-gulp --open
+npm start
 ```
 
-This will the site at http://localhost:3000/public. Omit the `--open` flag to skip opening the browser window.
+This will start a static server and open the site at `http://localhost:3000/public`. If you'd like to run the server without opening a window, use `gulp dev`. If you'd like to compile the CSS without running the server, use `gulp build`.
 
 ## Making a new demo page
 
