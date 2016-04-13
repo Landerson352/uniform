@@ -74,15 +74,12 @@ html {
 .even-grid-demo {
 	.background-fill("../img/hero1.png", black);
 	margin: 40rem 0;
+	font-size: 16 *@p;
 
 	&, * {
-		outline-offset: -1rem;
-		outline: 1rem solid white;
-		min-height: 90 *@p;
-
 		@media @xs {
-			display:block;
-			min-height: 40 *@xsp;
+			display: block;
+			font-size: 16 *@xsp;
 		}
 	}
 	.color-1 { background: fade(#FBF59D, 80%); }
@@ -100,6 +97,10 @@ html {
 	.color-3,
 	.color-4,
 	.color-5 {
-		padding:8rem;
+		padding:24 *@p;
+
+		@media @xs {
+			padding: 24 *@xsp;
+		}
 	}
 }

@@ -1,12 +1,19 @@
-.even-grid(@flexflow) {
+.even-grid(@flexflow: row, @num: 2) {
 	display: flex;
 	flex-flow: @flexflow;
 
-	> * { flex: 1; }
+	> * { flex: (100% / @num) 1 0; }
 }
-.even-row {
-	.even-grid(row);
-}
-.even-column {
-	.even-grid(column);
-}
+.even-row,
+.even-row-2 { .even-grid(row, 2); }
+.even-row-3 { .even-grid(row, 3); }
+.even-row-4 { .even-grid(row, 4); }
+.even-row-5 { .even-grid(row, 5); }
+.even-row-6 { .even-grid(row, 6); }
+
+.even-column,
+.even-column-2 { .even-grid(column, 2); }
+.even-column-3 { .even-grid(column, 3); }
+.even-column-4 { .even-grid(column, 4); }
+.even-column-5 { .even-grid(column, 5); }
+.even-column-6 { .even-grid(column, 6); }
