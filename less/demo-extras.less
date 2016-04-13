@@ -1,0 +1,45 @@
+@import "imports/uniform.less";
+
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+.hero {
+	.background-fill("../img/hero1.png", black);
+	.size(auto, 380 *@p);
+
+	color: #FBF59D;
+	margin-bottom: 100rem;
+
+	// Set as many breakpoint rules as you want
+	@media @xs { height: 240 *@xsp; }
+	@media @sm { height: 320 *@smp; }
+	@media @lg { height: 420 *@lgp; }
+	@media @xl { height: 480 *@xlp; }
+}
+.hero-title {
+	.anchor(); // defaults to center
+	.position(); // defaults to center
+	.size(100%); // defaults to 100% width, auto height
+	.text-uppercase;
+	.text-center;
+
+	font-size: 48 *@p;
+	letter-spacing: 0.5em;
+}
+.hero-profile {
+	// The following aligns the center of the profile with the bottom center point of the hero.
+	.anchor(0.5, 0.5); // shorthand for `translate(-50%, -50%);`
+	.position(0.5, 1); // shorthard for `position:absolute; left: 50%; top: 100%;`
+	.size(160rem, 160rem);
+	.round;
+
+	transform+_: rotate(10deg); // Remember to append additional transforms or you'll lose the anchor.
+}
+.responsive-helpers-table {
+	.text-center;
+	.round(5rem);
+	.size(150rem);
+
+	margin: 0 auto;
+}
