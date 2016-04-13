@@ -1,0 +1,12 @@
+.anchor(@x:0.5, @y:0.5) {
+	transform+_: translate(@x * -100%, @y * -100%);
+}
+.position(@x:0.5, @y:0.5) {
+	position: absolute;
+	left: @x * 100%;
+	top: @y * 100%;
+}
+.size(@w:100%, @h:auto) {
+	width: @w;
+	height: @h;
+}

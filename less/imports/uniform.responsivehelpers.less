@@ -1,0 +1,79 @@
+// Credit: https://github.com/twbs/bootstrap/blob/master/less/mixins/responsive-visibility.less
+
+.responsive-visibility() {
+  display: block !important;
+  table&  { display: table !important; }
+  tr&     { display: table-row !important; }
+  th&,
+  td&     { display: table-cell !important; }
+}
+
+.responsive-invisibility() {
+  display: none !important;
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg,
+.visible-xl {
+	.responsive-invisibility();
+}
+
+.visible-xs-block,
+.visible-sm-block,
+.visible-md-block,
+.visible-lg-block,
+.visible-xl-block,
+.visible-xs-inline,
+.visible-sm-inline,
+.visible-md-inline,
+.visible-lg-inline,
+.visible-xl-inline,
+.visible-xs-inline-block,
+.visible-sm-inline-block,
+.visible-md-inline-block,
+.visible-lg-inline-block,
+.visible-xl-inline-block {
+	display: none !important;
+}
+
+@media @xs {
+	.visible-xs { .responsive-visibility(); }
+	.visible-xs-block { display: block !important; }
+	.visible-xs-inline { display: inline !important; }
+	.visible-xs-inline-block { display: inline-block !important; }
+	.hidden-xs { display: none !important; }
+}
+
+@media @sm {
+	.visible-sm { .responsive-visibility(); }
+	.visible-sm-block { display: block !important; }
+	.visible-sm-inline { display: inline !important; }
+	.visible-sm-inline-block { display: inline-block !important; }
+	.hidden-sm { display: none !important; }
+}
+
+@media @md {
+	.visible-md { .responsive-visibility(); }
+	.visible-md-block { display: block !important; }
+	.visible-md-inline { display: inline !important; }
+	.visible-md-inline-block { display: inline-block !important; }
+	.hidden-md { display: none !important; }
+}
+
+@media @lg {
+	.visible-lg { .responsive-visibility(); }
+	.visible-lg-block { display: block !important; }
+	.visible-lg-inline { display: inline !important; }
+	.visible-lg-inline-block { display: inline-block !important; }
+	.hidden-lg { display: none !important; }
+}
+
+@media @xl {
+	.visible-xl { .responsive-visibility(); }
+	.visible-xl-block { display: block !important; }
+	.visible-xl-inline { display: inline !important; }
+	.visible-xl-inline-block { display: inline-block !important; }
+	.hidden-xl { display: none !important; }
+}

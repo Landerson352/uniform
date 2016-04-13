@@ -1,0 +1,22 @@
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+.text-lowercase  { text-transform: lowercase; }
+.text-uppercase  { text-transform: uppercase; }
+.text-captialize { text-transform: capitalize; }
+
+.round(@radius: 50%) {
+	border-radius: @radius;
+	overflow:hidden;
+}
+
+.background-fill(@url) {
+	background-position: center center;
+	background-size: cover;
+	background-image: url("@{url}");
+}
+.background-fill(@url, @color) {
+	background-color:@color;
+	.background-fill(@url);
+}
