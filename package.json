@@ -25,5 +25,8 @@
   },
   "scripts": {
     "start": "gulp dev --open"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
   }
 }

@@ -6,7 +6,7 @@ html {
 }
 .hero {
 	.background-fill("../img/hero1.png", black);
-	.size(auto, 380 *@p);
+	.size(auto, 380 *@p);  // shorthand for `width: 100%; height: 39.58333333vw;`
 
 	color: #FBF59D;
 	margin-bottom: 100rem;
@@ -16,11 +16,20 @@ html {
 	@media @sm { height: 320 *@smp; }
 	@media @lg { height: 420 *@lgp; }
 	@media @xl { height: 480 *@xlp; }
+
+	&:before {
+		.sudo; // shorthand for `content: "";`
+		.anchor(0.5, 0);
+		.position(0.5, 1);
+		.size(140rem, 160rem);
+
+		background:#eee;
+	}
 }
 .hero-title {
-	.anchor(); // defaults to center
-	.position(); // defaults to center
-	.size(100%); // defaults to 100% width, auto height
+	.anchor(); // defaults to center, shorthand for `translate(-50%, -50%);`
+	.position(); // defaults to center, shorthard for `position:absolute; left: 50%; top: 50%;`
+	.size(); // defaults to 100% width, auto height, shorthand for `width: 100%; height: auto;`
 	.text-uppercase;
 	.text-center;
 
@@ -29,17 +38,18 @@ html {
 }
 .hero-profile {
 	// The following aligns the center of the profile with the bottom center point of the hero.
-	.anchor(0.5, 0.5); // shorthand for `translate(-50%, -50%);`
+	.anchor();
 	.position(0.5, 1); // shorthard for `position:absolute; left: 50%; top: 100%;`
-	.size(160rem, 160rem);
-	.round;
+	.square(160rem); // shorthand for `width: 160rem; height: 160rem;`
+	.round; // defaults to 50%, shorthand for `border-radius: 50%;`
 
 	transform+_: rotate(10deg); // Remember to append additional transforms or you'll lose the anchor.
 }
 .responsive-helpers-table {
+	.size(160rem); // shorthand for `width: 150rem; height: auto;`
+	.round(5rem); // shorthand for `border-radius: 5rem;`
 	.text-center;
-	.round(5rem);
-	.size(150rem);
 
+	position: relative; // kick z-indexing
 	margin: 0 auto;
 }

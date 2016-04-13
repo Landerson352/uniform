@@ -6,9 +6,12 @@
 .text-uppercase  { text-transform: uppercase; }
 .text-captialize { text-transform: capitalize; }
 
-.round(@radius: 50%) {
+.round(@radius: 50%, @hideOverflow: true) {
 	border-radius: @radius;
-	overflow:hidden;
+
+	& when (@hideOverflow) {
+		overflow:hidden;
+	}
 }
 
 .background-fill(@url) {

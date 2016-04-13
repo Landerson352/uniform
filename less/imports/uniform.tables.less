@@ -1,12 +1,19 @@
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 td {
 	padding: 8rem;
+	border-bottom:1px solid #666;
 
 	&.success {
 		color: @success-color;
 		background: @success-background;
+		border-color: fade(@success-color, 10%);
 	}
 	&.error {
 		color: @error-color;
 		background: @error-background;
+		border-color: fade(@error-color, 10%);
 	}
 }
