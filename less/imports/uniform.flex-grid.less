@@ -1,0 +1,15 @@
+.flex-grid(@justifyContent:left) {
+	display: flex;
+	flex-flow: row wrap;
+
+	& when not (@justifyContent=left) {
+		justify-content: @justifyContent;
+	}
+
+	> * {
+		display: flex; // equalize height
+	}
+}
+.flex-grid {
+	.flex-grid(left);
+}
