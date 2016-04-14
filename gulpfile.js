@@ -44,6 +44,10 @@ gulp.task('watch', function() {
 		gulp.start('less', done);
 	}));
 });
+gulp.task('import-bootstrap', function() {
+	return gulp.src('./node_modules/bootstrap/less/**/*.less')
+		.pipe(gulp.dest('./less/imports/bootstrap'));
+});
 
 gulp.task('build', ['less']);
 
