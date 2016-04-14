@@ -7,13 +7,13 @@ td {
 	border-bottom:1px solid #666;
 
 	&.success {
-		color: @success-color;
-		background: @success-background;
-		border-color: fade(@success-color, 10%);
+		color: @state-success-text;
+		background: @state-success-bg;
+		border-color: @state-success-border;
 	}
-	&.error {
-		color: @error-color;
-		background: @error-background;
-		border-color: fade(@error-color, 10%);
+	&.danger {
+		color: @state-danger-text;
+		background: @state-danger-bg;
+		border-color: @state-danger-border;
 	}
 }
