@@ -59,8 +59,7 @@ p {
 	}
 
 	&:before {
-		.anchor(0.5, 1);
-		.position(0.5, 0);
+		.pin(center bottom, center top);
 		.sudo-triangle(bottomright, 125*@p 210*@p, @lt-pink);
 
 		@media @xs {
@@ -116,7 +115,7 @@ p {
 
 	&:before {
 		.sudo-triangle(bottomright, 285*@p 480*@p, white);
-		.anchor(0, 1);
+		.anchor(left bottom);
 		top:320*@p;
 	}
 
@@ -136,13 +135,11 @@ p {
 
 	&:before {
 		.sudo-triangle(bottomleft, 480*@p, @dk-pink);
-		.anchor(0, 1);
-		.position(0, 0);
+		.pin(left bottom, left top);
 	}
 	&:after {
 		.sudo-triangle(topleft, 275*@p 480*@p, @dk-pink);
-		.anchor(0, 0);
-		.position(0, 1);
+		.pin(left top, left bottom);
 	}
 
 	h2 {

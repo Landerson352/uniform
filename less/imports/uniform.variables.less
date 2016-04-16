@@ -1,12 +1,31 @@
-// Variables you're meant to override
+@font-size-base: 16rem;
 
-@brand-success: #393;
-@brand-danger: #933;
+@screen-xs: 320px;
+@screen-sm: 640px;
+@screen-md: 960px;
+@screen-lg: 1280px;
+@screen-xl: 1920px;
 
-@state-success-text: @brand-success;
-@state-success-border: fade(@brand-success, 10%);
-@state-success-bg: #dfd;
+//TODO: use breakpoints from above
 
-@state-danger-text: @brand-danger;
-@state-danger-border: fade(@brand-danger, 10%);
-@state-danger-bg: #fdd;
+@xs: ~"screen and (max-width:639px)";
+@sm: ~"screen and (min-width:640px) and (max-width:959px)";
+@md: ~"screen and (min-width:960px) and (max-width:1279px)";
+@lg: ~"screen and (min-width:1280px) and (max-width:1919px)";
+@xl: ~"screen and (min-width:1920px)";
+
+@sm-up:   ~"screen and (min-width:640px)";
+@sm-down: ~"screen and (max-width:959px)";
+@md-up:   ~"screen and (min-width:960px)";
+@md-down: ~"screen and (max-width:1279px)";
+@lg-up:   ~"screen and (min-width:1280px)";
+@lg-down: ~"screen and (max-width:1919px)";
+
+@xsp: 100vw/320;
+@smp: 100vw/640;
+@mdp: 100vw/960;
+@lgp: 100vw/1280;
+@xlp: 100vw/1920;
+
+// default
+@p: @mdp;

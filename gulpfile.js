@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var lessplugin_autoprefix = require('less-plugin-autoprefix');
 var plumber = require('gulp-plumber');
+var replace = require('gulp-replace');
 var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
 var yargs = require('yargs');
@@ -45,7 +46,10 @@ gulp.task('watch', function() {
 	}));
 });
 gulp.task('import-bootstrap', function() {
-	return gulp.src('./node_modules/bootstrap/less/**/*.less')
+	gulp.src('./node_modules/bootstrap/fonts/**/*.*')
+		.pipe(gulp.dest('./public/fonts'));
+	gulp.src('./node_modules/bootstrap/less/**/*.less')
+		.pipe(replace(/px/g, 'rem'))
 		.pipe(gulp.dest('./less/imports/bootstrap'));
 });
 

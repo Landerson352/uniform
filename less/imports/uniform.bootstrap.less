@@ -14,24 +14,24 @@
 // // Reset and dependencies
 @import "@{bootstrap-path}normalize.less";
 // @import "print.less";
-// @import "glyphicons.less";
+@import "@{bootstrap-path}glyphicons.less";
 
 // Core CSS
-// @import "scaffolding.less";
+@import "@{bootstrap-path}scaffolding.less";
 @import "@{bootstrap-path}type.less";
 // @import "code.less";
-// @import "grid.less";
-// @import "tables.less";
-// @import "forms.less";
+// CUT // @import "grid.less";
+@import "@{bootstrap-path}tables.less";
+@import "@{bootstrap-path}forms.less";
 @import "@{bootstrap-path}buttons.less";
 
 // Components
-// @import "component-animations.less";
-// @import "dropdowns.less";
-// @import "button-groups.less";
+@import "@{bootstrap-path}component-animations.less";
+@import "@{bootstrap-path}dropdowns.less";
+@import "@{bootstrap-path}button-groups.less";
 // @import "input-groups.less";
-// @import "navs.less";
-// @import "navbar.less";
+@import "@{bootstrap-path}navs.less";
+@import "@{bootstrap-path}navbar.less";
 // @import "breadcrumbs.less";
 // @import "pagination.less";
 // @import "pager.less";
@@ -55,5 +55,5 @@
 // @import "carousel.less";
 
 // Utility classes
-// @import "utilities.less";
-// @import "responsive-utilities.less";
+@import "@{bootstrap-path}utilities.less";
+// CUT // @import "responsive-utilities.less";

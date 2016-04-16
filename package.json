@@ -19,6 +19,7 @@
     "gulp-batch": "^1.0.5",
     "gulp-clean-css": "^2.0.6",
     "gulp-less": "^3.0.5",
+    "gulp-replace": "^0.5.4",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.5",
     "less-plugin-autoprefix": "^1.5.1",
