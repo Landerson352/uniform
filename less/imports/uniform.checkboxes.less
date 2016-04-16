@@ -1,0 +1,43 @@
+.checkbox.checkbox-uniform {
+  > label {
+    cursor: pointer;
+
+    input {
+      // Hide the real checkbox
+      display:none;
+      
+      // Hide the checked icon by default
+      ~ .checked-icon {
+        display:none;
+      }
+      
+      // When the input is checked...
+      &:checked {
+        // Show the checked icon
+        ~ .checked-icon {
+          display:inline;
+        }
+        // Hide the unchecked icon
+        ~ .unchecked-icon {
+          display:none;
+        }
+      }
+    }
+    &, i {
+      line-height:1.25em;
+    }
+    .checked-icon,
+    .unchecked-icon {
+      // From Bootstrap
+      position: absolute;
+      margin-left: -20rem;
+      margin-top: 4rem \9;
+
+      // Special offset for wide icon
+      &.fa-toggle-on,
+      &.fa-toggle-off {
+        margin-left: -23rem;
+      }
+    }
+  }
+}
