@@ -1,32 +1,21 @@
 @import "imports/uniform.less";
-
-
-
-@font-family-base: 'Open Sans', sans-serif;
-
-@brand-success: #393;
-@brand-danger: #933;
-
-@state-success-text: @brand-success;
-@state-success-border: fade(@brand-success, 10%);
-@state-success-bg: #dfd;
-
-@state-danger-text: @brand-danger;
-@state-danger-border: fade(@brand-danger, 10%);
-@state-danger-bg: #fdd;
+@import "imports/themes/flatly.less";
 
 @navbar-margin-bottom: 0;
 @navbar-border-radius: 0;
 
-
-
 body {
 	font-weight: 300;
+}
+.navbar-form .form-control.navbar-search {
+	@media @sm-up {
+		width: 310rem;
+	}
 }
 .hero {
 	.background-fill("../img/hero1.png", black);
 	.size(auto, 380 *@p);
-	color: #FBF59D;
+	color: @brand-success;
 	margin-bottom: 100rem;
 
 	@media @xs { height: 240 *@xsp; }
@@ -51,8 +40,8 @@ body {
 	letter-spacing: 0.5em;
 
 	&:before {
-		.sudo-triangle(bottomleft, 8 *@p, #FBF59D);
-		.pin(left bottom, 86% 10%);
+		.sudo-triangle(bottomleft, 8 *@p, @brand-success);
+		.pin(left bottom, 87% 10%);
 	}
 }
 .hero-profile {
@@ -92,7 +81,7 @@ body {
 			font-size: 16 *@xsp;
 		}
 	}
-	.color-1 { background: fade(#FBF59D, 80%); }
+	.color-1 { background: fade(@brand-success, 80%); }
 	.color-2 { background: fade(white, 10%); }
 	.color-3 { background: fade(white, 30%); }
 	.color-4 { background: fade(white, 100%); }
