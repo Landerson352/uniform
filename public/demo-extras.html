@@ -15,30 +15,30 @@
 
 		<div class="page">
 
-<nav class="navbar navbar-default">
-  <div>
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars" aria-hidden="true"></span>
-      </button>
-      <a class="navbar-brand" href="#">Uniform</a>
-    </div>
+      <nav class="navbar navbar-default">
+        <div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </button>
+            <a class="navbar-brand" href="#">Uniform</a>
+          </div>
 
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-      </ul>
-      <form class="navbar-form navbar-right" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control navbar-search" placeholder="Search">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control navbar-search" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-  </div>
-</nav>
+      </nav>
 
 			<section class="hero container">
 				<div class="hero-title">Uniform Extras</div>
@@ -78,24 +78,24 @@
 				</tr>
 			</table>
 
-			<div class="flex-grid-demo flex-grid">
+			<div class="flex-grid flex-grid-demo-1">
 				<div class="component">
 					This component is internally consistent on each screen size. <br/><br/> It has a minimum height.<br/><br/>
-<div class="btn-group" role="group" aria-label="...">
-<button type="button" class="btn btn-default">1</button>
-<button type="button" class="btn btn-default">2</button>
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
 
-<div class="btn-group" role="group">
-<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Dropdown
-<span class="caret"></span>
-</button>
-<ul class="dropdown-menu">
-<li><a href="#">Dropdown link</a></li>
-<li><a href="#">Dropdown link</a></li>
-</ul>
-</div>
-</div>
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
 				</div>
 				<div class="component">
 					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6).
@@ -114,107 +114,97 @@ Dropdown
 				</div>
 			</div>
 
-			<div class="even-grid-demo even-row-4">
-				<div class="even-column-4">
-					<div class="color-1">cell</div>
-					<div class="color-5">cell</div>
-				</div>
-				<div class="color-2">The "even grid" gives you a way to create layouts of evenly sized cells, organized into rows or columns, and it can be nested for a "subdivided" look.<br/><br/>
-				You could use this to create interesting layouts, or simply to create an evenly spaced menu or sequence of images.<br/><br/>
-				You should also notice that the grid can accommodate any amount of content, as each cell will stretch vertically to accomodate it, and thus stretch the entire grid (and all other cells) vertically, in proportion.</div>
-				<div class="even-column-5">
-					<div class="color-5">cell</div>
-					<div class="even-row-4">
-						<div class="color-4">cell</div>
-						<div class="color-2">cell</div>
-					</div>
-					<div class="color-5">cell</div>
-					<div class="color-4">cell</div>
-					<div class="color-1">cell</div>
-				</div>
-				<div class="color-3">cell</div>
-			</div>
+      <div class="flex-grid-demo-2">
+        <div class="cell-1">cell 1</div>
+        <div class="cell-2">cell 2</div>
+      </div>
 
-		</div>
+      <form class="example-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-circle checked-icon"></i>
+            <i class="fa fa-circle unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-circle-o checked-icon"></i>
+            <i class="fa fa-circle-o unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-square checked-icon"></i>
+            <i class="fa fa-square unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-square-o checked-icon"></i>
+            <i class="fa fa-square-o unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-toggle-on checked-icon"></i>
+            <i class="fa fa-toggle-off unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-microphone-slash checked-icon"></i>
+            <i class="fa fa-microphone unchecked-icon"></i>
+            Microphone muted
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
-<form class="example-form">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-check-circle checked-icon"></i>
-      <i class="fa fa-circle unchecked-icon"></i>
-      Check me out
-    </label>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-check-circle-o checked-icon"></i>
-      <i class="fa fa-circle-o unchecked-icon"></i>
-      Check me out
-    </label>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-check-square checked-icon"></i>
-      <i class="fa fa-square unchecked-icon"></i>
-      Check me out
-    </label>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-check-square-o checked-icon"></i>
-      <i class="fa fa-square-o unchecked-icon"></i>
-      Check me out
-    </label>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-toggle-on checked-icon"></i>
-      <i class="fa fa-toggle-off unchecked-icon"></i>
-      Check me out
-    </label>
-  </div>
-  <div class="checkbox checkbox-uniform">
-    <label>
-      <input type="checkbox"/>
-      <i class="fa fa-microphone-slash checked-icon"></i>
-      <i class="fa fa-microphone unchecked-icon"></i>
-      Microphone muted
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+      <hr/>
 
-<hr/>
+      <form class="example-form-inline form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer cash</button>
+      </form>
 
-<form class="example-form-inline form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-    <div class="input-group">
-      <div class="input-group-addon">$</div>
-      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-      <div class="input-group-addon">.00</div>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Transfer cash</button>
-</form>
+    <script>
+    // Proposed helper method to inject icons into checkbox labels
+    // uniform.checkboxes({
+    //   checked: 'fa fa-toggle-on',
+    //   unchecked: 'fa fa-toggle-off'
+    // });
+    </script>
 
 	</body>
 

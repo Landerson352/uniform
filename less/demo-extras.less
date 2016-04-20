@@ -9,7 +9,7 @@ body {
 }
 .navbar-form .form-control.navbar-search {
 	@media @sm-up {
-		width: 310rem;
+		width: 300rem;
 	}
 }
 .hero {
@@ -59,52 +59,38 @@ body {
 	position: relative;
 	margin: 0 auto;
 }
-.flex-grid-demo {
+.flex-grid-demo-1 {
 	margin: 40rem 0;
 }
 .component {
-	// This component is internally consistent on each screen size. 
 	width: 320rem;
 	min-height: 160rem;
 	padding: 20rem;
 	border:2rem solid white;
 	background: #eee;
 }
-.even-grid-demo {
+.flex-grid-demo-2 {
 	.background-fill("../img/hero1.png", black);
-	margin: 40rem 0;
-	font-size: 16 *@p;
+	color: white;
 
-	&, * {
-		@media @xs {
-			display: block;
-			font-size: 16 *@xsp;
-		}
+	> * { padding: 16rem; }
+
+	.cell-1 {
+		background: fade(@brand-success, 80%);
 	}
-	.color-1 { background: fade(@brand-success, 80%); }
-	.color-2 { background: fade(white, 10%); }
-	.color-3 { background: fade(white, 30%); }
-	.color-4 { background: fade(white, 100%); }
-
-	.color-2,
-	.color-3,
-	.color-5 {
-		color: white;
+	.cell-2 {
+		min-height: 400rem;
 	}
-	.color-1,
-	.color-2,
-	.color-3,
-	.color-4,
-	.color-5 {
-		padding:24 *@p;
 
-		@media @xs {
-			padding: 24 *@xsp;
-		}
+	@media @md-up { 
+		.flex-grid;
+		.cell-1 { flex: 0 0 320rem; }
+		.cell-2 { flex: 1 0 auto; }
 	}
 }
 .example-form {
-	width: 280rem;
+	width: 320rem;
+	padding: 20rem;
 	margin: 20rem auto;
 }
 .example-form-inline {

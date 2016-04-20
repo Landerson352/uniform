@@ -10,38 +10,7 @@
 	.flex-grid(left);
 }
 
-
-
-.even-grid(@flexflow: row, @num: 2) {
-	display: flex;
-	flex-flow: @flexflow;
-
-	> * {
-		flex: 1 0 (100% / @num);
-	}
-}
-.even-row,
-.even-row-2 { .even-grid(row, 2); }
-.even-row-3 { .even-grid(row, 3); }
-.even-row-4 { .even-grid(row, 4); }
-.even-row-5 { .even-grid(row, 5); }
-.even-row-6 { .even-grid(row, 6); }
-.even-row-7 { .even-grid(row, 7); }
-.even-row-8 { .even-grid(row, 8); }
-.even-row-9 { .even-grid(row, 9); }
-.even-row-10 { .even-grid(row, 10); }
-.even-row-11 { .even-grid(row, 11); }
-.even-row-12 { .even-grid(row, 12); }
-
-.even-column,
-.even-column-2 { .even-grid(column, 2); }
-.even-column-3 { .even-grid(column, 3); }
-.even-column-4 { .even-grid(column, 4); }
-.even-column-5 { .even-grid(column, 5); }
-.even-column-6 { .even-grid(column, 6); }
-.even-column-7 { .even-grid(column, 7); }
-.even-column-8 { .even-grid(column, 8); }
-.even-column-9 { .even-grid(column, 9); }
-.even-column-10 { .even-grid(column, 10); }
-.even-column-11 { .even-grid(column, 11); }
-.even-column-12 { .even-grid(column, 12); }
+.row {}
+.row-fluid {}
+.col-md-1 {}
+.col-sm-2 {}
