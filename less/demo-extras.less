@@ -1,6 +1,7 @@
 @import "imports/uniform.less";
-@import "imports/themes/flatly.less";
+@import "imports/themes/bootswatch.flatly.less";
 
+// Bootstrap variable override
 @navbar-margin-bottom: 0;
 @navbar-border-radius: 0;
 
@@ -58,6 +59,15 @@ body {
 	.text-center;
 	position: relative;
 	margin: 0 auto;
+}
+.example-bootstrap-grid {
+	margin: 40rem 0;
+
+	[class*=col-] {
+		border: 1rem solid white;
+		background:#eee;
+		padding:10rem;
+	}
 }
 .flex-grid-demo-1 {
 	margin: 40rem 0;
