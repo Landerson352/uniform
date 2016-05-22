@@ -49,7 +49,7 @@ gulp.task('import-bootstrap', function() {
 	gulp.src('./node_modules/bootstrap/fonts/**/*.*')
 		.pipe(gulp.dest('./demos/fonts'));
 	gulp.src('./node_modules/bootstrap/less/**/*.less')
-		.pipe(replace(/px/g, 'rem'))
+		.pipe(replace(/px/g, 'rem')) //TODO: add specificity so that ppx is not caught
 		.pipe(gulp.dest('./less/bootstrap'));
 });
 
