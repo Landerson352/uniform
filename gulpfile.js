@@ -15,7 +15,7 @@ var autoprefix = new lessplugin_autoprefix({ browsers: ['last 1 version', '> 0.5
 var browsersync_instance = browsersync.create();
 
 gulp.task('less', function(done) {
-	return gulp.src('./less/*.less')
+	return gulp.src('./demos/less/*.less')
 		.pipe(plumber({
 			errorHandler: function (err) {
 				done(err);
@@ -27,7 +27,7 @@ gulp.task('less', function(done) {
 		}))
 		//.pipe(cleanCSS())
 		.pipe(sourcemaps.write())
-		.pipe(gulp.dest('./public/css'));
+		.pipe(gulp.dest('./demos/css'));
 });
 
 gulp.task('browser-sync', function() {
@@ -35,22 +35,22 @@ gulp.task('browser-sync', function() {
 		server: './',
 		ui: false,
 		open: argv.open,
-		files: ['./*.html', './public/**/*'],
+		files: ['./*.html', './demos/*.html', './demos/css/**/*'],
 		startPath: '/'
 	});
 });
 
 gulp.task('watch', function() {
-	watch('./less/**/*.less', batch(function (events, done) {
+	watch(['./less/**/*.less', './demos/less/**/*'], batch(function (events, done) {
 		gulp.start('less', done);
 	}));
 });
 gulp.task('import-bootstrap', function() {
 	gulp.src('./node_modules/bootstrap/fonts/**/*.*')
-		.pipe(gulp.dest('./public/fonts'));
+		.pipe(gulp.dest('./demos/fonts'));
 	gulp.src('./node_modules/bootstrap/less/**/*.less')
 		.pipe(replace(/px/g, 'rem'))
-		.pipe(gulp.dest('./less/imports/bootstrap'));
+		.pipe(gulp.dest('./less/bootstrap'));
 });
 
 gulp.task('build', ['less']);
