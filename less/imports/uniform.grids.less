@@ -1,3 +1,6 @@
+// Flex Grid is a simple flexbox container.
+// It has a "row" direction with wrapping.
+// Its content justification can be set (default left).
 .flex-grid(@justifyContent:left) {
 	display: flex;
 	flex-flow: row wrap;
@@ -6,14 +9,17 @@
 		justify-content: @justifyContent;
 	}
 }
-.flex-grid {
-	.flex-grid(left);
-}
+.flex-grid,
+.flex-grid-left {	.flex-grid(left);	}
+.flex-grid-center {	.flex-grid(center);	}
+.flex-grid-right {	.flex-grid(right);	}
 
+// For fans of Bootstrap's 12-column grid,
+// we provide a percentage-based solution.
 .row, .row-fluid {
 	.flex-grid(left);
 
-	// Default vertically stacked
+	// Default vertically stacked cells
 	> * { width: 100%; }
 }
 .col(@size, @col) {
