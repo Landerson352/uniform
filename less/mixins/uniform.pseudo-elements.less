@@ -1,0 +1,44 @@
+// "Pseudo" is weird as hell to type. How about "sudo"!
+
+.sudo() {
+	content:"";
+	display:block;
+	position: absolute;
+}
+
+.sudo-triangle(@type, @size, @color) {
+	.sudo;
+	z-index:-1;
+	width:0;
+	height:0;
+
+	border-width: @size;
+	border-style: solid;
+	border-color: transparent;
+
+	& when (@type=top), (@type=topleft), (@type=topright) {
+		border-top-color: @color;
+	}
+	& when (@type=bottom), (@type=bottomleft), (@type=bottomright) {
+		border-bottom-color: @color;
+	}
+	& when (@type=left), (@type=topleft), (@type=bottomleft) {
+		border-left-color: @color;
+	}
+	& when (@type=right), (@type=topright), (@type=bottomright) {
+		border-right-color: @color;
+	}
+
+	& when (@type=top) {
+		border-bottom-width:0;
+	}
+	& when (@type=bottom) {
+		border-top-width:0;
+	}
+	& when (@type=left) {
+		border-right-width:0;
+	}
+	& when (@type=right) {
+		border-left-width:0;
+	}
+}

@@ -1,0 +1,28 @@
+@import "../../less/uniform.less";
+@import "../../less/themes/bootswatch.flatly.less";
+
+// Bootstrap variable override
+@navbar-margin-bottom: 0;
+@navbar-border-radius: 0;
+
+body {
+	font-weight: 300;
+}
+.navbar-form .form-control.navbar-search {
+	@media @sm-up {
+		width: 300rem;
+	}
+}
+
+.hero {
+	background: #eee;
+	height: 50vw;
+}
+
+.video-intro {
+	margin-top:40 *@p;
+	min-width:320rem;
+	width: 40%;
+	margin: 0 auto;
+	box-shadow: 0 20rem 40rem fade(black, 40);
+}

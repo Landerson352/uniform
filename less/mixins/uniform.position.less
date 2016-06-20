@@ -1,0 +1,83 @@
+.anchor(@props:center middle) {
+	@x: extract(@props, 1);
+	@y: extract(@props, 2);
+
+	@top: 0;
+	@middle: 0.5;
+	@bottom: 1;
+	@left: 0;
+	@center: 0.5;
+	@right: 1;
+
+	& when (isnumber(@x)) and (isnumber(@y)) {
+		transform+_: translate(@x * -100%, @y * -100%);
+	}
+
+	& when (isnumber(@x)) and not (isnumber(@y)) {
+		@yval: "@{y}";
+		transform+_: translate(@x * -100%, @@yval * -100%);
+	}
+
+	& when not (isnumber(@x)) and (isnumber(@y)) {
+		@xval: "@{x}";
+		transform+_: translate(@@xval * -100%, @y * -100%);
+	}
+
+	& when not (isnumber(@x)) and not (isnumber(@y)) {
+		@xval: "@{x}";
+		@yval: "@{y}";
+		transform+_: translate(@@xval * -100%, @@yval * -100%);
+	}
+}
+.position(@props:center middle) {
+	@x: extract(@props, 1);
+	@y: extract(@props, 2);
+
+	@top: 0;
+	@middle: 0.5;
+	@bottom: 1;
+	@left: 0;
+	@center: 0.5;
+	@right: 1;
+	
+	position: absolute;
+
+	& when (isnumber(@x)) {
+		& when (ispercentage(@x)) {
+			left: @x;
+		}
+		& when not (ispercentage(@x)) {
+			@xval: "@{x}";
+			left: @@xval * 100%;
+		}
+	}
+	& when not (isnumber(@x)) {
+		@xval: "@{x}";
+		left: @@xval * 100%;
+	}
+
+	& when (isnumber(@y)) {
+		& when (ispercentage(@y)) {
+			top: @y;
+		}
+		& when not (ispercentage(@y)) {
+			@yval: "@{y}";
+			top: @@yval * 100%;
+		}
+	}
+	& when not (isnumber(@y)) {
+		@yval: "@{y}";
+		top: @@yval * 100%;
+	}
+}
+.pin(@anchorProps:center middle, @positionProps:center middle) {
+	.anchor(@anchorProps);
+	.position(@positionProps);
+}
+.size(@w:100%, @h:auto) {
+	width: @w;
+	height: @h;
+}
+.square(@size) {
+	.size(@size, @size);
+}

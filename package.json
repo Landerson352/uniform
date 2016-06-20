@@ -13,13 +13,22 @@
   },
   "homepage": "https://github.com/Landerson352/uniform#readme",
   "devDependencies": {
+    "bootstrap": "3.3.6",
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
+    "gulp-clean-css": "^2.0.6",
     "gulp-less": "^3.0.5",
+    "gulp-replace": "^0.5.4",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-watch": "^4.3.5",
     "less-plugin-autoprefix": "^1.5.1",
     "yargs": "^4.3.1"
+  },
+  "scripts": {
+    "start": "gulp dev --open"
+  },
+  "dependencies": {
+    "normalize.css": "^4.1.1"
   }
 }
