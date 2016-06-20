@@ -1,0 +1,127 @@
+@import "../../less/uniform.less";
+@import "../../less/themes/bootswatch.flatly.less";
+
+// Bootstrap variable override
+@navbar-margin-bottom: 0;
+@navbar-border-radius: 0;
+
+body {
+	font-weight: 300;
+}
+.navbar-form .form-control.navbar-search {
+	@media @sm-up {
+		width: 300rem;
+	}
+}
+.hero {
+	.background-fill("../img/hero1.png", black);
+	.size(auto, 380 *@p);
+	color: @brand-success;
+	margin-bottom: 100rem;
+
+	@media @xs { height: 240 *@xsp; }
+	@media @sm { height: 320 *@smp; }
+	@media @lg { height: 420 *@lgp; }
+	@media @xl { height: 480 *@xlp; }
+
+	&:before {
+		.sudo;
+		.pin(center top, center bottom);
+		.size(140rem, 160rem);
+
+		background:#eee;
+	}
+}
+.hero-title {
+	.pin(); // default to center
+	.size(); // default to 100% x auto
+	.text-uppercase;
+	.text-center;
+	font-size: 48 *@p;
+	letter-spacing: 0.5em;
+
+	&:before {
+		.sudo-triangle(bottomleft, 8 *@p, @brand-success);
+		.pin(left bottom, 87% 10%);
+	}
+}
+.hero-profile {
+	.anchor();
+	.position(center bottom);
+	.square(160rem);
+	.round;
+
+	transform+_: rotate(10deg);
+}
+.responsive-helpers-table {
+	.size(280rem);
+	.round(5rem);
+	.text-center;
+	position: relative;
+	margin: 0 auto;
+}
+.example-bootstrap-grid {
+	margin: 40rem 0;
+
+	[class*=col-] {
+		border: 1rem solid white;
+		background:#eee;
+		padding:10rem;
+	}
+}
+.flex-grid-demo-1 {
+	margin: 40rem 0;
+}
+.component {
+	width: 320rem;
+	min-height: 160rem;
+	padding: 20rem;
+	border:2rem solid white;
+	background: #eee;
+}
+.flex-grid-demo-2 {
+	.background-fill("../img/hero1.png", black);
+	color: white;
+
+	> * { padding: 16rem; }
+
+	.cell-1 {
+		background: fade(@brand-success, 80%);
+	}
+	.cell-2 {
+		min-height: 400rem;
+	}
+
+	@media @md-up { 
+		.flex-grid;
+		.cell-1 { flex: 0 0 320rem; }
+		.cell-2 { flex: 1 0 auto; }
+	}
+}
+.example-ui {
+	width: 320rem;
+	padding: 20rem;
+	margin: 20rem auto;
+}
+.example-ui-wide {
+	max-width: 640rem;
+	padding: 10rem;
+	margin: 20rem auto;
+}
+.example-form-inline {
+	.text-center;
+	margin: 20rem;
+}
+.example-thumbnail-grid {
+	margin: 0 10rem;
+
+	.row > * {
+		padding: 0 10rem;
+	}
+}
+.tooltips-demo,
+.popovers-demo {
+	width: 320rem;
+	margin: 0 auto;
+	text-align: center;
+}

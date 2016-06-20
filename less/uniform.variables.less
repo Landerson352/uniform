@@ -1,0 +1,35 @@
+@bootstrap-path: "bootstrap/";
+
+@font-size-base: 16rem;
+
+@screen-xs: 320px;
+@screen-sm: 640px;
+@screen-md: 960px;
+@screen-lg: 1280px;
+@screen-xl: 1920px;
+
+// Bootstrap filler
+@screen-xl-min: @screen-xl;
+@screen-lg-max: (@screen-xl-min - 1);
+
+@xs: ~"screen and (max-width:@{screen-xs-max})";
+@sm: ~"screen and (min-width:@{screen-sm}) and (max-width:@{screen-sm-max})";
+@md: ~"screen and (min-width:@{screen-md}) and (max-width:@{screen-md-max})";
+@lg: ~"screen and (min-width:@{screen-lg}) and (max-width:@{screen-lg-max})";
+@xl: ~"screen and (min-width:@{screen-xl})";
+
+@sm-up:   ~"screen and (min-width:@{screen-sm})";
+@sm-down: ~"screen and (max-width:@{screen-sm-max})";
+@md-up:   ~"screen and (min-width:@{screen-md})";
+@md-down: ~"screen and (max-width:@{screen-md-max})";
+@lg-up:   ~"screen and (min-width:@{screen-lg})";
+@lg-down: ~"screen and (max-width:@{screen-lg-max})";
+
+@xsp: unit(100/unit(@screen-xs), vw);
+@smp: unit(100/unit(@screen-sm), vw);
+@mdp: unit(100/unit(@screen-md), vw);
+@lgp: unit(100/unit(@screen-lg), vw);
+@xlp: unit(100/unit(@screen-xl), vw);
+
+// default
+@p: @mdp;

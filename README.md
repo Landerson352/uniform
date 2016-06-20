@@ -10,10 +10,10 @@ npm i
 
 Run whenever you work on the site:
 ```
-gulp --open
+npm start
 ```
 
-This will the site at http://localhost:3000/public. Omit the `--open` flag to skip opening the browser window.
+This will start a static server and open the site at `http://localhost:3000/public`. If you'd like to run the server without opening a window, use `gulp dev`. If you'd like to compile the CSS without running the server, use `gulp build`.
 
 ## Making a new demo page
 
@@ -30,6 +30,11 @@ This will the site at http://localhost:3000/public. Omit the `--open` flag to sk
 2. Create designs for each of these artboards.
 3. Code each of these designs, converting pixels to `rem` units. For example, a 123 pixel wide div would be assigned `width: 123rem;`. This hooks into the viewport scaling magic.
  
+## Recommended design constraints
+
+1. For the most readable lines of text, Create components that wrap text at around 55 characters. For Helvetica 14px, this is about 320px wide.
+2. Prevent full-screen designs from overwhelming the user. Constrain your "content zone" where people will be reading text and diagrams to 960px or less in the center of the screen, and use the rest of the space for secondary options and decorative graphics.
+
 ## FAQ
 
 ###### Q: Do I need to use those breakpoints you listed?
