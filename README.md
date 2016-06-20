@@ -1,6 +1,10 @@
 # Uniform
 This is an experimental responsive design strategy. We abhor the unpredictable squishiness of "liquid layout". Uniform takes another approach. Design specific layouts at each breakpoint, and the entire design scales *proportionally* to fit the viewport.
 
+See demos at http://landerson352.github.io/uniform/
+
+Note: All instructions on this page are for experimenting and contributing demos. A more streamlined way to import into your website will be coming soon.
+
 ## Setup
 
 Run once after you clone the repo:
@@ -13,7 +17,7 @@ Run whenever you work on the site:
 npm start
 ```
 
-This will start a static server and open the site at `http://localhost:3000/public`. If you'd like to run the server without opening a window, use `gulp dev`. If you'd like to compile the CSS without running the server, use `gulp build`.
+This will start a static server and open the site at `http://localhost:3000`. If you'd like to run the server without opening a window, use `gulp dev`. If you'd like to compile the CSS without running the server, use `gulp build`.
 
 ## Making a new demo page
 
@@ -29,6 +33,7 @@ This will start a static server and open the site at `http://localhost:3000/publ
 1. Create artboards (in Sketch, Photoshop, etc.) at each recommended min-width breakpoint: 320px, 640px, 960px, 1280px, 1920px.
 2. Create designs for each of these artboards.
 3. Code each of these designs, converting pixels to `rem` units. For example, a 123 pixel wide div would be assigned `width: 123rem;`. This hooks into the viewport scaling magic.
+4. Use the handy mixins like `pin`, `anchor`, `size` and `position` too, if you can figure them out, since they are completely undocumented.
  
 ## Recommended design constraints
 
@@ -45,6 +50,9 @@ A: Yes, it's kind of a hack. But in terms of design-to-code workflow, it's a hel
 
 ###### Q: Should `rem` units be used for everything?
 A: Mostly, if you want things to behave in the "Uniform way". This is especially useful for design patterns that are always the same visual size across breakpoints. Proportional units like `vw` and `%` are still quite useful. The Grid demo page gives a good example of when to use `rem` versus `vw`. You *can* even use `px` on elements, just know that those elements will be following different rules from the `rem` based elements (they *wont* scale the same way), so use them sparingly, and only with specific intentions.
+
+###### Q: What's with the mixins like `pin` and `anchor`?
+A: These just reduce absolute CSS positioning into more human terms like "pin the bottom-left corner of the element to the bottom-left corner of the parent container". They are totally optional. I found them to be useful. See the source code on `uniform.mixinx.less`.
 
 ###### Q: How does Uniform work?
 A: It's simpler than you might think. At each breakpoint, we set a document font size in `vw` units at a particular value. This makes `rem` units act like pixels that scale up and down, in the same way an image does when it scales-to-fits to the window.
