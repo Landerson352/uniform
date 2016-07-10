@@ -6736,21 +6736,22 @@ p {
   }
 }
 .introduction:before {
+  -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%);
+  left: 50%;
+  top: 0%;
   content: "";
+  display: block;
   position: absolute;
   z-index: -1;
-  display: block;
   width: 0;
   height: 0;
-  border: 0 solid transparent;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(0, -100%);
-      -ms-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  border-right-color: #e4a3c0;
-  border-bottom-color: #e4a3c0;
   border-width: 13.02083333vw 21.875vw;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #e4a3c0;
+  border-right-color: #e4a3c0;
 }
 @media screen and (max-width:639px) {
   .introduction:before {
@@ -6804,21 +6805,20 @@ p {
 }
 .runner-2:before {
   content: "";
+  display: block;
   position: absolute;
   z-index: -1;
-  display: block;
   width: 0;
   height: 0;
-  border: 0 solid transparent;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(0, -100%);
-      -ms-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  top: 33.33333333vw;
-  border-right-color: white;
-  border-bottom-color: white;
   border-width: 29.6875vw 50vw;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: white;
+  border-right-color: white;
+  -webkit-transform: translate(0%, -100%);
+      -ms-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  top: 33.33333333vw;
 }
 .runner-2 img {
   position: absolute;
@@ -6835,37 +6835,39 @@ p {
 }
 .shoes:before {
   content: "";
-  position: absolute;
-  z-index: -1;
   display: block;
+  z-index: -1;
   width: 0;
   height: 0;
-  border: 0 solid transparent;
-  top: 0;
-  left: 0;
-  -webkit-transform: translate(0, -100%);
-      -ms-transform: translate(0, -100%);
-          transform: translate(0, -100%);
   border-width: 50vw;
+  border-style: solid;
+  border-color: transparent;
   border-bottom-color: #c76591;
   border-left-color: #c76591;
+  -webkit-transform: translate(0%, -100%);
+      -ms-transform: translate(0%, -100%);
+          transform: translate(0%, -100%);
+  position: absolute;
+  left: 0%;
+  top: 0%;
 }
 .shoes:after {
   content: "";
-  position: absolute;
-  z-index: -1;
   display: block;
+  z-index: -1;
   width: 0;
   height: 0;
-  border: 0 solid transparent;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translate(0, 100%);
-      -ms-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+  border-width: 28.64583333vw 50vw;
+  border-style: solid;
+  border-color: transparent;
   border-top-color: #c76591;
   border-left-color: #c76591;
-  border-width: 28.64583333vw 50vw;
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  position: absolute;
+  left: 0%;
+  top: 100%;
 }
 .shoes h2 {
   position: absolute;
