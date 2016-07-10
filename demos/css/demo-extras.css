@@ -5245,6 +5245,7 @@ body {
 }
 .checkbox > label {
   cursor: pointer;
+  padding-left: 1.75em;
 }
 .checkbox > label input {
   width: 0.1px;
@@ -5263,11 +5264,21 @@ body {
 .checkbox > label input:checked ~ .unchecked-icon {
   display: none;
 }
-.checkbox > label input:focus + i,
-.checkbox > label input:focus + i + i {
-  border: 1px dotted red;
+.checkbox > label input:focus + i:after,
+.checkbox > label input:focus + i + i:after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 1.75em;
+  height: 1.75em;
+  border: 2rem solid #dce4ec;
   border-radius: 50%;
-  padding: 0 0.2em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .checkbox > label,
 .checkbox > label i {
@@ -5276,13 +5287,17 @@ body {
 .checkbox > label .checked-icon,
 .checkbox > label .unchecked-icon {
   position: absolute;
-  margin-left: -20rem;
+  margin: 0 0 0 -1.75em;
+  width: 1.25em;
+  text-align: center;
 }
-.checkbox > label .checked-icon.fa-toggle-on,
-.checkbox > label .unchecked-icon.fa-toggle-on,
-.checkbox > label .checked-icon.fa-toggle-off,
-.checkbox > label .unchecked-icon.fa-toggle-off {
-  margin-left: -23rem;
+.checkbox > label .checked-icon.fa-square-o,
+.checkbox > label .unchecked-icon.fa-square-o,
+.checkbox > label .checked-icon.fa-check-square-o,
+.checkbox > label .unchecked-icon.fa-check-square-o {
+  text-align: left;
+  margin: 0 0 0 -1.525em;
+  width: auto;
 }
 .fileinput input {
   width: 0.1px;
