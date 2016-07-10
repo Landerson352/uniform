@@ -6,7 +6,7 @@ var less = require('gulp-less');
 var lessplugin_autoprefix = require('less-plugin-autoprefix');
 var plumber = require('gulp-plumber');
 var replace = require('gulp-replace');
-var sourcemaps = require('gulp-sourcemaps');
+//var sourcemaps = require('gulp-sourcemaps');
 var watch = require('gulp-watch');
 var yargs = require('yargs');
 
@@ -21,12 +21,12 @@ gulp.task('less', function(done) {
 				done(err);
 			}
 		}))
-		.pipe(sourcemaps.init())
+		//.pipe(sourcemaps.init())
 		.pipe(less({
 			plugins: [autoprefix]
 		}))
 		//.pipe(cleanCSS())
-		.pipe(sourcemaps.write())
+		//.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./demos/css'));
 });
 
