@@ -1,4 +1,4 @@
-// Custom checkboxes
+// Custom fileinputs
 // http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/
 (function() {
 	var inputs = document.querySelectorAll( '.fileinput input' );
