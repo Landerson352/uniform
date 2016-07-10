@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Uniform Extras</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/demo-extras.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+
+		<div class="page">
+
+      <nav class="navbar navbar-default">
+        <div>
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="fa fa-bars" aria-hidden="true"></span>
+            </button>
+            <a class="navbar-brand" href="#">Uniform</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control navbar-search" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+			<section class="hero container">
+				<div class="hero-title">Uniform Extras</div>
+				<img class="hero-profile" src="img/landerson352.jpg"/>
+			</section>
+
+			<table class="responsive-helpers-table table">
+				<tr>
+					<td class="visible-xs success">visible-xs</td>
+					<td class="hidden-xs danger">visible-xs</td>
+					<td class="visible-xs danger">hidden-xs</td>
+					<td class="hidden-xs success">hidden-xs</td>
+				</tr>
+        <tr>
+          <td class="visible-ms success">visible-ms</td>
+          <td class="hidden-ms danger">visible-ms</td>
+          <td class="visible-ms danger">hidden-ms</td>
+          <td class="hidden-ms success">hidden-ms</td>
+        </tr>
+				<tr>
+					<td class="visible-sm success">visible-sm</td>
+					<td class="hidden-sm danger">visible-sm</td>
+					<td class="visible-sm danger">hidden-sm</td>
+					<td class="hidden-sm success">hidden-sm</td>
+				</tr>
+				<tr>
+					<td class="visible-md success">visible-md</td>
+					<td class="hidden-md danger">visible-md</td>
+					<td class="visible-md danger">hidden-md</td>
+					<td class="hidden-md success">hidden-md</td>
+				</tr>
+				<tr>
+					<td class="visible-lg success">visible-lg</td>
+					<td class="hidden-lg danger">visible-lg</td>
+					<td class="visible-lg danger">hidden-lg</td>
+					<td class="hidden-lg success">hidden-lg</td>
+				</tr>
+				<tr>
+					<td class="visible-xl success">visible-xl</td>
+					<td class="hidden-xl danger">visible-xl</td>
+					<td class="visible-xl danger">hidden-xl</td>
+					<td class="hidden-xl success">hidden-xl</td>
+				</tr>
+			</table>
+
+      <section class="example-bootstrap-grid">
+        <div class="row">
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+          <div class="col-md-1">.col-md-1</div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">.col-md-8</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4">.col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">.col-md-6</div>
+          <div class="col-md-6">.col-md-6</div>
+        </div>
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row">
+          <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row">
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row">
+          <div class="col-xs-6">.col-xs-6</div>
+          <div class="col-xs-6">.col-xs-6</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+          <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+          <!-- Optional: clear the XS cols if their content doesn't match in height -->
+          <div class="clearfix visible-xs-block"></div>
+          <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">.col-md-4</div>
+          <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+          <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+        </div>
+      </section>
+
+			<div class="flex-grid flex-grid-demo-1">
+				<div class="component">
+					This component is internally consistent on each screen size. <br/><br/> It has a minimum height.<br/><br/>
+          <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+
+            <div class="btn-group" role="group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Dropdown link</a></li>
+                <li><a href="#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
+				</div>
+				<div class="component">
+					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6).
+				</div>
+				<div class="component">
+					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6).
+				</div>
+				<div class="component">
+					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6). <br/><br/> It can also be quite a bit taller than its siblings, and the entire row will expand along with this item. This is acheived with a display value fo flex on each child in the grid, which causes the element to stretch vertically.
+				</div>
+				<div class="component">
+					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6).
+				</div>
+				<div class="component">
+					This component is internally consistent on each screen size, and takes up an even fraction of the screen (100%, 1/2, 1/3, 1/4 or 1/6).
+				</div>
+			</div>
+
+      <div class="flex-grid-demo-2">
+        <div class="cell-1">cell 1</div>
+        <div class="cell-2">cell 2</div>
+      </div>
+
+      <form class="example-ui">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <div class="fileinput">
+            <input type="file" id="exampleInputFile" multiple>
+            <label for="exampleInputFile">Choose a file...</label>
+          </div>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-circle checked-icon"></i>
+            <i class="fa fa-circle unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-circle-o checked-icon"></i>
+            <i class="fa fa-circle-o unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-square checked-icon"></i>
+            <i class="fa fa-square unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-check-square-o checked-icon"></i>
+            <i class="fa fa-square-o unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-toggle-on checked-icon"></i>
+            <i class="fa fa-toggle-off unchecked-icon"></i>
+            Check me out
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"/>
+            <i class="fa fa-microphone-slash checked-icon"></i>
+            <i class="fa fa-microphone unchecked-icon"></i>
+            Microphone muted
+          </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+
+      <hr/>
+
+      <form class="example-form-inline form-inline">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+            <div class="input-group-addon">.00</div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Transfer cash</button>
+      </form>
+
+      <hr/>
+
+      <nav class="text-center">
+        <ul class="pagination">
+          <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+          <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <hr/>
+
+      <nav>
+        <ul class="pager">
+          <li><a href="#">Previous</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </nav>
+
+      <hr/>
+
+      <div class="example-ui">
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+            <span class="sr-only">40% Complete (success)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+            <span class="sr-only">20% Complete</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+            <span class="sr-only">60% Complete (warning)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+            <span class="sr-only">80% Complete (danger)</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-success" style="width: 35%">
+            <span class="sr-only">35% Complete (success)</span>
+          </div>
+          <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">
+            <span class="sr-only">20% Complete (warning)</span>
+          </div>
+          <div class="progress-bar progress-bar-danger" style="width: 10%">
+            <span class="sr-only">10% Complete (danger)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="example-ui">
+        <ul class="list-group">
+          <li class="list-group-item">
+            Cras justo odio
+            <span class="badge">14</span>
+          </li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item active">Morbi leo risus</li>
+          <li class="list-group-item">Porta ac consectetur ac</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+
+      <div class="example-ui">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+          </div>
+          <div class="panel-body">
+            Panel content
+          </div>
+        </div>
+      </div>
+
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+      </ol>
+
+      <hr/>
+
+      <section class="example-thumbnail-grid">
+        <div class="row">
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/320x180" alt="...">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/320x180" alt="...">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/320x180" alt="...">
+            </a>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+              <img src="http://placehold.it/320x180" alt="...">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr/>
+
+      <div class="example-ui-wide">
+        <ul class="media-list">
+          <li class="media">
+            <div class="media-left">
+              <a href="#">
+                <img class="media-object" src="http://placehold.it/60x60" alt="...">
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Media heading</h4>
+              <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+              <ul class="media-list">
+                <li class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/60x60" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                  </div>
+                </li>
+                <li class="media">
+                  <div class="media-left">
+                    <a href="#">
+                      <img class="media-object" src="http://placehold.it/60x60" alt="...">
+                    </a>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Media heading</h4>
+                    <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <hr/>
+
+      <div class="tooltips-demo">
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+      </div>
+
+      <hr/>
+      
+      <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+
+      <hr/>
+
+      <div class="popovers-demo">
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on left
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on top
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+        sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on bottom
+        </button>
+
+        <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Popover on right
+        </button>
+      </div>
+
+      <hr/>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr/>
+
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="http://placehold.it/320x180" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/320x180" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+          <div class="item">
+            <img src="http://placehold.it/320x180" alt="...">
+            <div class="carousel-caption">
+              ...
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <i class="fa fa-angle-left nav-icon-left" aria-hidden="true"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <i class="fa fa-angle-right nav-icon-right" aria-hidden="true"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    <script src="../js/uniform.fileinput.js"></script>
+    <script>
+    $(function () {
+      // Bootstrap Tooltips and Popovers are opt-in
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover({trigger: 'focus'});
+      $('.carousel').carousel();
+    })
+    </script>
+
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

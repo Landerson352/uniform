@@ -1,0 +1,17 @@
+.round(@radius: 50%, @hideOverflow: true) {
+	border-radius: @radius;
+
+	& when (@hideOverflow) {
+		overflow:hidden;
+	}
+}
+
+.background-fill(@url) {
+	background-position: center center;
+	background-size: cover;
+	background-image: url("@{url}");
+}
+.background-fill(@url, @color) {
+	background-color:@color;
+	.background-fill(@url);
+}
