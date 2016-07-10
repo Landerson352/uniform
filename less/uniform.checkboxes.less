@@ -1,13 +1,19 @@
 // Checkboxes do not scale, and they vary a lot between browsers.
 // So we use a completely custom-checkbox solution.
 // You can use whatever icon you like, but .checked-icon and .unchecked-icon are required.
+// http://tympanus.net/codrops/2015/09/15/styling-customizing-file-inputs-smart-way/
 .checkbox {
   > label {
     cursor: pointer;
 
     input {
-      // Hide the real checkbox
-      display:none;
+      // Visually hide the real checkbox
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
       
       // Hide the checked icon by default
       ~ .checked-icon {
@@ -24,6 +30,13 @@
         ~ .unchecked-icon {
           display:none;
         }
+      }
+
+      &:focus + i,
+      &:focus + i + i {
+        border: 1px dotted red;
+        border-radius: 50%;
+        padding: 0 0.2em;
       }
     }
     &, i {

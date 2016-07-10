@@ -52,6 +52,12 @@
 					<td class="visible-xs danger">hidden-xs</td>
 					<td class="hidden-xs success">hidden-xs</td>
 				</tr>
+        <tr>
+          <td class="visible-ms success">visible-ms</td>
+          <td class="hidden-ms danger">visible-ms</td>
+          <td class="visible-ms danger">hidden-ms</td>
+          <td class="hidden-ms success">hidden-ms</td>
+        </tr>
 				<tr>
 					<td class="visible-sm success">visible-sm</td>
 					<td class="hidden-sm danger">visible-sm</td>
@@ -200,7 +206,10 @@
         </div>
         <div class="form-group">
           <label for="exampleInputFile">File input</label>
-          <input type="file" id="exampleInputFile">
+          <div class="fileinput">
+            <input type="file" id="exampleInputFile" multiple>
+            <label for="exampleInputFile">Choose a file...</label>
+          </div>
           <p class="help-block">Example block-level help text here.</p>
         </div>
         <div class="checkbox">
@@ -536,6 +545,7 @@
         </a>
       </div>
 
+    <script src="../js/custom-fileinput.js"></script>
     <script>
     $(function () {
       // Bootstrap Tooltips and Popovers are opt-in
@@ -543,12 +553,6 @@
       $('[data-toggle="popover"]').popover({trigger: 'focus'});
       $('.carousel').carousel();
     })
-
-    // Proposed helper method to inject icons into checkbox labels
-    // uniform.checkboxes({
-    //   checked: 'fa fa-toggle-on',
-    //   unchecked: 'fa fa-toggle-off'
-    // });
     </script>
 
 	</body>
