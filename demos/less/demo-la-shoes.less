@@ -7,19 +7,20 @@
 @pink: #C43374;
 @lt-pink: mix(@pink, white, 45%);
 @dk-pink: mix(@pink, #ccc, 67%);
-@font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial,sans-serif;
-@heading-font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial,sans-serif;
+@font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial,sans-serif;
+@headings-font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @extrabold: 700;
 @semibold: 600;
+@text-color: white;
 
 
 
 // Mixins
 .heading-style() {
-	font-family: @heading-font-family;
+	font-family: @headings-font-family;
 	text-transform: uppercase;
 	letter-spacing: -0.02em;
-	
+
 	em {
 		font-style: normal;
 	}
@@ -28,10 +29,6 @@
 
 
 // Styles
-html {
-	font-family: @font-family;
-	color:white;
-}
 h1, h2, h3, h4, h5, h6 {
 	.heading-style();
 	margin: 0;
@@ -43,6 +40,21 @@ p {
 	img {
 		width:100%;
 	}
+}
+.shoe-print {
+  position: relative;
+  z-index: 50;
+  img {
+    position: absolute;
+    width: 350*@p;
+    top: -1010*@p;
+    left: -120*@p;
+		@media @xs {
+			width: 200*@p;
+			top: -1110*@p;
+			left: -90*@p;
+		}
+  }
 }
 .introduction {
 	position: relative;
@@ -177,7 +189,7 @@ p {
 			height:330*@p;
 			float: right;
 			shape-outside: ellipse(170*@p 90*@p at 100% 210*@p);
-		
+
 			@media @xs {
 				display:none;
 			}
@@ -212,7 +224,14 @@ p {
 	padding-bottom: 130*@p;
 
 	img {
-		width:100%;
+		position: absolute;
+		width: 1010*@p;
+		// width:100%;
+		@media @xs {
+			width:2000*@p;
+			left: -660*@p;
+			top: -250*@p;
+		}
 	}
 	.quote {
 		position: absolute;
@@ -221,6 +240,11 @@ p {
 		left: 130*@p;
 		font-size: 19*@p;
 		text-align: right;
+		width: 420*@p;
+		@media @xs {
+			top: 570*@p;
+			left: 70*@p;
+		}
 		.heading-style();
 
 		* {
@@ -232,16 +256,33 @@ p {
 			&:nth-child(1) {
 				font-weight: @semibold;
 				font-size: 3.15em;
+				
+				@media @xs {
+					font-size: 6.15em;
+					line-height: .8em;
+				}
 			}
 			&:nth-child(2) {
 				font-weight: @semibold;
 				font-size: 2.6em;
+
+				@media @xs {
+					font-size: 2.9em;
+				}
 			}
 			&:nth-child(3) {
 				font-size: 2.4em;
+
+				@media @xs {
+					font-size: 3em;
+				}
 			}
 			&:nth-child(4) {
 				font-size: 2em;
+
+				@media @xs {
+					font-size: 2.5em;
+				}
 
 				em {
 					font-size: 1.5em;
@@ -253,6 +294,9 @@ p {
 		.author {
 			font-size: 1em;
 			text-transform: none;
+			@media @xs {
+				font-size: 2em;
+			}
 		}
 	}
 }

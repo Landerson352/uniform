@@ -269,10 +269,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16rem;
   line-height: 1.42857143;
-  color: #333333;
+  color: white;
   background-color: #fff;
 }
 input,
@@ -370,7 +370,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -1418,7 +1418,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5rem;
   margin-bottom: 10rem;
-  color: #737373;
+  color: #ffffff;
 }
 @media (min-width: 640px) {
   .form-inline .form-group {
@@ -3514,7 +3514,7 @@ a.thumbnail.active {
 }
 .thumbnail .caption {
   padding: 9rem;
-  color: #333333;
+  color: white;
 }
 .alert {
   padding: 15rem;
@@ -4458,7 +4458,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4576,7 +4576,7 @@ button.close {
   display: none;
   max-width: 276rem;
   padding: 1rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6678,10 +6678,6 @@ img.media-object {
     margin-left: 100%;
   }
 }
-html {
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-}
 h1,
 h2,
 h3,
@@ -6706,6 +6702,23 @@ p {
 }
 .runner-1 img {
   width: 100%;
+}
+.shoe-print {
+  position: relative;
+  z-index: 50;
+}
+.shoe-print img {
+  position: absolute;
+  width: 36.45833333vw;
+  top: -105.20833333vw;
+  left: -12.5vw;
+}
+@media screen and (max-width:639px) {
+  .shoe-print img {
+    width: 20.83333333vw;
+    top: -115.625vw;
+    left: -9.375vw;
+  }
 }
 .introduction {
   position: relative;
@@ -6929,7 +6942,15 @@ p {
   padding-bottom: 13.54166667vw;
 }
 .runner-3 img {
-  width: 100%;
+  position: absolute;
+  width: 105.20833333vw;
+}
+@media screen and (max-width:639px) {
+  .runner-3 img {
+    width: 208.33333333vw;
+    left: -68.75vw;
+    top: -26.04166667vw;
+  }
 }
 .runner-3 .quote {
   position: absolute;
@@ -6938,9 +6959,16 @@ p {
   left: 13.54166667vw;
   font-size: 1.97916667vw;
   text-align: right;
+  width: 43.75vw;
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote {
+    top: 59.375vw;
+    left: 7.29166667vw;
+  }
 }
 .runner-3 .quote em {
   font-style: normal;
@@ -6952,15 +6980,36 @@ p {
   font-weight: 600;
   font-size: 3.15em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(1) {
+    font-size: 6.15em;
+    line-height: .8em;
+  }
+}
 .runner-3 .quote .line:nth-child(2) {
   font-weight: 600;
   font-size: 2.6em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(2) {
+    font-size: 2.9em;
+  }
+}
 .runner-3 .quote .line:nth-child(3) {
   font-size: 2.4em;
 }
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(3) {
+    font-size: 3em;
+  }
+}
 .runner-3 .quote .line:nth-child(4) {
   font-size: 2em;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote .line:nth-child(4) {
+    font-size: 2.5em;
+  }
 }
 .runner-3 .quote .line:nth-child(4) em {
   font-size: 1.5em;
@@ -6970,4 +7019,9 @@ p {
 .runner-3 .quote .author {
   font-size: 1em;
   text-transform: none;
+}
+@media screen and (max-width:639px) {
+  .runner-3 .quote .author {
+    font-size: 2em;
+  }
 }
