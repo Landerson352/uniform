@@ -5333,10 +5333,6 @@ body {
   border-color: #95a5a6;
   display: block;
   width: 100%;
-  padding: 6rem 9rem;
-  font-size: 14rem;
-  line-height: 1.5;
-  border-radius: 3rem;
 }
 .fileinput label:focus,
 .fileinput label:active:focus,
@@ -5426,6 +5422,11 @@ fieldset[disabled] .fileinput label.focus {
 }
 .fileinput label * {
   pointer-events: none;
+}
+.fileinput input:focus + label {
+  color: #ffffff;
+  background-color: #798d8f;
+  border-color: #566566;
 }
 .navbar-toggle {
   color: #ffffff;
