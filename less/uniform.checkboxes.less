@@ -6,6 +6,7 @@
 .checkbox {
   > label {
     cursor: pointer;
+    padding-left: 1.75em;
 
     input {
       // Visually hide the real checkbox
@@ -35,9 +36,19 @@
 
       &:focus + i,
       &:focus + i + i {
-        border: 1px dotted red;
-        border-radius: 50%;
-        padding: 0 0.2em;
+        &:after {
+          content: "";
+          display:block;
+          position: absolute;
+          z-index: -1;
+          width: 1.75em;
+          height: 1.75em;
+          border: 2rem solid @input-border;
+          border-radius: 50%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
     &, i {
@@ -47,12 +58,16 @@
     .unchecked-icon {
       // From Bootstrap
       position: absolute;
-      margin-left: -20rem;
+      margin: 0 0 0 -1.75em;
+      width: 1.25em;
+      text-align: center;
 
-      // Special offset for wide icon
-      &.fa-toggle-on,
-      &.fa-toggle-off {
-        margin-left: -23rem;
+      // Special offset for square with uneven sizes :/
+      &.fa-square-o,
+      &.fa-check-square-o {
+        text-align: left;
+        margin: 0 0 0 -1.525em;
+        width: auto;
       }
     }
   }
