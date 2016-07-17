@@ -5,11 +5,11 @@ html {
     width: 100vw;
 
 	// This is the magic.
-	@media @xs { font-size: 100vw/320; }
-	@media @sm { font-size: 100vw/640; }
-	@media @md { font-size: 100vw/960; }
-	@media @lg { font-size: 100vw/1280; }
-	@media @xl { font-size: 100vw/1920; }
+	@media @xs { font-size: @precision * 100vw/320; }
+	@media @sm { font-size: @precision * 100vw/640; }
+	@media @md { font-size: @precision * 100vw/960; }
+	@media @lg { font-size: @precision * 100vw/1280; }
+	@media @xl { font-size: @precision * 100vw/1920; }
 }
 body {
 	min-height: 100%;

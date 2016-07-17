@@ -10,14 +10,14 @@ body {
 }
 .navbar-form .form-control.navbar-search {
 	@media @sm-up {
-		width: 300rem;
+		width: 300*@rem;
 	}
 }
 .hero {
 	.background-fill("../img/hero1.png", black);
 	.size(auto, 380 *@p);
 	color: @brand-success;
-	margin-bottom: 100rem;
+	margin-bottom: 100*@rem;
 
 	@media @xs { height: 240 *@xsp; }
 	@media @sm { height: 320 *@smp; }
@@ -27,7 +27,7 @@ body {
 	&:before {
 		.sudo;
 		.pin(center top, center bottom);
-		.size(140rem, 160rem);
+		.size(140*@rem, 160*@rem);
 
 		background:#eee;
 	}
@@ -48,80 +48,80 @@ body {
 .hero-profile {
 	.anchor();
 	.position(center bottom);
-	.square(160rem);
+	.square(160*@rem);
 	.round;
 
 	transform+_: rotate(10deg);
 }
 .responsive-helpers-table {
-	.size(280rem);
-	.round(5rem);
+	.size(280*@rem);
+	.round(5*@rem);
 	.text-center;
 	position: relative;
 	margin: 0 auto;
 }
 .example-bootstrap-grid {
-	margin: 40rem 0;
+	margin: 40*@rem 0;
 
 	[class*=col-] {
-		border: 1rem solid white;
+		border: 1*@rem solid white;
 		background:#eee;
-		padding:10rem;
+		padding:10*@rem;
 	}
 }
 .flex-grid-demo-1 {
-	margin: 40rem 0;
+	margin: 40*@rem 0;
 }
 .component {
-	width: 320rem;
-	min-height: 160rem;
-	padding: 20rem;
-	border:2rem solid white;
+	width: 320*@rem;
+	min-height: 160*@rem;
+	padding: 20*@rem;
+	border:2*@rem solid white;
 	background: #eee;
 }
 .flex-grid-demo-2 {
 	.background-fill("../img/hero1.png", black);
 	color: white;
 
-	> * { padding: 16rem; }
+	> * { padding: 16*@rem; }
 
 	.cell-1 {
 		background: fade(@brand-success, 80%);
 	}
 	.cell-2 {
-		min-height: 400rem;
+		min-height: 400*@rem;
 	}
 
 	@media @md-up { 
 		.flex-grid;
-		.cell-1 { flex: 0 0 320rem; }
+		.cell-1 { flex: 0 0 320*@rem; }
 		.cell-2 { flex: 1 0 auto; }
 	}
 }
 .example-ui {
-	width: 320rem;
-	padding: 20rem;
-	margin: 20rem auto;
+	width: 320*@rem;
+	padding: 20*@rem;
+	margin: 20*@rem auto;
 }
 .example-ui-wide {
-	max-width: 640rem;
-	padding: 10rem;
-	margin: 20rem auto;
+	max-width: 640*@rem;
+	padding: 10*@rem;
+	margin: 20*@rem auto;
 }
 .example-form-inline {
 	.text-center;
-	margin: 20rem;
+	margin: 20*@rem;
 }
 .example-thumbnail-grid {
-	margin: 0 10rem;
+	margin: 0 10*@rem;
 
 	.row > * {
-		padding: 0 10rem;
+		padding: 0 10*@rem;
 	}
 }
 .tooltips-demo,
 .popovers-demo {
-	width: 320rem;
+	width: 320*@rem;
 	margin: 0 auto;
 	text-align: center;
 }

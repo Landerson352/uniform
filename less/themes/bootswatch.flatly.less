@@ -20,7 +20,7 @@
 @font-family-serif: Georgia, "Times New Roman", Times, serif;
 @font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base: @font-family-sans-serif;
-@font-size-base: 16rem;
+@font-size-base: 16*@rem;
 @font-size-large: ceil((@font-size-base * 1.25));
 @font-size-small: ceil((@font-size-base * 0.85));
 @font-size-h1: floor((@font-size-base * 2.6));
@@ -38,25 +38,25 @@
 @icon-font-path: "../fonts/";
 @icon-font-name: "glyphicons-halflings-regular";
 @icon-font-svg-id: "glyphicons_halflingsregular";
-@padding-base-vertical: 10rem;
-@padding-base-horizontal: 15rem;
-@padding-large-vertical: 18rem;
-@padding-large-horizontal: 27rem;
-@padding-small-vertical: 6rem;
-@padding-small-horizontal: 9rem;
-@padding-xs-vertical: 1rem;
-@padding-xs-horizontal: 5rem;
+@padding-base-vertical: 10*@rem;
+@padding-base-horizontal: 15*@rem;
+@padding-large-vertical: 18*@rem;
+@padding-large-horizontal: 27*@rem;
+@padding-small-vertical: 6*@rem;
+@padding-small-horizontal: 9*@rem;
+@padding-xs-vertical: 1*@rem;
+@padding-xs-horizontal: 5*@rem;
 @line-height-large: 1.3333333;
 @line-height-small: 1.5;
-@border-radius-base: 4rem;
-@border-radius-large: 6rem;
-@border-radius-small: 3rem;
+@border-radius-base: 4*@rem;
+@border-radius-large: 6*@rem;
+@border-radius-small: 3*@rem;
 @component-active-color: rgb(255, 255, 255);
 @component-active-bg: @brand-primary;
-@caret-width-base: 4rem;
-@caret-width-large: 5rem;
-@table-cell-padding: 8rem;
-@table-condensed-cell-padding: 5rem;
+@caret-width-base: 4*@rem;
+@caret-width-large: 5*@rem;
+@table-cell-padding: 8*@rem;
+@table-condensed-cell-padding: 5*@rem;
 @table-bg: transparent;
 @table-bg-accent: rgb(249, 249, 249);
 @table-bg-hover: @gray-lighter;
@@ -97,7 +97,7 @@
 @input-height-base: (@line-height-computed + (@padding-base-vertical * 2) + 4);
 @input-height-large: (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 4);
 @input-height-small: (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 4);
-@form-group-margin-bottom: 15rem;
+@form-group-margin-bottom: 15*@rem;
 @legend-color: @text-color;
 @legend-border-color: transparent;
 @input-group-addon-bg: @gray-lighter;
@@ -123,21 +123,21 @@
 @zindex-modal-background: 1040;
 @zindex-modal: 1050;
 @grid-columns: 12;
-@grid-gutter-width: 30rem;
+@grid-gutter-width: 30*@rem;
 @grid-float-breakpoint: @screen-sm-min;
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
-@container-tablet: (720rem + @grid-gutter-width);
+@container-tablet: (720*@rem + @grid-gutter-width);
 @container-sm: @container-tablet;
-@container-desktop: (940rem + @grid-gutter-width);
+@container-desktop: (940*@rem + @grid-gutter-width);
 @container-md: @container-desktop;
-@container-large-desktop: (1140rem + @grid-gutter-width);
+@container-large-desktop: (1140*@rem + @grid-gutter-width);
 @container-lg: @container-large-desktop;
-@navbar-height: 60rem;
+@navbar-height: 60*@rem;
 @navbar-margin-bottom: @line-height-computed;
 @navbar-border-radius: @border-radius-base;
 @navbar-padding-horizontal: floor((@grid-gutter-width / 2));
 @navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
-@navbar-collapse-max-height: 340rem;
+@navbar-collapse-max-height: 340*@rem;
 @navbar-default-color: rgb(255, 255, 255);
 @navbar-default-bg: @brand-primary;
 @navbar-default-border: transparent;
@@ -170,7 +170,7 @@
 @navbar-inverse-toggle-hover-bg: darken(@navbar-inverse-bg, 10%);
 @navbar-inverse-toggle-icon-bar-bg: rgb(255, 255, 255);
 @navbar-inverse-toggle-border-color: darken(@navbar-inverse-bg, 10%);
-@nav-link-padding: 10rem 15rem;
+@nav-link-padding: 10*@rem 15*@rem;
 @nav-link-hover-bg: @gray-lighter;
 @nav-disabled-link-color: @gray-light;
 @nav-disabled-link-hover-color: @gray-light;
@@ -198,12 +198,12 @@
 @pagination-disabled-border: transparent;
 @pager-bg: @pagination-bg;
 @pager-border: @pagination-border;
-@pager-border-radius: 15rem;
+@pager-border-radius: 15*@rem;
 @pager-hover-bg: @pagination-hover-bg;
 @pager-active-bg: @pagination-active-bg;
 @pager-active-color: @pagination-active-color;
 @pager-disabled-color: rgb(255, 255, 255);
-@jumbotron-padding: 30rem;
+@jumbotron-padding: 30*@rem;
 @jumbotron-color: inherit;
 @jumbotron-bg: @gray-lighter;
 @jumbotron-heading-color: inherit;
@@ -221,18 +221,18 @@
 @state-danger-text: rgb(255, 255, 255);
 @state-danger-bg: @brand-danger;
 @state-danger-border: @brand-danger;
-@tooltip-max-width: 200rem;
+@tooltip-max-width: 200*@rem;
 @tooltip-color: rgb(255, 255, 255);
 @tooltip-bg: rgb(0, 0, 0);
 @tooltip-opacity: .9;
-@tooltip-arrow-width: 5rem;
+@tooltip-arrow-width: 5*@rem;
 @tooltip-arrow-color: @tooltip-bg;
 @popover-bg: rgb(255, 255, 255);
-@popover-max-width: 276rem;
+@popover-max-width: 276*@rem;
 @popover-border-color: rgba(0, 0, 0, 0.2);
 @popover-fallback-border-color: rgb(204, 204, 204);
 @popover-title-bg: darken(@popover-bg, 3%);
-@popover-arrow-width: 10rem;
+@popover-arrow-width: 10*@rem;
 @popover-arrow-color: @popover-bg;
 @popover-arrow-outer-width: (@popover-arrow-width + 1);
 @popover-arrow-outer-color: fadein(@popover-border-color, 5%);
@@ -245,8 +245,8 @@
 @label-danger-bg: @brand-danger;
 @label-color: rgb(255, 255, 255);
 @label-link-hover-color: rgb(255, 255, 255);
-@modal-inner-padding: 20rem;
-@modal-title-padding: 15rem;
+@modal-inner-padding: 20*@rem;
+@modal-title-padding: 15*@rem;
 @modal-title-line-height: @line-height-base;
 @modal-content-bg: rgb(255, 255, 255);
 @modal-content-border-color: rgba(0, 0, 0, 0.2);
@@ -255,10 +255,10 @@
 @modal-backdrop-opacity: .5;
 @modal-header-border-color: rgb(229, 229, 229);
 @modal-footer-border-color: @modal-header-border-color;
-@modal-lg: 900rem;
-@modal-md: 600rem;
-@modal-sm: 300rem;
-@alert-padding: 15rem;
+@modal-lg: 900*@rem;
+@modal-md: 600*@rem;
+@modal-sm: 300*@rem;
+@alert-padding: 15*@rem;
 @alert-border-radius: @border-radius-base;
 @alert-link-font-weight: bold;
 @alert-success-bg: @state-success-bg;
@@ -296,8 +296,8 @@
 @list-group-link-hover-color: @list-group-link-color;
 @list-group-link-heading-color: rgb(51, 51, 51);
 @panel-bg: rgb(255, 255, 255);
-@panel-body-padding: 15rem;
-@panel-heading-padding: 10rem 15rem;
+@panel-body-padding: 15*@rem;
+@panel-heading-padding: 10*@rem 15*@rem;
 @panel-footer-padding: @panel-heading-padding;
 @panel-border-radius: @border-radius-base;
 @panel-inner-border: @gray-lighter;
@@ -320,12 +320,12 @@
 @panel-danger-text: @state-danger-text;
 @panel-danger-border: @state-danger-border;
 @panel-danger-heading-bg: @state-danger-bg;
-@thumbnail-padding: 4rem;
+@thumbnail-padding: 4*@rem;
 @thumbnail-bg: @body-bg;
 @thumbnail-border: @gray-lighter;
 @thumbnail-border-radius: @border-radius-base;
 @thumbnail-caption-color: @text-color;
-@thumbnail-caption-padding: 9rem;
+@thumbnail-caption-padding: 9*@rem;
 @well-bg: @gray-lighter;
 @well-border: transparent;
 @badge-color: rgb(255, 255, 255);
@@ -335,18 +335,18 @@
 @badge-active-bg: rgb(255, 255, 255);
 @badge-font-weight: bold;
 @badge-line-height: 1;
-@badge-border-radius: 10rem;
-@breadcrumb-padding-vertical: 8rem;
-@breadcrumb-padding-horizontal: 15rem;
+@badge-border-radius: 10*@rem;
+@breadcrumb-padding-vertical: 8*@rem;
+@breadcrumb-padding-horizontal: 15*@rem;
 @breadcrumb-bg: @gray-lighter;
 @breadcrumb-color: rgb(204, 204, 204);
 @breadcrumb-active-color: @gray;
 @breadcrumb-separator: "/";
-@carousel-text-shadow: 0 1rem 2rem rgba(0,0,0,.6);
+@carousel-text-shadow: 0 1*@rem 2*@rem rgba(0,0,0,.6);
 @carousel-control-color: rgb(255, 255, 255);
 @carousel-control-width: 15%;
 @carousel-control-opacity: .5;
-@carousel-control-font-size: 20rem;
+@carousel-control-font-size: 20*@rem;
 @carousel-indicator-active-bg: rgb(255, 255, 255);
 @carousel-indicator-border-color: rgb(255, 255, 255);
 @carousel-caption-color: rgb(255, 255, 255);
@@ -360,8 +360,8 @@
 @pre-bg: @gray-lighter;
 @pre-color: @gray-dark;
 @pre-border-color: rgb(204, 204, 204);
-@pre-scrollable-max-height: 340rem;
-@component-offset-horizontal: 180rem;
+@pre-scrollable-max-height: 340*@rem;
+@component-offset-horizontal: 180*@rem;
 @text-muted: @gray-light;
 @abbr-border-color: @gray-light;
 @headings-small-color: @gray-light;
@@ -413,7 +413,7 @@
 // Buttons ====================================================================
 
 .btn {
-  border-width: 2rem;
+  border-width: 2*@rem;
 }
 
 .btn:active {
@@ -492,7 +492,7 @@ table,
   &-bordered > thead > tr > td,
   &-bordered > tbody > tr > td,
   &-bordered > tfoot > tr > td {
-    border: 1rem solid @table-border-color;
+    border: 1*@rem solid @table-border-color;
   }
 }
 
@@ -500,7 +500,7 @@ table,
 
 .form-control,
 input {
-  border-width: 2rem;
+  border-width: 2*@rem;
   .box-shadow(none);
 
   &:focus {
@@ -525,7 +525,7 @@ input {
 
   .form-control,
   .form-control:focus {
-    border: 2rem solid @brand-warning;
+    border: 2*@rem solid @brand-warning;
   }
 
   .input-group-addon {
@@ -550,7 +550,7 @@ input {
 
   .form-control,
   .form-control:focus {
-    border: 2rem solid @brand-danger;
+    border: 2*@rem solid @brand-danger;
   }
 
   .input-group-addon {
@@ -575,7 +575,7 @@ input {
 
   .form-control,
   .form-control:focus {
-    border: 2rem solid @brand-success;
+    border: 2*@rem solid @brand-success;
   }
 
   .input-group-addon {
@@ -634,11 +634,11 @@ input {
 // Progress bars ==============================================================
 
 .progress {
-  height: 10rem;
+  height: 10*@rem;
   .box-shadow(none);
   .progress-bar {
-    font-size: 10rem;
-    line-height: 10rem;
+    font-size: 10*@rem;
+    line-height: 10*@rem;
   }
 }
 

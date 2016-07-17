@@ -110,7 +110,7 @@ a{
 
     // this is complicated..
     bottom: -220*@p; // anchor to bottom of large number in layout
-    transform: translate(0, 200rem); // then offset the component
+    transform: translate(0, 200*@rem); // then offset the component
   }
 }
 .handwritten1 {
@@ -129,19 +129,19 @@ a{
 .login{
   h2{
     font: @heading-font-family;
-    font-size: 60rem;
+    font-size: 60*@rem;
     font-weight: 500;
     text-transform: lowercase;
   }
   form {
-    margin-top: -5rem;
-    margin-left: 20rem;
+    margin-top: -5*@rem;
+    margin-left: 20*@rem;
   }
   input[type="text"] {
     border-bottom: 2px solid #a1a1a1;
     background-color: rgba(255, 255, 255, 0);;
-    margin-bottom: 2rem;
-    margin-top: 17rem;
+    margin-bottom: 2*@rem;
+    margin-top: 17*@rem;
     width:100%;
   }
   input::input-placeholder {
@@ -153,12 +153,12 @@ a{
     color: #fff;
     padding: 6px 16px;
     position: relative;
-    top: 11rem;
-    left: 20rem;
+    top: 11*@rem;
+    left: 20*@rem;
   }
   .sign-up {
     display: inline-block;
-    margin-top: 10rem;
+    margin-top: 10*@rem;
   }
 }
 .section-02 {
@@ -240,8 +240,8 @@ a{
   }
 }
 .card {
-  font-size: 25rem;
-  line-height: 32rem;
+  font-size: 25*@rem;
+  line-height: 32*@rem;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -253,8 +253,8 @@ a{
 
   }
   .copy{
-    font-size: 16rem;
-    line-height: 25rem;
+    font-size: 16*@rem;
+    line-height: 25*@rem;
   }
 }
 .section-04 {}
@@ -264,22 +264,22 @@ a{
   margin-bottom: 20px;
 }
 .component {
-  width: 300rem;
+  width: 300*@rem;
   // margin: 0px auto;
   // background-color: rgb(133, 242, 22)
 }
 .quote{
-  font-size: 25rem;
-  line-height: 32rem;
+  font-size: 25*@rem;
+  line-height: 32*@rem;
   text-align: center;
 
   .quotation{
     position: relative;
     z-index: -1;
     text-align:left;
-    margin-left:10rem;
+    margin-left:10*@rem;
     img{
-      width: 237rem;
+      width: 237*@rem;
       height: auto;
     }
   }
@@ -289,17 +289,17 @@ a{
   // }
   .section-content{
     position: relative;
-    width: 260rem;
-    top: -145rem;
-    left: 40rem;
+    width: 260*@rem;
+    top: -145*@rem;
+    left: 40*@rem;
     font-family: @heading-font-family;
     font-weight: 300;
   }
 
   .author{
-    font-size: 12rem;
-    line-height: 15rem;
+    font-size: 12*@rem;
+    line-height: 15*@rem;
     text-align: right;
-    margin-top: 20rem;
+    margin-top: 20*@rem;
   }
 }

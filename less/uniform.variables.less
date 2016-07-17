@@ -1,6 +1,6 @@
 @bootstrap-path: "bootstrap/";
 
-@font-size-base: 16rem;
+@precision: 10;
 
 @screen-xs: 320px;
 @screen-sm: 640px;
@@ -31,5 +31,8 @@
 @lgp: unit(100/unit(@screen-lg), vw);
 @xlp: unit(100/unit(@screen-xl), vw);
 
-// default
-@p: @mdp;
+@p: @mdp; //unit(@p-precision, rem);
+
+@rem: 1rem / @precision;
+
+@font-size-base: 16 *@rem;
