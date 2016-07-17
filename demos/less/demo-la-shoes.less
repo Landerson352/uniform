@@ -3,10 +3,10 @@
 
 
 // Variables
-@purple: #7B2F9F;
-@pink: #C43374;
-@lt-pink: mix(@pink, white, 45%);
-@dk-pink: mix(@pink, #ccc, 67%);
+@mdpurple: #7B2F9F;
+@mdpink: #C43374;
+@lt-pink: mix(@mdpink, white, 45%);
+@dk-pink: mix(@mdpink, #ccc, 67%);
 @font-family-sans-serif: "proxima-nova", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @headings-font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @extrabold: 700;
@@ -46,22 +46,22 @@ p {
   z-index: 50;
   img {
     position: absolute;
-    width: 350*@p;
-    top: -1010*@p;
-    left: -120*@p;
+    width: 350*@mdp;
+    top: -1010*@mdp;
+    left: -120*@mdp;
 		@media @xs {
-			width: 200*@p;
-			top: -1110*@p;
-			left: -90*@p;
+			width: 200*@mdp;
+			top: -1110*@mdp;
+			left: -90*@mdp;
 		}
   }
 }
 .introduction {
 	position: relative;
 	z-index: 20;
-	width: 420*@p;
-	margin: -675*@p 0 0 auto;
-	padding: 10*@p 75*@p 160*@p 45*@p;
+	width: 420*@mdp;
+	margin: -675*@mdp 0 0 auto;
+	padding: 10*@mdp 75*@mdp 160*@mdp 45*@mdp;
 	background: @lt-pink;
 
 	@media @xs {
@@ -72,7 +72,7 @@ p {
 
 	&:before {
 		.pin(center bottom, center top);
-		.sudo-triangle(bottomright, 125*@p 210*@p, @lt-pink);
+		.sudo-triangle(bottomright, 125*@mdp 210*@mdp, @lt-pink);
 
 		@media @xs {
 			border-width: 100*@xsp 160*@xsp;
@@ -81,10 +81,10 @@ p {
 
 	h1 {
 		position: absolute;
-		top: -230*@p;
-		left: 40*@p;
-		color: @purple;
-		font-size: 100*@p;
+		top: -230*@mdp;
+		left: 40*@mdp;
+		color: @mdpurple;
+		font-size: 100*@mdp;
 		font-weight: @semibold;
 		line-height: 1em;
 
@@ -105,9 +105,9 @@ p {
 	}
 	.copy {
 		p {
-			padding-bottom: 28*@p;
-			font-size: 18*@p;
-			line-height: 28*@p;
+			padding-bottom: 28*@mdp;
+			font-size: 18*@mdp;
+			line-height: 28*@mdp;
 
 			@media @xs {
 				padding-bottom: 26*@xsp;
@@ -126,16 +126,16 @@ p {
 	}
 
 	&:before {
-		.sudo-triangle(bottomright, 285*@p 480*@p, white);
+		.sudo-triangle(bottomright, 285*@mdp 480*@mdp, white);
 		.anchor(left bottom);
-		top:320*@p;
+		top:320*@mdp;
 	}
 
 	img {
 		position:absolute;
 		right:0;
-		top:-60*@p;
-		width:450*@p;
+		top:-60*@mdp;
+		width:450*@mdp;
 	}
 }
 .shoes {
@@ -143,24 +143,24 @@ p {
 	z-index: 40;
 	background: @dk-pink;
 	padding-top: 1px;
-	margin-top: 790*@p;
+	margin-top: 790*@mdp;
 
 	&:before {
-		.sudo-triangle(bottomleft, 480*@p, @dk-pink);
+		.sudo-triangle(bottomleft, 480*@mdp, @dk-pink);
 		.pin(left bottom, left top);
 	}
 	&:after {
-		.sudo-triangle(topleft, 275*@p 480*@p, @dk-pink);
+		.sudo-triangle(topleft, 275*@mdp 480*@mdp, @dk-pink);
 		.pin(left top, left bottom);
 	}
 
 	h2 {
 		position: absolute;
 		margin: 0;
-		font-size: 350*@p;
+		font-size: 350*@mdp;
 		font-weight: @extrabold;
-		left: -50*@p;
-		top: -655*@p;
+		left: -50*@mdp;
+		top: -655*@mdp;
 
 		@media @xs {
 			font-size: 140*@xsp;
@@ -171,10 +171,10 @@ p {
 
 	.copy {
 		position: relative;
-		margin-top: -520*@p;
-		margin-left: 130*@p;
-		width: 320*@p;
-		transform: translate(0, 210*@p);
+		margin-top: -520*@mdp;
+		margin-left: 130*@mdp;
+		width: 320*@mdp;
+		transform: translate(0, 210*@mdp);
 
 		@media @xs {
 			margin-top: -30*@xsp;
@@ -185,10 +185,10 @@ p {
 		.shape {
 			content:"";
 			display:block;
-			width:170*@p;
-			height:330*@p;
+			width:170*@mdp;
+			height:330*@mdp;
 			float: right;
-			shape-outside: ellipse(170*@p 90*@p at 100% 210*@p);
+			shape-outside: ellipse(170*@mdp 90*@mdp at 100% 210*@mdp);
 
 			@media @xs {
 				display:none;
@@ -196,9 +196,9 @@ p {
 		}
 
 		p {
-			padding-bottom: 26*@p;
-			font-size: 16*@p;
-			line-height: 26*@p;
+			padding-bottom: 26*@mdp;
+			font-size: 16*@mdp;
+			line-height: 26*@mdp;
 
 			@media @xs {
 				padding-bottom: 26*@xsp;
@@ -209,9 +209,9 @@ p {
 
 		img {
 			position: absolute;
-			width: 1010*@p;
-			top: -150*@p;
-			left: 160*@p;
+			width: 1010*@mdp;
+			top: -150*@mdp;
+			left: 160*@mdp;
 
 			@media @xs {
 				top: -180*@xsp;
@@ -221,29 +221,29 @@ p {
 }
 .runner-3 {
 	position:relative;
-	padding-bottom: 130*@p;
+	padding-bottom: 130*@mdp;
 
 	img {
 		position: absolute;
-		width: 1010*@p;
+		width: 1010*@mdp;
 		// width:100%;
 		@media @xs {
-			width:2000*@p;
-			left: -660*@p;
-			top: -250*@p;
+			width:2000*@mdp;
+			left: -660*@mdp;
+			top: -250*@mdp;
 		}
 	}
 	.quote {
 		position: absolute;
 		z-index: 60;
-		top: 370*@p;
-		left: 130*@p;
-		font-size: 19*@p;
+		top: 370*@mdp;
+		left: 130*@mdp;
+		font-size: 19*@mdp;
 		text-align: right;
-		width: 420*@p;
+		width: 420*@mdp;
 		@media @xs {
-			top: 570*@p;
-			left: 70*@p;
+			top: 570*@mdp;
+			left: 70*@mdp;
 		}
 		.heading-style();
 

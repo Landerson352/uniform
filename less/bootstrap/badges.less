@@ -6,8 +6,8 @@
 // Base class
 .badge {
   display: inline-block;
-  min-width: 10*@rem;
-  padding: 3*@rem 7*@rem;
+  min-width: 10*@p;
+  padding: 3*@p 7*@p;
   font-size: @font-size-small;
   font-weight: @badge-font-weight;
   color: @badge-color;
@@ -26,13 +26,13 @@
   // Quick fix for badges in buttons
   .btn & {
     position: relative;
-    top: -1*@rem;
+    top: -1*@p;
   }
 
   .btn-xs &,
   .btn-group-xs > .btn & {
     top: 0;
-    padding: 1*@rem 5*@rem;
+    padding: 1*@p 5*@p;
   }
 
   // Hover state, but only for links
@@ -57,10 +57,10 @@
   }
 
   .list-group-item > & + & {
-    margin-right: 5*@rem;
+    margin-right: 5*@p;
   }
 
   .nav-pills > li > a > & {
-    margin-left: 3*@rem;
+    margin-left: 3*@p;
   }
 }

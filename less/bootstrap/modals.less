@@ -44,17 +44,17 @@
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10*@rem;
+  margin: 10*@p;
 }
 
 // Actual modal
 .modal-content {
   position: relative;
   background-color: @modal-content-bg;
-  border: 1*@rem solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
-  border: 1*@rem solid @modal-content-border-color;
+  border: 1*@p solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  border: 1*@p solid @modal-content-border-color;
   border-radius: @border-radius-large;
-  .box-shadow(0 3*@rem 9*@rem rgba(0,0,0,.5));
+  .box-shadow(0 3*@p 9*@p rgba(0,0,0,.5));
   background-clip: padding-box;
   // Remove focus outline from opened modal
   outline: 0;
@@ -78,12 +78,12 @@
 // Top section of the modal w/ title and dismiss
 .modal-header {
   padding: @modal-title-padding;
-  border-bottom: 1*@rem solid @modal-header-border-color;
+  border-bottom: 1*@p solid @modal-header-border-color;
   &:extend(.clearfix all);
 }
 // Close icon
 .modal-header .close {
-  margin-top: -2*@rem;
+  margin-top: -2*@p;
 }
 
 // Title text within header
@@ -103,17 +103,17 @@
 .modal-footer {
   padding: @modal-inner-padding;
   text-align: right; // right align buttons
-  border-top: 1*@rem solid @modal-footer-border-color;
+  border-top: 1*@p solid @modal-footer-border-color;
   &:extend(.clearfix all); // clear it in case folks use .pull-* classes on buttons
 
   // Properly space out buttons
   .btn + .btn {
-    margin-left: 5*@rem;
+    margin-left: 5*@p;
     margin-bottom: 0; // account for input[type="submit"] which gets the bottom margin like all other inputs
   }
   // but override that for button groups
   .btn-group .btn + .btn {
-    margin-left: -1*@rem;
+    margin-left: -1*@p;
   }
   // and override it for block buttons as well
   .btn-block + .btn-block {
@@ -124,9 +124,9 @@
 // Measure scrollbar width for padding body during modal show/hide
 .modal-scrollbar-measure {
   position: absolute;
-  top: -9999*@rem;
-  width: 50*@rem;
-  height: 50*@rem;
+  top: -9999*@p;
+  width: 50*@p;
+  height: 50*@p;
   overflow: scroll;
 }
 
@@ -135,10 +135,10 @@
   // Automatically set modal's width for larger viewports
   .modal-dialog {
     width: @modal-md;
-    margin: 30*@rem auto;
+    margin: 30*@p auto;
   }
   .modal-content {
-    .box-shadow(0 5*@rem 15*@rem rgba(0,0,0,.5));
+    .box-shadow(0 5*@p 15*@p rgba(0,0,0,.5));
   }
 
   // Modal sizes

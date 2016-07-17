@@ -29,7 +29,7 @@
     @media all and (transform-3d), (-webkit-transform-3d) {
       .transition-transform(~'0.6s ease-in-out');
       .backface-visibility(~'hidden');
-      .perspective(1000*@rem);
+      .perspective(1000*@p);
 
       &.next,
       &.active.right {
@@ -131,24 +131,24 @@
   .glyphicon-chevron-right {
     position: absolute;
     top: 50%;
-    margin-top: -10*@rem;
+    margin-top: -10*@p;
     z-index: 5;
     display: inline-block;
   }
   .icon-prev,
   .glyphicon-chevron-left {
     left: 50%;
-    margin-left: -10*@rem;
+    margin-left: -10*@p;
   }
   .icon-next,
   .glyphicon-chevron-right {
     right: 50%;
-    margin-right: -10*@rem;
+    margin-right: -10*@p;
   }
   .icon-prev,
   .icon-next {
-    width:  20*@rem;
-    height: 20*@rem;
+    width:  20*@p;
+    height: 20*@p;
     line-height: 1;
     font-family: serif;
   }
@@ -173,7 +173,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10*@rem;
+  bottom: 10*@p;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -184,12 +184,12 @@
 
   li {
     display: inline-block;
-    width:  10*@rem;
-    height: 10*@rem;
-    margin: 1*@rem;
-    text-indent: -999*@rem;
-    border: 1*@rem solid @carousel-indicator-border-color;
-    border-radius: 10*@rem;
+    width:  10*@p;
+    height: 10*@p;
+    margin: 1*@p;
+    text-indent: -999*@p;
+    border: 1*@p solid @carousel-indicator-border-color;
+    border-radius: 10*@p;
     cursor: pointer;
 
     // IE8-9 hack for event handling
@@ -206,8 +206,8 @@
   }
   .active {
     margin: 0;
-    width:  12*@rem;
-    height: 12*@rem;
+    width:  12*@p;
+    height: 12*@p;
     background-color: @carousel-indicator-active-bg;
   }
 }
@@ -219,10 +219,10 @@
   position: absolute;
   left: 15%;
   right: 15%;
-  bottom: 20*@rem;
+  bottom: 20*@p;
   z-index: 10;
-  padding-top: 20*@rem;
-  padding-bottom: 20*@rem;
+  padding-top: 20*@p;
+  padding-bottom: 20*@p;
   color: @carousel-caption-color;
   text-align: center;
   text-shadow: @carousel-text-shadow;
@@ -260,11 +260,11 @@
   .carousel-caption {
     left: 20%;
     right: 20%;
-    padding-bottom: 30*@rem;
+    padding-bottom: 30*@p;
   }
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20*@rem;
+    bottom: 20*@p;
   }
 }
