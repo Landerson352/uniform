@@ -4632,7 +4632,7 @@ button.close {
   border-style: solid;
 }
 .popover > .arrow {
-  border-width: 1.1rem;
+  border-width: 0.11rem;
 }
 .popover > .arrow:after {
   border-width: 0.1rem;
@@ -4640,11 +4640,11 @@ button.close {
 }
 .popover.top > .arrow {
   left: 50%;
-  margin-left: -1.1rem;
+  margin-left: -0.11rem;
   border-bottom-width: 0;
   border-top-color: #999999;
   border-top-color: rgba(0, 0, 0, 0.25);
-  bottom: -1.1rem;
+  bottom: -0.11rem;
 }
 .popover.top > .arrow:after {
   content: " ";
@@ -4655,8 +4655,8 @@ button.close {
 }
 .popover.right > .arrow {
   top: 50%;
-  left: -1.1rem;
-  margin-top: -1.1rem;
+  left: -0.11rem;
+  margin-top: -0.11rem;
   border-left-width: 0;
   border-right-color: #999999;
   border-right-color: rgba(0, 0, 0, 0.25);
@@ -4670,11 +4670,11 @@ button.close {
 }
 .popover.bottom > .arrow {
   left: 50%;
-  margin-left: -1.1rem;
+  margin-left: -0.11rem;
   border-top-width: 0;
   border-bottom-color: #999999;
   border-bottom-color: rgba(0, 0, 0, 0.25);
-  top: -1.1rem;
+  top: -0.11rem;
 }
 .popover.bottom > .arrow:after {
   content: " ";
@@ -4685,8 +4685,8 @@ button.close {
 }
 .popover.left > .arrow {
   top: 50%;
-  right: -1.1rem;
-  margin-top: -1.1rem;
+  right: -0.11rem;
+  margin-top: -0.11rem;
   border-right-width: 0;
   border-left-color: #999999;
   border-left-color: rgba(0, 0, 0, 0.25);
