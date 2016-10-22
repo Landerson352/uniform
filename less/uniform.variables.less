@@ -1,5 +1,6 @@
 @bootstrap-path: "bootstrap/";
 
+// IE rounds to only two decimal places, so we shim in a couple.
 @precision: 100;
 
 @screen-xs: 320px;
@@ -34,3 +35,6 @@
 @p: 1rem / @precision;
 
 @font-size-base: 16 *@p;
+
+// we care more about decimal precision in IE than pixels.
+@line-height-base: 1.5;
