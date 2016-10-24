@@ -18,10 +18,11 @@
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
     "gulp-clean-css": "^2.0.6",
-    "gulp-less": "^3.0.5",
+    "gulp-less": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
     "gulp-replace": "^0.5.4",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-watch": "^4.3.5",
+    "gulp-watch-less2": "^2.0.4",
     "less-plugin-autoprefix": "^1.5.1",
     "yargs": "^4.3.1"
   },

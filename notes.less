@@ -1,0 +1,39 @@
+@function-injector: `(function() {
+	// var lessModule = '/node_modules/less/lib/less/',
+	// var tree = 'tree/',
+	var modules = {
+		'functionRegistry': '/node_modules/less/lib/less/functions/function-registry.js',
+		'color': '/node_modules/less/lib/less/tree/color.js',
+		'dimension': '/node_modules/less/lib/less/tree/dimension.js'
+	};
+
+	function traceModules(module, log) {
+		for(var i in modules) {
+			if(module.filename.substr(-modules[i].length) === modules[i]) {
+				modules[i] = module.exports;
+			}
+		}
+		for(var i in module.children) {
+			traceModules(module.children[i], log);
+		}
+	}
+	traceModules(process.mainModule, false);
+
+	var fn = @{functions};
+	for(var i in fn) {
+		modules.functionRegistry.add(i, fn[i]);	
+	}
+
+})()`;
+
+@functions: ~"{
+	u: function(a, context) {
+	    return new modules.dimension(a.value / 100, 'rem');
+	}
+}";
+
+h1 {
+	border: 1px solid red;
+	color: red;
+	width: u(3000);
+}

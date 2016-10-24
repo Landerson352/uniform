@@ -48,21 +48,21 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14*@p;
-@font-size-large:         ((@font-size-base * 1.25)); // ~18*@p
-@font-size-small:         ((@font-size-base * 0.85)); // ~12*@p
+@font-size-base:          c(14);
+@font-size-large:         ((@font-size-base * 1.25)); // ~c(18)
+@font-size-small:         ((@font-size-base * 0.85)); // ~c(12)
 
-@font-size-h1:            ((@font-size-base * 2.6)); // ~36*@p
-@font-size-h2:            ((@font-size-base * 2.15)); // ~30*@p
-@font-size-h3:            ((@font-size-base * 1.7)); // ~24*@p
-@font-size-h4:            ((@font-size-base * 1.25)); // ~18*@p
+@font-size-h1:            ((@font-size-base * 2.6)); // ~c(36)
+@font-size-h2:            ((@font-size-base * 2.15)); // ~c(30)
+@font-size-h3:            ((@font-size-base * 1.7)); // ~c(24)
+@font-size-h4:            ((@font-size-base * 1.25)); // ~c(18)
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ((@font-size-base * 0.85)); // ~12*@p
+@font-size-h6:            ((@font-size-base * 0.85)); // ~c(12)
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
-@line-height-computed:    ((@font-size-base * @line-height-base)); // ~20*@p
+@line-height-computed:    ((@font-size-base * @line-height-base)); // ~c(20)
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
@@ -85,26 +85,26 @@
 
 //== Components
 //
-//## Define common padding and border radius sizes and more. Values based on 14*@p text and 1.428 line-height (~20*@p to start).
+//## Define common padding and border radius sizes and more. Values based on c(14) text and 1.428 line-height (~c(20) to start).
 
-@padding-base-vertical:     6*@p;
-@padding-base-horizontal:   12*@p;
+@padding-base-vertical:     c(6);
+@padding-base-horizontal:   c(12);
 
-@padding-large-vertical:    10*@p;
-@padding-large-horizontal:  16*@p;
+@padding-large-vertical:    c(10);
+@padding-large-horizontal:  c(16);
 
-@padding-small-vertical:    5*@p;
-@padding-small-horizontal:  10*@p;
+@padding-small-vertical:    c(5);
+@padding-small-horizontal:  c(10);
 
-@padding-xs-vertical:       1*@p;
-@padding-xs-horizontal:     5*@p;
+@padding-xs-vertical:       c(1);
+@padding-xs-horizontal:     c(5);
 
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4*@p;
-@border-radius-large:       6*@p;
-@border-radius-small:       3*@p;
+@border-radius-base:        c(4);
+@border-radius-large:       c(6);
+@border-radius-small:       c(3);
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -112,9 +112,9 @@
 @component-active-bg:       @brand-primary;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
-@caret-width-base:          4*@p;
+@caret-width-base:          c(4);
 //** Carets increase slightly in size for larger components.
-@caret-width-large:         5*@p;
+@caret-width-large:         c(5);
 
 
 //== Tables
@@ -122,9 +122,9 @@
 //## Customizes the `.table` component with basic values, each used across all table variations.
 
 //** Padding for `<th>`s and `<td>`s.
-@table-cell-padding:            8*@p;
+@table-cell-padding:            c(8);
 //** Padding for cells in `.table-condensed`.
-@table-condensed-cell-padding:  5*@p;
+@table-condensed-cell-padding:  c(5);
 
 //** Default background color used for all tables.
 @table-bg:                      transparent;
@@ -206,14 +206,14 @@
 @input-color-placeholder:        #999;
 
 //** Default `.form-control` height
-@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2*@p);
+@input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
-@input-height-large:             ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2*@p);
+@input-height-large:             ((@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
-@input-height-small:             ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2*@p);
+@input-height-small:             ((@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
 
 //** `.form-group` margin
-@form-group-margin-bottom:       15*@p;
+@form-group-margin-bottom:       c(15);
 
 @legend-color:                   @gray-dark;
 @legend-border-color:            #e5e5e5;
@@ -284,7 +284,7 @@
 
 // Extra small screen / phone
 //** Deprecated `@screen-xs` as of v3.0.1
-@screen-xs:                  480*@p;
+@screen-xs:                  c(480);
 //** Deprecated `@screen-xs-min` as of v3.2.0
 @screen-xs-min:              @screen-xs;
 //** Deprecated `@screen-phone` as of v3.0.1
@@ -292,21 +292,21 @@
 
 // Small screen / tablet
 //** Deprecated `@screen-sm` as of v3.0.1
-@screen-sm:                  768*@p;
+@screen-sm:                  c(768);
 @screen-sm-min:              @screen-sm;
 //** Deprecated `@screen-tablet` as of v3.0.1
 @screen-tablet:              @screen-sm-min;
 
 // Medium screen / desktop
 //** Deprecated `@screen-md` as of v3.0.1
-@screen-md:                  992*@p;
+@screen-md:                  c(992);
 @screen-md-min:              @screen-md;
 //** Deprecated `@screen-desktop` as of v3.0.1
 @screen-desktop:             @screen-md-min;
 
 // Large screen / wide desktop
 //** Deprecated `@screen-lg` as of v3.0.1
-@screen-lg:                  1200*@p;
+@screen-lg:                  c(1200);
 @screen-lg-min:              @screen-lg;
 //** Deprecated `@screen-lg-desktop` as of v3.0.1
 @screen-lg-desktop:          @screen-lg-min;
@@ -324,7 +324,7 @@
 //** Number of columns in the grid.
 @grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-@grid-gutter-width:         30*@p;
+@grid-gutter-width:         c(30);
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 @grid-float-breakpoint:     @screen-sm-min;
@@ -337,17 +337,17 @@
 //## Define the maximum width of `.container` for different screen sizes.
 
 // Small screen / tablet
-@container-tablet:             (720*@p + @grid-gutter-width);
+@container-tablet:             (c(720) + @grid-gutter-width);
 //** For `@screen-sm-min` and up.
 @container-sm:                 @container-tablet;
 
 // Medium screen / desktop
-@container-desktop:            (940*@p + @grid-gutter-width);
+@container-desktop:            (c(940) + @grid-gutter-width);
 //** For `@screen-md-min` and up.
 @container-md:                 @container-desktop;
 
 // Large screen / wide desktop
-@container-large-desktop:      (1140*@p + @grid-gutter-width);
+@container-large-desktop:      (c(1140) + @grid-gutter-width);
 //** For `@screen-lg-min` and up.
 @container-lg:                 @container-large-desktop;
 
@@ -357,12 +357,12 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    50*@p;
+@navbar-height:                    c(50);
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        ((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
-@navbar-collapse-max-height:       340*@p;
+@navbar-collapse-max-height:       c(340);
 
 @navbar-default-color:             #777;
 @navbar-default-bg:                #f8f8f8;
@@ -419,7 +419,7 @@
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10*@p 15*@p;
+@nav-link-padding:                          c(10) c(15);
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-disabled-link-color:                   @gray-light;
@@ -470,7 +470,7 @@
 
 @pager-bg:                             @pagination-bg;
 @pager-border:                         @pagination-border;
-@pager-border-radius:                  15*@p;
+@pager-border-radius:                  c(15);
 
 @pager-hover-bg:                       @pagination-hover-bg;
 
@@ -484,7 +484,7 @@
 //
 //##
 
-@jumbotron-padding:              30*@p;
+@jumbotron-padding:              c(30);
 @jumbotron-color:                inherit;
 @jumbotron-bg:                   @gray-lighter;
 @jumbotron-heading-color:        inherit;
@@ -518,7 +518,7 @@
 //##
 
 //** Tooltip max width
-@tooltip-max-width:           200*@p;
+@tooltip-max-width:           c(200);
 //** Tooltip text color
 @tooltip-color:               #fff;
 //** Tooltip background color
@@ -526,7 +526,7 @@
 @tooltip-opacity:             .9;
 
 //** Tooltip arrow width
-@tooltip-arrow-width:         5*@p;
+@tooltip-arrow-width:         c(5);
 //** Tooltip arrow color
 @tooltip-arrow-color:         @tooltip-bg;
 
@@ -538,7 +538,7 @@
 //** Popover body background color
 @popover-bg:                          #fff;
 //** Popover maximum width
-@popover-max-width:                   276*@p;
+@popover-max-width:                   c(276);
 //** Popover border color
 @popover-border-color:                rgba(0,0,0,.2);
 //** Popover fallback border color
@@ -548,12 +548,12 @@
 @popover-title-bg:                    darken(@popover-bg, 3%);
 
 //** Popover arrow width
-@popover-arrow-width:                 10*@p;
+@popover-arrow-width:                 c(10);
 //** Popover arrow color
 @popover-arrow-color:                 @popover-bg;
 
 //** Popover outer arrow width
-@popover-arrow-outer-width:           (@popover-arrow-width + 1*@p);
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
 //** Popover outer arrow color
 @popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
 //** Popover outer arrow fallback color
@@ -588,10 +588,10 @@
 //##
 
 //** Padding applied to the modal body
-@modal-inner-padding:         15*@p;
+@modal-inner-padding:         c(15);
 
 //** Padding applied to the modal title
-@modal-title-padding:         15*@p;
+@modal-title-padding:         c(15);
 //** Modal title line-height
 @modal-title-line-height:     @line-height-base;
 
@@ -611,16 +611,16 @@
 //** Modal footer border color
 @modal-footer-border-color:   @modal-header-border-color;
 
-@modal-lg:                    900*@p;
-@modal-md:                    600*@p;
-@modal-sm:                    300*@p;
+@modal-lg:                    c(900);
+@modal-md:                    c(600);
+@modal-sm:                    c(300);
 
 
 //== Alerts
 //
 //## Define alert colors, border radius, and padding.
 
-@alert-padding:               15*@p;
+@alert-padding:               c(15);
 @alert-border-radius:         @border-radius-base;
 @alert-link-font-weight:      bold;
 
@@ -703,8 +703,8 @@
 //##
 
 @panel-bg:                    #fff;
-@panel-body-padding:          15*@p;
-@panel-heading-padding:       10*@p 15*@p;
+@panel-body-padding:          c(15);
+@panel-heading-padding:       c(10) c(15);
 @panel-footer-padding:        @panel-heading-padding;
 @panel-border-radius:         @border-radius-base;
 
@@ -742,7 +742,7 @@
 //##
 
 //** Padding around the thumbnail image
-@thumbnail-padding:           4*@p;
+@thumbnail-padding:           c(4);
 //** Thumbnail background color
 @thumbnail-bg:                @body-bg;
 //** Thumbnail border color
@@ -753,7 +753,7 @@
 //** Custom text color for thumbnail captions
 @thumbnail-caption-color:     @text-color;
 //** Padding around the thumbnail caption
-@thumbnail-caption-padding:   9*@p;
+@thumbnail-caption-padding:   c(9);
 
 
 //== Wells
@@ -780,15 +780,15 @@
 
 @badge-font-weight:           bold;
 @badge-line-height:           1;
-@badge-border-radius:         10*@p;
+@badge-border-radius:         c(10);
 
 
 //== Breadcrumbs
 //
 //##
 
-@breadcrumb-padding-vertical:   8*@p;
-@breadcrumb-padding-horizontal: 15*@p;
+@breadcrumb-padding-vertical:   c(8);
+@breadcrumb-padding-horizontal: c(15);
 //** Breadcrumb background color
 @breadcrumb-bg:                 #f5f5f5;
 //** Breadcrumb text color
@@ -803,12 +803,12 @@
 //
 //##
 
-@carousel-text-shadow:                        0 1*@p 2*@p rgba(0,0,0,.6);
+@carousel-text-shadow:                        0 c(1) c(2) rgba(0,0,0,.6);
 
 @carousel-control-color:                      #fff;
 @carousel-control-width:                      15%;
 @carousel-control-opacity:                    .5;
-@carousel-control-font-size:                  20*@p;
+@carousel-control-font-size:                  c(20);
 
 @carousel-indicator-active-bg:                #fff;
 @carousel-indicator-border-color:             #fff;
@@ -822,7 +822,7 @@
 
 @close-font-weight:           bold;
 @close-color:                 #000;
-@close-text-shadow:           0 1*@p 0 #fff;
+@close-text-shadow:           0 c(1) 0 #fff;
 
 
 //== Code
@@ -838,7 +838,7 @@
 @pre-bg:                      #f5f5f5;
 @pre-color:                   @gray-dark;
 @pre-border-color:            #ccc;
-@pre-scrollable-max-height:   340*@p;
+@pre-scrollable-max-height:   c(340);
 
 
 //== Type
@@ -846,7 +846,7 @@
 //##
 
 //** Horizontal offset for forms and lists.
-@component-offset-horizontal: 180*@p;
+@component-offset-horizontal: c(180);
 //** Text muted color
 @text-muted:                  @gray-light;
 //** Abbreviations and acronyms border color

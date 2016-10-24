@@ -10,7 +10,7 @@ body {
 }
 .navbar-form .form-control.navbar-search {
 	@media @sm-up {
-		width: 300*@p;
+		width: c(300);
 	}
 }
 .hero {
@@ -19,7 +19,10 @@ body {
 	color: @brand-success;
 	margin-bottom: 100*@p;
 
-	@media @xs { height: 240 *@xsp; }
+	@media @xs {
+		height: 240 *@xsp;
+		height: u(240);
+	}
 	@media @sm { height: 320 *@smp; }
 	@media @lg { height: 420 *@lgp; }
 	@media @xl { height: 480 *@xlp; }

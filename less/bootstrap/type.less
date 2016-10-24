@@ -74,7 +74,7 @@ p {
 // Emphasis & misc
 // -------------------------
 
-// Ex: (12*@p small font / 14*@p base font) * 100% = about 85%
+// Ex: (c(12) small font / c(14) base font) * 100% = about 85%
 small,
 .small {
   font-size: ((100% * @font-size-small / @font-size-base));
@@ -147,7 +147,7 @@ mark,
 .page-header {
   padding-bottom: ((@line-height-computed / 2) - 1);
   margin: (@line-height-computed * 2) 0 @line-height-computed;
-  border-bottom: 1*@p solid @page-header-border-color;
+  border-bottom: c(1) solid @page-header-border-color;
 }
 
 
@@ -176,12 +176,12 @@ ol {
 // Inline turns list items into inline-block
 .list-inline {
   .list-unstyled();
-  margin-left: -5*@p;
+  margin-left: c(-5);
 
   > li {
     display: inline-block;
-    padding-left: 5*@p;
-    padding-right: 5*@p;
+    padding-left: c(5);
+    padding-right: c(5);
   }
 }
 
@@ -204,7 +204,7 @@ dd {
 // Horizontal description lists
 //
 // Defaults to being stacked without any of the below styles applied, until the
-// grid breakpoint is reached (default of ~768*@p).
+// grid breakpoint is reached (default of ~c(768)).
 
 .dl-horizontal {
   dd {
@@ -234,7 +234,7 @@ abbr[title],
 // Add data-* attribute to help out our tooltip plugin, per https://github.com/twbs/bootstrap/issues/5257
 abbr[data-original-title] {
   cursor: help;
-  border-bottom: 1*@p dotted @abbr-border-color;
+  border-bottom: c(1) dotted @abbr-border-color;
 }
 .initialism {
   font-size: 90%;
@@ -246,7 +246,7 @@ blockquote {
   padding: (@line-height-computed / 2) @line-height-computed;
   margin: 0 0 @line-height-computed;
   font-size: @blockquote-font-size;
-  border-left: 5*@p solid @blockquote-border-color;
+  border-left: c(5) solid @blockquote-border-color;
 
   p,
   ul,
@@ -277,9 +277,9 @@ blockquote {
 // Heads up: `blockquote.pull-right` has been deprecated as of v3.1.0.
 .blockquote-reverse,
 blockquote.pull-right {
-  padding-right: 15*@p;
+  padding-right: c(15);
   padding-left: 0;
-  border-right: 5*@p solid @blockquote-border-color;
+  border-right: c(5) solid @blockquote-border-color;
   border-left: 0;
   text-align: right;
 

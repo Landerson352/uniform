@@ -1,0 +1,61 @@
+// Defaults
+@lessModulePath: ~"/node_modules/less/lib/less/";
+
+@functions: ~"(function() {
+	var p = {
+		xs: parseFloat('@{xsp}'),
+		sm: parseFloat('@{smp}'),
+		md: parseFloat('@{mdp}'),
+		lg: parseFloat('@{lgp}'),
+		xl: parseFloat('@{xlp}')
+	};
+	var precision = @{precision};
+
+	function unitFactory(size) {
+		return function(a, context) {
+			return new modules.dimension(a.value * p[size], 'vw');
+		};
+	}
+
+	return {
+		c: function(a, context) {
+			console.log(a.value);
+		    return new modules.dimension(a.value / precision, 'rem');
+		},
+		xs: unitFactory('xs'),
+		sm: unitFactory('sm'),
+		md: unitFactory('md'),
+		lg: unitFactory('lg'),
+		xl: unitFactory('xl')
+	};
+})()";
+
+@function-injector: `(function() {
+	var lessModulePath = '@{lessModulePath}';
+	var treeModulePath = lessModulePath + 'tree/';
+
+	var modules = {
+		'functionRegistry': lessModulePath + 'functions/function-registry.js',
+		'color': treeModulePath + 'color.js',
+		'dimension': treeModulePath + 'dimension.js',
+		'value': treeModulePath + 'value.js'
+	};
+
+	function traceModules(module, log) {
+		for(var i in modules) {
+			if(module.filename.substr(-modules[i].length) === modules[i]) {
+				modules[i] = module.exports;
+			}
+		}
+		for(var i in module.children) {
+			traceModules(module.children[i], log);
+		}
+	}
+	traceModules(process.mainModule, false);
+
+	var fn = @{functions};
+	for(var i in fn) {
+		modules.functionRegistry.add(i, fn[i]);	
+	}
+
+})()`;

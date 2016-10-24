@@ -9,7 +9,7 @@
 .alert {
   padding: @alert-padding;
   margin-bottom: @line-height-computed;
-  border: 1*@p solid transparent;
+  border: c(1) solid transparent;
   border-radius: @alert-border-radius;
 
   // Headings for larger alerts
@@ -31,7 +31,7 @@
   }
 
   > p + p {
-    margin-top: 5*@p;
+    margin-top: c(5);
   }
 }
 
@@ -46,8 +46,8 @@
   // Adjust close link position
   .close {
     position: relative;
-    top: -2*@p;
-    right: -21*@p;
+    top: c(-2);
+    right: c(-21);
     color: inherit;
   }
 }
