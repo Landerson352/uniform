@@ -10,8 +10,18 @@
 @screen-xl: 1920px;
 
 // Bootstrap filler
-@screen-xl-min: @screen-xl;
+@screen-xs-max: (@screen-sm-min - 1);
+
+@screen-sm-min: @screen-sm;
+@screen-sm-max: (@screen-md-min - 1);
+
+@screen-md-min: @screen-md;
+@screen-md-max: (@screen-lg-min - 1);
+
+@screen-lg-min: @screen-lg;
 @screen-lg-max: (@screen-xl-min - 1);
+
+@screen-xl-min: @screen-xl;
 
 @xs: ~"screen and (max-width:@{screen-xs-max})";
 @sm: ~"screen and (min-width:@{screen-sm}) and (max-width:@{screen-sm-max})";

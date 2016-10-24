@@ -27,8 +27,18 @@
 }
 
 
+// Normalize
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
 
 // Styles
+body {
+	color: white;
+}
 h1, h2, h3, h4, h5, h6 {
 	.heading-style();
 	margin: 0;
@@ -44,6 +54,7 @@ p {
 .shoe-print {
   position: relative;
   z-index: 50;
+
   img {
     position: absolute;
     width: 350*@mdp;

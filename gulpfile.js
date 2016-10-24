@@ -36,7 +36,8 @@ gulp.task('browser-sync', function() {
 		ui: false,
 		open: argv.open,
 		files: ['./*.html', './demos/*.html', './demos/css/**/*'],
-		startPath: '/'
+		startPath: '/',
+		notify: false
 	});
 });
 

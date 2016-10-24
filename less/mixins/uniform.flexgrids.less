@@ -1,0 +1,11 @@
+// Flex Grid is a simple flexbox container.
+// It has a "row" direction with wrapping.
+// Its content justification can be set (default left).
+.flex-grid(@justifyContent:left) {
+	display: flex;
+	flex-flow: row wrap;
+
+	& when not (@justifyContent=left) {
+		justify-content: @justifyContent;
+	}
+}

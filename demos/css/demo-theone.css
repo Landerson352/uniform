@@ -1,9 +1,4 @@
 /*!
- * Uniform
- * Copyright 2015-2016 Lincoln Anderson
- * Licensed under MIT (https://github.com/Landerson352/uniform/blob/master/LICENSE)
- */
-/*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -1515,8 +1510,7 @@ select[multiple].input-lg {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 0.01rem solid transparent;
@@ -4353,7 +4347,6 @@ button.close {
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate(0, -25%);
-  -ms-transform: translate(0, -25%);
   transform: translate(0, -25%);
   -webkit-transition: -webkit-transform 0.3s ease-out;
   transition: -webkit-transform 0.3s ease-out;
@@ -4362,7 +4355,6 @@ button.close {
 }
 .modal.in .modal-dialog {
   -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
   transform: translate(0, 0);
 }
 .modal-open .modal {
@@ -4995,45 +4987,6 @@ button.close {
 .affix {
   position: fixed;
 }
-html,
-body {
-  height: 100%;
-}
-html {
-  width: 100vw;
-}
-@media screen and (max-width:639px) {
-  html {
-    font-size: 31.25vw;
-  }
-}
-@media screen and (min-width:640px) and (max-width:959px) {
-  html {
-    font-size: 15.625vw;
-  }
-}
-@media screen and (min-width:960px) and (max-width:1279px) {
-  html {
-    font-size: 10.41666667vw;
-  }
-}
-@media screen and (min-width:1280px) and (max-width:1919px) {
-  html {
-    font-size: 7.8125vw;
-  }
-}
-@media screen and (min-width:1920px) {
-  html {
-    font-size: 5.20833333vw;
-  }
-}
-body {
-  min-height: 100%;
-  overflow-x: hidden;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-          text-size-adjust: 100%;
-}
 @-ms-viewport {
   width: device-width;
 }
@@ -5277,7 +5230,6 @@ body {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 .checkbox > label,
@@ -5313,8 +5265,7 @@ body {
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
+  touch-action: manipulation;
   cursor: pointer;
   background-image: none;
   border: 0.01rem solid transparent;
@@ -5428,106 +5379,11 @@ fieldset[disabled] .fileinput label.focus {
   background-color: #798d8f;
   border-color: #566566;
 }
-.navbar-toggle {
-  color: #ffffff;
-  padding: 0.06rem 0.1rem;
-}
-.navbar-inverse .navbar-toggle {
-  color: #ffffff;
-}
-.thumbnail > img {
-  width: 100%;
-}
-img.media-object {
-  width: 0.6rem;
-}
-.carousel-inner > .item > a > img,
-.carousel-inner > .item > img {
-  width: 100%;
-}
-.carousel-control .nav-icon-left,
-.carousel-control .nav-icon-right {
-  position: absolute;
-  top: 50%;
-  margin-top: -0.1rem;
-  z-index: 5;
-  display: inline-block;
-}
-.carousel-control .nav-icon-left {
-  left: 50%;
-  margin-left: -0.1rem;
-}
-.carousel-control .nav-icon-right {
-  right: 50%;
-  margin-right: -0.1rem;
-}
-@media screen and (min-width: 640px) {
-  .carousel-control .nav-icon-left,
-  .carousel-control .nav-icon-right {
-    width: 0.3rem;
-    height: 0.3rem;
-    margin-top: -0.1rem;
-    font-size: 0.3rem;
-  }
-  .carousel-control .nav-icon-left {
-    margin-left: -0.1rem;
-  }
-  .carousel-control .nav-icon-right {
-    margin-right: -0.1rem;
-  }
-}
-.page {
-  min-height: 100%;
-  overflow-x: hidden;
-}
-.container {
-  position: relative;
-}
-.flex-grid,
-.flex-grid-left {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-}
-.flex-grid-center {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.flex-grid-right {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: right;
-  -webkit-justify-content: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-}
 .row,
 .row-fluid {
   display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  flex-flow: row wrap;
 }
 .row > *,
 .row-fluid > * {
@@ -6695,6 +6551,137 @@ img.media-object {
   .col-xl-offset-12 {
     margin-left: 100%;
   }
+}
+.navbar-toggle {
+  color: #ffffff;
+  padding: 0.06rem 0.1rem;
+}
+.navbar-inverse .navbar-toggle {
+  color: #ffffff;
+}
+.thumbnail > img {
+  width: 100%;
+}
+img.media-object {
+  width: 0.6rem;
+}
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  width: 100%;
+}
+.carousel-control .nav-icon-left,
+.carousel-control .nav-icon-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -0.1rem;
+  z-index: 5;
+  display: inline-block;
+}
+.carousel-control .nav-icon-left {
+  left: 50%;
+  margin-left: -0.1rem;
+}
+.carousel-control .nav-icon-right {
+  right: 50%;
+  margin-right: -0.1rem;
+}
+@media screen and (min-width: 640px) {
+  .carousel-control .nav-icon-left,
+  .carousel-control .nav-icon-right {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-top: -0.1rem;
+    font-size: 0.3rem;
+  }
+  .carousel-control .nav-icon-left {
+    margin-left: -0.1rem;
+  }
+  .carousel-control .nav-icon-right {
+    margin-right: -0.1rem;
+  }
+}
+/*!
+ * Uniform
+ * Copyright 2015-2016 Lincoln Anderson
+ * Licensed under MIT (https://github.com/Landerson352/uniform/blob/master/LICENSE)
+ */
+html,
+body {
+  height: 100%;
+}
+html {
+  width: 100vw;
+}
+@media screen and (max-width:639px) {
+  html {
+    font-size: 31.25vw;
+  }
+}
+@media screen and (min-width:640px) and (max-width:959px) {
+  html {
+    font-size: 15.625vw;
+  }
+}
+@media screen and (min-width:960px) and (max-width:1279px) {
+  html {
+    font-size: 10.41666667vw;
+  }
+}
+@media screen and (min-width:1280px) and (max-width:1919px) {
+  html {
+    font-size: 7.8125vw;
+  }
+}
+@media screen and (min-width:1920px) {
+  html {
+    font-size: 5.20833333vw;
+  }
+}
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-size: 0.16rem;
+}
+img {
+  vertical-align: middle;
+}
+.flex-grid,
+.flex-grid-left {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-grid-center {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+.flex-grid-right {
+  display: -webkit-box;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: right;
+          justify-content: right;
+}
+.page {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+.container {
+  position: relative;
 }
 /*! Generated by Live LESS Theme Customizer */
 .navbar {
