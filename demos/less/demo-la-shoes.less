@@ -52,58 +52,62 @@ p {
 	}
 }
 .shoe-print {
-  position: relative;
-  z-index: 50;
+	position: relative;
+	z-index: 50;
 
-  img {
-    position: absolute;
-    width: 350*@mdp;
-    top: -1010*@mdp;
-    left: -120*@mdp;
-		@media @xs {
-			width: 200*@mdp;
-			top: -1110*@mdp;
-			left: -90*@mdp;
-		}
+	img {
+		position: absolute;
+
+		width: 350*@p;
+		top: -1010*@p;
+		left: -120*@p;
+
+		.xs({
+			width: 65*@rp;
+			top: -370*@rp;
+			left: -30*@rp;
+		});
   }
 }
 .introduction {
 	position: relative;
 	z-index: 20;
-	width: 420*@mdp;
-	margin: -675*@mdp 0 0 auto;
-	padding: 10*@mdp 75*@mdp 160*@mdp 45*@mdp;
 	background: @lt-pink;
 
-	@media @xs {
+	width: 420*@p;
+	margin: -675*@p 0 0 auto;
+	padding: 10*@p 75*@p 160*@p 45*@p;
+
+	.xs({
 		width: auto;
-		margin: -70*@xsp 0 0 auto;
-		padding: 10*@xsp 30*@xsp 100*@xsp 30*@xsp;
-	}
+		margin: -70*@rp 0 0 auto;
+		padding: 10*@rp 30*@rp 100*@rp 30*@rp;
+	});
 
 	&:before {
 		.pin(center bottom, center top);
-		.sudo-triangle(bottomright, 125*@mdp 210*@mdp, @lt-pink);
+		.sudo-triangle(bottomright, 125*@p 210*@p, @lt-pink);
 
-		@media @xs {
-			border-width: 100*@xsp 160*@xsp;
-		}
+		.xs({
+			border-width: 100*@rp 160*@rp;
+		});
 	}
 
 	h1 {
 		position: absolute;
-		top: -230*@mdp;
-		left: 40*@mdp;
 		color: @purple;
-		font-size: 100*@mdp;
 		font-weight: @semibold;
 		line-height: 1em;
 
-		@media @xs {
-			left: 27*@xsp;
-			top: -180*@xsp;
-			font-size: 80*@xsp;
-		}
+		top: -230*@p;
+		left: 40*@p;
+		font-size: 100*@p;
+
+		.xs({
+			left: 27*@rp;
+			top: -180*@rp;
+			font-size: 80*@rp;
+		});
 
 		em {
 			position: relative;
@@ -116,15 +120,15 @@ p {
 	}
 	.copy {
 		p {
-			padding-bottom: 28*@mdp;
-			font-size: 18*@mdp;
-			line-height: 28*@mdp;
+			padding-bottom: 28*@p;
+			font-size: 18*@p;
+			line-height: 28*@p;
 
-			@media @xs {
-				padding-bottom: 26*@xsp;
-				font-size: 16*@xsp;
-				line-height: 26*@xsp;
-			}
+			.xs({
+				padding-bottom: 26*@rp;
+				font-size: 16*@rp;
+				line-height: 26*@rp;
+			});
 		}
 	}
 }
@@ -132,21 +136,21 @@ p {
 	position: relative;
 	z-index: 30;
 
-	@media @xs {
-		margin-top:-50*@xsp;
+	&:before {
+		.sudo-triangle(bottomright, 285*@p 480*@p, white);
+		.anchor(left bottom);
+		top:320*@p;
 	}
 
-	&:before {
-		.sudo-triangle(bottomright, 285*@mdp 480*@mdp, white);
-		.anchor(left bottom);
-		top:320*@mdp;
-	}
+	.xs({
+		margin-top:-50*@rp;
+	});
 
 	img {
 		position:absolute;
 		right:0;
-		top:-60*@mdp;
-		width:450*@mdp;
+		top:-60*@p;
+		width:450*@p;
 	}
 }
 .shoes {
@@ -154,108 +158,116 @@ p {
 	z-index: 40;
 	background: @dk-pink;
 	padding-top: 1px;
-	margin-top: 790*@mdp;
+
+	margin-top: 790*@p;
 
 	&:before {
-		.sudo-triangle(bottomleft, 480*@mdp, @dk-pink);
+		.sudo-triangle(bottomleft, 480*@p, @dk-pink);
 		.pin(left bottom, left top);
 	}
 	&:after {
-		.sudo-triangle(topleft, 275*@mdp 480*@mdp, @dk-pink);
+		.sudo-triangle(topleft, 275*@p 480*@p, @dk-pink);
 		.pin(left top, left bottom);
 	}
 
 	h2 {
 		position: absolute;
 		margin: 0;
-		font-size: 350*@mdp;
 		font-weight: @extrabold;
-		left: -50*@mdp;
-		top: -655*@mdp;
 
-		@media @xs {
-			font-size: 140*@xsp;
-			left: -10*@xsp;
-			top: -190*@xsp;
-		}
+		font-size: 350*@p;
+		left: -50*@p;
+		top: -655*@p;
+
+		.xs({
+			font-size: 140*@rp;
+			left: -10*@rp;
+			top: -190*@rp;
+		});
 	}
 
 	.copy {
 		position: relative;
-		margin-top: -520*@mdp;
-		margin-left: 130*@mdp;
-		width: 320*@mdp;
-		transform: translate(0, 210*@mdp);
 
-		@media @xs {
-			margin-top: -30*@xsp;
-			margin-left: 30*@xsp;
-			width: 260*@xsp;
-		}
+		margin-top: -520*@p;
+		margin-left: 130*@p;
+		width: 320*@p;
+		transform: translate(0, 210*@p);
+
+		.xs({
+			margin-top: -30*@rp;
+			margin-left: 30*@rp;
+			width: 260*@rp;
+		});
 
 		.shape {
 			content:"";
 			display:block;
-			width:170*@mdp;
-			height:330*@mdp;
 			float: right;
-			shape-outside: ellipse(170*@mdp 90*@mdp at 100% 210*@mdp);
 
-			@media @xs {
+			width:170*@p;
+			height:330*@p;
+			shape-outside: ellipse(170*@p 90*@p at 100% 210*@p);
+
+			.xs({
 				display:none;
-			}
+			});
 		}
 
 		p {
-			padding-bottom: 26*@mdp;
-			font-size: 16*@mdp;
-			line-height: 26*@mdp;
+			padding-bottom: 26*@p;
+			font-size: 16*@p;
+			line-height: 26*@p;
 
-			@media @xs {
-				padding-bottom: 26*@xsp;
-				font-size: 16*@xsp;
-				line-height: 26*@xsp;
-			}
+			.xs({
+				padding-bottom: 26*@rp;
+				font-size: 16*@rp;
+				line-height: 26*@rp;
+			});
 		}
 
 		img {
 			position: absolute;
-			width: 1010*@mdp;
-			top: -150*@mdp;
-			left: 160*@mdp;
+			width: 1010*@p;
+			top: -150*@p;
+			left: 160*@p;
 
-			@media @xs {
-				top: -180*@xsp;
-			}
+			.xs({
+				top: -180*@rp;
+			});
 		}
 	}
 }
 .runner-3 {
 	position:relative;
-	padding-bottom: 130*@mdp;
+	padding-bottom: 130*@p;
 
 	img {
 		position: absolute;
-		width: 1010*@mdp;
-		// width:100%;
-		@media @xs {
-			width:2000*@mdp;
-			left: -660*@mdp;
-			top: -250*@mdp;
-		}
+		width: 1010*@p;
+
+		.xs({
+			width:665*@rp;
+			left: -220*@rp;
+			top: -85*@rp;
+		});
 	}
 	.quote {
 		position: absolute;
 		z-index: 60;
-		top: 370*@mdp;
-		left: 130*@mdp;
-		font-size: 19*@mdp;
 		text-align: right;
-		width: 420*@mdp;
-		@media @xs {
-			top: 570*@mdp;
-			left: 70*@mdp;
-		}
+
+		top: 370*@p;
+		left: 130*@p;
+		font-size: 19*@p;
+		width: 420*@p;
+
+		.xs({
+			color: black;
+			top: 570*@rp;
+			left: 70*@rp;
+		});
+
 		.heading-style();
 
 		* {
@@ -268,32 +280,32 @@ p {
 				font-weight: @semibold;
 				font-size: 3.15em;
 				
-				@media @xs {
+				.xs({
 					font-size: 6.15em;
 					line-height: .8em;
-				}
+				});
 			}
 			&:nth-child(2) {
 				font-weight: @semibold;
 				font-size: 2.6em;
 
-				@media @xs {
+				.xs({
 					font-size: 2.9em;
-				}
+				});
 			}
 			&:nth-child(3) {
 				font-size: 2.4em;
 
-				@media @xs {
+				.xs({
 					font-size: 3em;
-				}
+				});
 			}
 			&:nth-child(4) {
 				font-size: 2em;
 
-				@media @xs {
+				.xs({
 					font-size: 2.5em;
-				}
+				});
 
 				em {
 					font-size: 1.5em;
@@ -305,9 +317,10 @@ p {
 		.author {
 			font-size: 1em;
 			text-transform: none;
-			@media @xs {
+
+			.xs({
 				font-size: 2em;
-			}
+			});
 		}
 	}
 }

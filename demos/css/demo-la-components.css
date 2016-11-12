@@ -49,7 +49,7 @@ body {
 }
 body {
   margin: 0;
-  font-size: 0.16rem;
+  font-size: 1.66666667vw;
 }
 img {
   vertical-align: middle;
@@ -175,8 +175,8 @@ a :hover {
   position: absolute;
   left: 0;
   bottom: -22.91666667vw;
-  -webkit-transform: translate(0, 2rem);
-          transform: translate(0, 2rem);
+  -webkit-transform: translate(0, 20.83333333vw);
+          transform: translate(0, 20.83333333vw);
 }
 .handwritten1 {
   position: absolute;
@@ -192,19 +192,19 @@ a :hover {
 }
 .login h2 {
   font: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-size: 6.25vw;
   font-weight: 500;
   text-transform: lowercase;
 }
 .login form {
-  margin-top: -0.05rem;
-  margin-left: 0.2rem;
+  margin-top: -0.52083333vw;
+  margin-left: 2.08333333vw;
 }
 .login input[type="text"] {
   border-bottom: 2px solid #a1a1a1;
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 0.02rem;
-  margin-top: 0.17rem;
+  margin-bottom: 0.20833333vw;
+  margin-top: 1.77083333vw;
   width: 100%;
 }
 .login input::input-placeholder {
@@ -216,12 +216,12 @@ a :hover {
   color: #fff;
   padding: 6px 16px;
   position: relative;
-  top: 0.11rem;
-  left: 0.2rem;
+  top: 1.14583333vw;
+  left: 2.08333333vw;
 }
 .login .sign-up {
   display: inline-block;
-  margin-top: 0.1rem;
+  margin-top: 1.04166667vw;
 }
 .section-02 {
   position: relative;
@@ -294,8 +294,8 @@ a :hover {
   margin-left: 38vw;
 }
 .card {
-  font-size: 0.25rem;
-  line-height: 0.32rem;
+  font-size: 2.60416667vw;
+  line-height: 3.33333333vw;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -303,8 +303,8 @@ a :hover {
   top: -28.45833333vw;
 }
 .card .copy {
-  font-size: 0.16rem;
-  line-height: 0.25rem;
+  font-size: 1.66666667vw;
+  line-height: 2.60416667vw;
 }
 .copy {
   font-size: 1.66666667vw;
@@ -312,34 +312,34 @@ a :hover {
   margin-bottom: 20px;
 }
 .component {
-  width: 3rem;
+  width: 31.25vw;
 }
 .quote {
-  font-size: 0.25rem;
-  line-height: 0.32rem;
+  font-size: 2.60416667vw;
+  line-height: 3.33333333vw;
   text-align: center;
 }
 .quote .quotation {
   position: relative;
   z-index: -1;
   text-align: left;
-  margin-left: 0.1rem;
+  margin-left: 1.04166667vw;
 }
 .quote .quotation img {
-  width: 2.37rem;
+  width: 24.6875vw;
   height: auto;
 }
 .quote .section-content {
   position: relative;
-  width: 2.6rem;
-  top: -1.45rem;
-  left: 0.4rem;
+  width: 27.08333333vw;
+  top: -15.10416667vw;
+  left: 4.16666667vw;
   font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .quote .author {
-  font-size: 0.12rem;
-  line-height: 0.15rem;
+  font-size: 1.25vw;
+  line-height: 1.5625vw;
   text-align: right;
-  margin-top: 0.2rem;
+  margin-top: 2.08333333vw;
 }

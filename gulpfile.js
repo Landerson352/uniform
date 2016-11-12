@@ -51,7 +51,7 @@ gulp.task('import-bootstrap', function() {
 		.pipe(gulp.dest('./demos/fonts'));
 	gulp.src('./node_modules/bootstrap/less/**/*.less')
 		.pipe(replace(/[0-9 ]px(?! \\9)/g, function(match){
-			return match[0] + '*@p'; 
+			return match[0] + '*@cp'; 
 		}))
 		.pipe(replace(/floor|ceil/g, ''))
 		.pipe(gulp.dest('./less/bootstrap'));

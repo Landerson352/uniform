@@ -49,7 +49,7 @@ body {
 }
 body {
   margin: 0;
-  font-size: 0.16rem;
+  font-size: 1.66666667vw;
 }
 img {
   vertical-align: middle;
@@ -146,7 +146,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-01 .section-content {
-    margin-left: 28.10416667vw;
+    margin-left: 84.3125vw;
   }
 }
 .page .section-01 .section-content h1 {
@@ -156,7 +156,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-01 .section-content h1 {
-    font-size: 6.225vw;
+    font-size: 18.675vw;
   }
 }
 .page .section-01 .section-content h1 em {
@@ -168,7 +168,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-01 .section-content h1 em {
-    font-size: 10.925vw;
+    font-size: 32.775vw;
   }
 }
 .page .section-01 .section-content .copy {
@@ -180,8 +180,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-01 .section-content .copy {
-    font-size: 3.5vw;
-    line-height: 5.7vw;
+    font-size: 10.5vw;
+    line-height: 17.1vw;
   }
 }
 .page .number {
@@ -192,8 +192,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .number {
-    margin-left: -19vw;
-    margin-top: 8.75vw;
+    margin-left: -57vw;
+    margin-top: 26.25vw;
   }
 }
 .page .number img {
@@ -201,7 +201,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .number img {
-    width: 54.16666667vw;
+    width: 162.5vw;
   }
 }
 .page .login {
@@ -217,19 +217,19 @@ a :hover {
 }
 .page .login h2 {
   font: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-size: 6.25vw;
   font-weight: 500;
   text-transform: lowercase;
 }
 .page .login form {
-  margin-top: -0.05rem;
-  margin-left: 0.2rem;
+  margin-top: -0.52083333vw;
+  margin-left: 2.08333333vw;
 }
 .page .login input[type="text"] {
   border-bottom: 2px solid #a1a1a1;
   background-color: rgba(255, 255, 255, 0);
-  margin-bottom: 0.02rem;
-  margin-top: 0.17rem;
+  margin-bottom: 0.20833333vw;
+  margin-top: 1.77083333vw;
   -webkit-transition: all 0.18s ease-out;
   transition: all 0.18s ease-out;
 }
@@ -246,13 +246,13 @@ a :hover {
   color: #000;
   padding: 6px 16px;
   position: relative;
-  top: 0.11rem;
-  left: 0.2rem;
+  top: 1.14583333vw;
+  left: 2.08333333vw;
 }
 .page .login .sign-up {
   display: inline-block;
-  margin-top: 0.1rem;
-  font-size: 0.12rem;
+  margin-top: 1.04166667vw;
+  font-size: 1.25vw;
 }
 .page .handwritten1 {
   display: inline-block;
@@ -261,8 +261,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .handwritten1 {
-    margin-left: 39.79166667vw;
-    margin-top: 0.8vw;
+    margin-left: 119.375vw;
+    margin-top: 2.4vw;
   }
 }
 .page .handwritten1 img {
@@ -272,7 +272,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .handwritten1 img {
-    width: 114.25vw;
+    width: 342.75vw;
   }
 }
 .page .section-02 {
@@ -292,9 +292,9 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-02 .section-content .copy {
-    width: 60.41666667vw;
-    font-size: 3.5vw;
-    line-height: 5.7vw;
+    width: 181.25vw;
+    font-size: 10.5vw;
+    line-height: 17.1vw;
   }
 }
 .page .section-02 .section-content .line:nth-child(1) {
@@ -304,7 +304,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-02 .section-content .line:nth-child(1) {
-    font-size: 6.55vw;
+    font-size: 19.65vw;
   }
 }
 .page .section-02 .section-content .line:nth-child(2) {
@@ -313,8 +313,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-02 .section-content .line:nth-child(2) {
-    font-size: 16.25vw;
-    margin-top: -4vw;
+    font-size: 48.75vw;
+    margin-top: -12vw;
   }
 }
 .page .section-02 .section-content .line:nth-child(3) {
@@ -323,8 +323,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-02 .section-content .line:nth-child(3) {
-    font-size: 9.18958333vw;
-    margin-top: -5.1vw;
+    font-size: 27.56875vw;
+    margin-top: -15.3vw;
   }
 }
 .page .section-02 .section-content .line:nth-child(4) {
@@ -334,8 +334,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-02 .section-content .line:nth-child(4) {
-    font-size: 7.4vw;
-    margin-top: -2.4vw;
+    font-size: 22.2vw;
+    margin-top: -7.2vw;
   }
 }
 .page .leaf-screen1 {
@@ -344,8 +344,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .leaf-screen1 {
-    margin-left: -14.79166667vw;
-    margin-top: -107.70833333vw;
+    margin-left: -44.375vw;
+    margin-top: -323.125vw;
   }
 }
 .page .leaf-screen1 img {
@@ -353,7 +353,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .leaf-screen1 img {
-    width: 70vw;
+    width: 210vw;
   }
 }
 .page .number-02 {
@@ -362,8 +362,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .number-02 {
-    margin-left: -3.33333333vw;
-    margin-top: -28.95833333vw;
+    margin-left: -10vw;
+    margin-top: -86.875vw;
   }
 }
 .page .number-02 img {
@@ -371,7 +371,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .number-02 img {
-    width: 30.20833333vw;
+    width: 90.625vw;
   }
 }
 .page .section-03 {
@@ -381,7 +381,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 {
-    margin-top: 14.16666667vw;
+    margin-top: 42.5vw;
   }
 }
 .page .section-03 .shrt-bar-03 img {
@@ -390,8 +390,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 .shrt-bar-03 img {
-    width: 74.66666667vw;
-    height: 83vw;
+    width: 224vw;
+    height: 249vw;
   }
 }
 .page .section-03 .number-03 {
@@ -400,8 +400,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 .number-03 {
-    margin-left: -105.9375vw;
-    margin-top: 7vw;
+    margin-left: -317.8125vw;
+    margin-top: 21vw;
   }
 }
 .page .section-03 .number-03 img {
@@ -409,7 +409,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 .number-03 img {
-    width: 98.33333333vw;
+    width: 295vw;
   }
 }
 .page .section-03 .lng-bar-03 {
@@ -418,7 +418,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 .lng-bar-03 {
-    margin-left: -20.8vw;
+    margin-left: -62.4vw;
   }
 }
 .page .section-03 .lng-bar-03 img {
@@ -427,7 +427,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-03 .lng-bar-03 img {
-    height: 83vw;
+    height: 249vw;
   }
 }
 .page .leaf-screen2 {
@@ -445,16 +445,16 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .card {
-    margin: 18.75vw auto 0;
+    margin: 56.25vw auto 0;
   }
 }
 .page .card .title h2 {
-  font-size: 0.35rem;
+  font-size: 3.64583333vw;
 }
 .page .card .copy {
-  font-size: 0.16rem;
-  line-height: 0.25rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.66666667vw;
+  line-height: 2.60416667vw;
+  margin-bottom: 2.08333333vw;
 }
 .page .section-04 .title {
   display: inline-block;
@@ -476,7 +476,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-04 .number-04 {
-    margin-left: -33.33333333vw;
+    margin-left: -100vw;
   }
 }
 .page .section-04 .number-04 img {
@@ -484,7 +484,7 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-04 .number-04 img {
-    width: 145.9375vw;
+    width: 437.8125vw;
   }
 }
 .page .section-04 .section-content {
@@ -496,11 +496,11 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .section-04 .section-content {
-    margin-left: 13.1875vw;
-    margin-top: -26.3125vw;
-    width: 72.375vw;
-    font-size: 3.5vw;
-    line-height: 5.7vw;
+    margin-left: 39.5625vw;
+    margin-top: -78.9375vw;
+    width: 217.125vw;
+    font-size: 10.5vw;
+    line-height: 17.1vw;
   }
 }
 .page .leaf-04 {
@@ -509,8 +509,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .leaf-04 {
-    margin-left: -37.35416667vw;
-    margin-top: -9.375vw;
+    margin-left: -112.0625vw;
+    margin-top: -28.125vw;
   }
 }
 .page .leaf-04 img {
@@ -522,8 +522,8 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .handwritten2 {
-    margin-left: -5.20833333vw;
-    margin-top: -51.875vw;
+    margin-left: -15.625vw;
+    margin-top: -155.625vw;
   }
 }
 .page .handwritten2 img {
@@ -531,43 +531,43 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .handwritten2 img {
-    width: 91.25vw;
+    width: 273.75vw;
   }
 }
 .page .component {
-  width: 3rem;
+  width: 31.25vw;
 }
 .page .quote {
-  font-size: 0.25rem;
-  line-height: 0.32rem;
+  font-size: 2.60416667vw;
+  line-height: 3.33333333vw;
   text-align: center;
   margin-left: 16.66666667vw;
   margin-top: 10.41666667vw;
 }
 @media screen and (max-width:639px) {
   .page .quote {
-    margin: 10.41666667vw auto 0;
+    margin: 31.25vw auto 0;
   }
 }
 .page .quote .quotation {
   text-align: left;
-  margin-left: -0.4rem;
+  margin-left: -4.16666667vw;
 }
 .page .quote .quotation img {
-  width: 2.37rem;
+  width: 24.6875vw;
   height: auto;
 }
 .page .quote .section-content {
-  width: 2.6rem;
-  margin: -1.4rem auto 0;
+  width: 27.08333333vw;
+  margin: -14.58333333vw auto 0;
   font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
 }
 .page .quote .author {
-  font-size: 0.12rem;
-  line-height: 0.15rem;
+  font-size: 1.25vw;
+  line-height: 1.5625vw;
   text-align: right;
-  margin-top: 0.2rem;
+  margin-top: 2.08333333vw;
 }
 .page .contact {
   background-color: #fff;
@@ -576,18 +576,18 @@ a :hover {
 }
 @media screen and (max-width:639px) {
   .page .contact {
-    margin-top: 72.91666667vw;
-    margin-left: 2.56666667vw;
+    margin-top: 218.75vw;
+    margin-left: 7.7vw;
   }
 }
 .page .contact .title h2 {
   font: "museo-slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-size: 6.25vw;
   font-weight: 500;
   text-transform: lowercase;
 }
 .page .contact form {
-  margin-left: 0.2rem;
+  margin-left: 2.08333333vw;
 }
 .page .contact form #inner-editor {
   display: inline-block;
@@ -601,8 +601,8 @@ a :hover {
 }
 .page .contact form input[type="text"] {
   border-bottom: 2px solid #a1a1a1;
-  margin-bottom: 0.02rem;
-  margin-top: 0.17rem;
+  margin-bottom: 0.20833333vw;
+  margin-top: 1.77083333vw;
   -webkit-transition: all 0.18s ease-out;
   transition: all 0.18s ease-out;
 }
@@ -626,8 +626,8 @@ a :hover {
 }
 .page .contact form .sign-up {
   display: inline-block;
-  margin-top: 0.1rem;
-  font-size: 0.12rem;
+  margin-top: 1.04166667vw;
+  font-size: 1.25vw;
 }
 .page .leaf-screen3 {
   margin-top: -65.72916667vw;

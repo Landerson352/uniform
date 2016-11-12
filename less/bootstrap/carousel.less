@@ -29,7 +29,7 @@
     @media all and (transform-3d), (-webkit-transform-3d) {
       .transition-transform(~'0.6s ease-in-out');
       .backface-visibility(~'hidden');
-      .perspective(1000*@p);
+      .perspective(1000*@cp);
 
       &.next,
       &.active.right {
@@ -131,24 +131,24 @@
   .glyphicon-chevron-right {
     position: absolute;
     top: 50%;
-    margin-top: -10*@p;
+    margin-top: -10*@cp;
     z-index: 5;
     display: inline-block;
   }
   .icon-prev,
   .glyphicon-chevron-left {
     left: 50%;
-    margin-left: -10*@p;
+    margin-left: -10*@cp;
   }
   .icon-next,
   .glyphicon-chevron-right {
     right: 50%;
-    margin-right: -10*@p;
+    margin-right: -10*@cp;
   }
   .icon-prev,
   .icon-next {
-    width:  20*@p;
-    height: 20*@p;
+    width:  20*@cp;
+    height: 20*@cp;
     line-height: 1;
     font-family: serif;
   }
@@ -173,7 +173,7 @@
 
 .carousel-indicators {
   position: absolute;
-  bottom: 10*@p;
+  bottom: 10*@cp;
   left: 50%;
   z-index: 15;
   width: 60%;
@@ -184,12 +184,12 @@
 
   li {
     display: inline-block;
-    width:  10*@p;
-    height: 10*@p;
-    margin: 1*@p;
-    text-indent: -999*@p;
-    border: 1*@p solid @carousel-indicator-border-color;
-    border-radius: 10*@p;
+    width:  10*@cp;
+    height: 10*@cp;
+    margin: 1*@cp;
+    text-indent: -999*@cp;
+    border: 1*@cp solid @carousel-indicator-border-color;
+    border-radius: 10*@cp;
     cursor: pointer;
 
     // IE8-9 hack for event handling
@@ -206,8 +206,8 @@
   }
   .active {
     margin: 0;
-    width:  12*@p;
-    height: 12*@p;
+    width:  12*@cp;
+    height: 12*@cp;
     background-color: @carousel-indicator-active-bg;
   }
 }
@@ -219,10 +219,10 @@
   position: absolute;
   left: 15%;
   right: 15%;
-  bottom: 20*@p;
+  bottom: 20*@cp;
   z-index: 10;
-  padding-top: 20*@p;
-  padding-bottom: 20*@p;
+  padding-top: 20*@cp;
+  padding-bottom: 20*@cp;
   color: @carousel-caption-color;
   text-align: center;
   text-shadow: @carousel-text-shadow;
@@ -260,11 +260,11 @@
   .carousel-caption {
     left: 20%;
     right: 20%;
-    padding-bottom: 30*@p;
+    padding-bottom: 30*@cp;
   }
 
   // Move up the indicators
   .carousel-indicators {
-    bottom: 20*@p;
+    bottom: 20*@cp;
   }
 }

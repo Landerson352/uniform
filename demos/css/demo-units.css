@@ -49,7 +49,7 @@ body {
 }
 body {
   margin: 0;
-  font-size: 0.16rem;
+  font-size: 1.66666667vw;
 }
 img {
   vertical-align: middle;
@@ -100,8 +100,8 @@ img {
   border: 0.20833333vw solid black;
 }
 .uniform-component {
-  font-size: 0.16rem;
-  width: 3.2rem;
-  padding: 0.2rem;
-  border: 0.02rem solid black;
+  font-size: 1.66666667vw;
+  width: 33.33333333vw;
+  padding: 2.08333333vw;
+  border: 0.20833333vw solid black;
 }

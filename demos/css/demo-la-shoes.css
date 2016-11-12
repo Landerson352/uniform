@@ -49,7 +49,7 @@ body {
 }
 body {
   margin: 0;
-  font-size: 0.16rem;
+  font-size: 1.66666667vw;
 }
 img {
   vertical-align: middle;
@@ -129,7 +129,7 @@ p {
 }
 @media screen and (max-width:639px) {
   .shoe-print img {
-    width: 20.83333333vw;
+    width: 20.3125vw;
     top: -115.625vw;
     left: -9.375vw;
   }
@@ -137,10 +137,10 @@ p {
 .introduction {
   position: relative;
   z-index: 20;
+  background: #e4a3c0;
   width: 43.75vw;
   margin: -70.3125vw 0 0 auto;
   padding: 1.04166667vw 7.8125vw 16.66666667vw 4.6875vw;
-  background: #e4a3c0;
 }
 @media screen and (max-width:639px) {
   .introduction {
@@ -173,12 +173,12 @@ p {
 }
 .introduction h1 {
   position: absolute;
-  top: -23.95833333vw;
-  left: 4.16666667vw;
   color: #7B2F9F;
-  font-size: 10.41666667vw;
   font-weight: 600;
   line-height: 1em;
+  top: -23.95833333vw;
+  left: 4.16666667vw;
+  font-size: 10.41666667vw;
 }
 @media screen and (max-width:639px) {
   .introduction h1 {
@@ -211,11 +211,6 @@ p {
   position: relative;
   z-index: 30;
 }
-@media screen and (max-width:639px) {
-  .runner-2 {
-    margin-top: -15.625vw;
-  }
-}
 .runner-2:before {
   content: "";
   display: block;
@@ -231,6 +226,11 @@ p {
   -webkit-transform: translate(0%, -100%);
           transform: translate(0%, -100%);
   top: 33.33333333vw;
+}
+@media screen and (max-width:639px) {
+  .runner-2 {
+    margin-top: -15.625vw;
+  }
 }
 .runner-2 img {
   position: absolute;
@@ -282,8 +282,8 @@ p {
 .shoes h2 {
   position: absolute;
   margin: 0;
-  font-size: 36.45833333vw;
   font-weight: 700;
+  font-size: 36.45833333vw;
   left: -5.20833333vw;
   top: -68.22916667vw;
 }
@@ -312,9 +312,9 @@ p {
 .shoes .copy .shape {
   content: "";
   display: block;
+  float: right;
   width: 17.70833333vw;
   height: 34.375vw;
-  float: right;
   -webkit-shape-outside: ellipse(17.70833333vw 9.375vw at 100% 21.875vw);
           shape-outside: ellipse(17.70833333vw 9.375vw at 100% 21.875vw);
 }
@@ -356,18 +356,18 @@ p {
 }
 @media screen and (max-width:639px) {
   .runner-3 img {
-    width: 208.33333333vw;
+    width: 207.8125vw;
     left: -68.75vw;
-    top: -26.04166667vw;
+    top: -26.5625vw;
   }
 }
 .runner-3 .quote {
   position: absolute;
   z-index: 60;
+  text-align: right;
   top: 38.54166667vw;
   left: 13.54166667vw;
   font-size: 1.97916667vw;
-  text-align: right;
   width: 43.75vw;
   font-family: "proxima-nova-extra-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -375,8 +375,9 @@ p {
 }
 @media screen and (max-width:639px) {
   .runner-3 .quote {
-    top: 59.375vw;
-    left: 7.29166667vw;
+    color: black;
+    top: 178.125vw;
+    left: 21.875vw;
   }
 }
 .runner-3 .quote em {

@@ -10,9 +10,9 @@ body {
 	font-weight: 300;
 }
 .navbar-form .form-control.navbar-search {
-	@media @sm-up {
+	.sm-up({
 		width: 300*@p;
-	}
+	});
 }
 .hero {
 	.background-fill("../img/hero1.png", black);
@@ -20,10 +20,10 @@ body {
 	color: @brand-success;
 	margin-bottom: 100*@p;
 
-	@media @xs { height: 240 *@xsp; }
-	@media @sm { height: 320 *@smp; }
-	@media @lg { height: 420 *@lgp; }
-	@media @xl { height: 480 *@xlp; }
+	.xs({ height: 240 *@rp; });
+	.sm({ height: 320 *@rp; });
+	.lg({ height: 420 *@rp; });
+	.xl({ height: 480 *@rp; });
 
 	&:before {
 		.sudo;
@@ -93,11 +93,11 @@ body {
 		min-height: 400*@p;
 	}
 
-	@media @md-up { 
+	.md-up({ 
 		.flex-grid;
-		.cell-1 { flex: 0 0 320*@p; }
+		.cell-1 { flex: 0 0 320*@rp; }
 		.cell-2 { flex: 1 0 auto; }
-	}
+	});
 }
 .example-ui {
 	width: 320*@p;

@@ -7,9 +7,9 @@
 .panel {
   margin-bottom: @line-height-computed;
   background-color: @panel-bg;
-  border: 1*@p solid transparent;
+  border: 1*@cp solid transparent;
   border-radius: @panel-border-radius;
-  .box-shadow(0 1*@p 1*@p rgba(0,0,0,.05));
+  .box-shadow(0 1*@cp 1*@cp rgba(0,0,0,.05));
 }
 
 // Panel contents
@@ -21,7 +21,7 @@
 // Optional heading
 .panel-heading {
   padding: @panel-heading-padding;
-  border-bottom: 1*@p solid transparent;
+  border-bottom: 1*@cp solid transparent;
   .border-top-radius((@panel-border-radius - 1));
 
   > .dropdown .dropdown-toggle {
@@ -49,7 +49,7 @@
 .panel-footer {
   padding: @panel-footer-padding;
   background-color: @panel-footer-bg;
-  border-top: 1*@p solid @panel-inner-border;
+  border-top: 1*@cp solid @panel-inner-border;
   .border-bottom-radius((@panel-border-radius - 1));
 }
 
@@ -65,7 +65,7 @@
     margin-bottom: 0;
 
     .list-group-item {
-      border-width: 1*@p 0;
+      border-width: 1*@cp 0;
       border-radius: 0;
     }
 
@@ -165,7 +165,7 @@
   > .panel-body + .table-responsive,
   > .table + .panel-body,
   > .table-responsive + .panel-body {
-    border-top: 1*@p solid @table-border-color;
+    border-top: 1*@cp solid @table-border-color;
   }
   > .table > tbody:first-child > tr:first-child th,
   > .table > tbody:first-child > tr:first-child td {
@@ -228,7 +228,7 @@
     border-radius: @panel-border-radius;
 
     + .panel {
-      margin-top: 5*@p;
+      margin-top: 5*@cp;
     }
   }
 
@@ -237,14 +237,14 @@
 
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
-      border-top: 1*@p solid @panel-inner-border;
+      border-top: 1*@cp solid @panel-inner-border;
     }
   }
 
   .panel-footer {
     border-top: 0;
     + .panel-collapse .panel-body {
-      border-bottom: 1*@p solid @panel-inner-border;
+      border-bottom: 1*@cp solid @panel-inner-border;
     }
   }
 }

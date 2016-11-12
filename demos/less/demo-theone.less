@@ -10,9 +10,9 @@ body {
 	font-weight: 300;
 }
 .navbar-form .form-control.navbar-search {
-	@media @sm-up {
-		width: 300*@p;
-	}
+	.sm-up({
+		width: 300*@rp;
+	});
 }
 
 .hero {
@@ -21,7 +21,7 @@ body {
 }
 
 .video-intro {
-	margin-top:40 *@mdp;
+	margin-top:40 *@p;
 	min-width:320*@p;
 	width: 40%;
 	margin: 0 auto;
