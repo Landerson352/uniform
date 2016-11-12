@@ -1,4 +1,4 @@
-@import "../../less/uniform.less";
+@import "../../uniform";
 
 .screenlayout {
 	// This component scales to fit the screen size.
@@ -11,9 +11,9 @@
 }
 .component {
 	// This component is internally consistent on each screen size. 
-	width: 320rem;
-	min-height: 160rem;
-	padding: 20rem;
+	width: 320*@p;
+	min-height: 160*@p;
+	padding: 20*@p;
 
-	border:2rem solid black;
+	border:2*@p solid black;
 }

@@ -36,7 +36,8 @@ gulp.task('browser-sync', function() {
 		ui: false,
 		open: argv.open,
 		files: ['./*.html', './demos/*.html', './demos/css/**/*'],
-		startPath: '/'
+		startPath: '/',
+		notify: false
 	});
 });
 
@@ -49,7 +50,10 @@ gulp.task('import-bootstrap', function() {
 	gulp.src('./node_modules/bootstrap/fonts/**/*.*')
 		.pipe(gulp.dest('./demos/fonts'));
 	gulp.src('./node_modules/bootstrap/less/**/*.less')
-		.pipe(replace(/px/g, 'rem')) //TODO: add specificity so that ppx is not caught
+		.pipe(replace(/[0-9 ]px(?! \\9)/g, function(match){
+			return match[0] + '*@cp'; 
+		}))
+		.pipe(replace(/floor|ceil/g, ''))
 		.pipe(gulp.dest('./less/bootstrap'));
 });
 

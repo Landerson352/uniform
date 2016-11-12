@@ -3,17 +3,25 @@ html, body {
 }
 html {
     width: 100vw;
-
-	// This is the magic.
-	@media @xs { font-size: 100vw/320; }
-	@media @sm { font-size: 100vw/640; }
-	@media @md { font-size: 100vw/960; }
-	@media @lg { font-size: 100vw/1280; }
-	@media @xl { font-size: 100vw/1920; }
+	font-size: @p * @precision;
 }
 body {
 	min-height: 100%;
 	overflow-x: hidden;
 
 	text-size-adjust: 100%;
+}
+
+
+
+// Replacement for Bootstrap basics
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-size: @font-size-base;
+}
+img {
+  vertical-align: middle;
 }
