@@ -1,0 +1,72 @@
+.component(@rules) {
+	& {
+		@rp: @cp;
+		@rules();
+	}
+}
+.xs(@rules) {
+	@media @xs {
+		@rp: @xsp;
+		@rules();
+	}
+}
+.sm(@rules) {
+	@media @sm {
+		@rp: @smp;
+		@rules();
+	}
+}
+.md(@rules) {
+	@media @md {
+		@rp: @mdp;
+		@rules();
+	}
+}
+.lg(@rules) {
+	@media @lg {
+		@rp: @lgp;
+		@rules();
+	}
+}
+.xl(@rules) {
+	@media @xl {
+		@rp: @xlp;
+		@rules();
+	}
+}
+.sm-up(@rules) {
+	@media @sm-up {
+		@rp: @smp;
+		@rules();
+	}
+}
+.sm-down(@rules) {
+	@media @sm-down {
+		@rp: @smp;
+		@rules();
+	}
+}
+.md-up(@rules) {
+	@media @md-up {
+		@rp: @mdp;
+		@rules();
+	}
+}
+.md-down(@rules) {
+	@media @md-down {
+		@rp: @mdp;
+		@rules();
+	}
+}
+.lg-up(@rules) {
+	@media @lg-up {
+		@rp: @lgp;
+		@rules();
+	}
+}
+.lg-down(@rules) {
+	@media @lg-down {
+		@rp: @lgp;
+		@rules();
+	}
+}
