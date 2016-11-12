@@ -1,3 +1,14 @@
+.activate-component-breakpoints() {
+	html {
+		// This is the magic.
+		.xs({ font-size: @rp * @precision; });
+		.sm({ font-size: @rp * @precision; });
+		.md({ font-size: @rp * @precision; });
+		.lg({ font-size: @rp * @precision; });
+		.xl({ font-size: @rp * @precision; });
+	}
+}
+
 .component(@rules) {
 	& {
 		@rp: @cp;
