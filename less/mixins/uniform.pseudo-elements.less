@@ -7,12 +7,21 @@
 }
 
 .sudo-triangle(@type, @size, @color) {
+	border-width: @size/2;
+	.sudo-triangle(@type, @color);
+}
+
+.sudo-triangle(@type, @xsize, @ysize, @color) {
+	border-width: @ysize/2 @xsize/2;
+	.sudo-triangle(@type, @color);
+}
+
+.sudo-triangle(@type, @color) {
 	.sudo;
 	z-index:-1;
 	width:0;
 	height:0;
 
-	border-width: @size;
 	border-style: solid;
 	border-color: transparent;
 

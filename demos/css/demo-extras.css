@@ -7008,12 +7008,12 @@ body {
   letter-spacing: 0.5em;
 }
 .hero-title:before {
+  border-width: 0.83333333vw;
   content: "";
   display: block;
   z-index: -1;
   width: 0;
   height: 0;
-  border-width: 0.83333333vw;
   border-style: solid;
   border-color: transparent;
   border-bottom-color: #18bc9c;

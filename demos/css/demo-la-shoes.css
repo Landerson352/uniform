@@ -130,13 +130,13 @@ p {
           transform: translate(-50%, -100%);
   left: 50%;
   top: 0%;
+  border-width: 13.02083333vw 21.875vw;
   content: "";
   display: block;
   position: absolute;
   z-index: -1;
   width: 0;
   height: 0;
-  border-width: 13.02083333vw 21.875vw;
   border-style: solid;
   border-color: transparent;
   border-bottom-color: #e4a3c0;
@@ -188,13 +188,13 @@ p {
   z-index: 30;
 }
 .runner-2:before {
+  border-width: 29.6875vw 50vw;
   content: "";
   display: block;
   position: absolute;
   z-index: -1;
   width: 0;
   height: 0;
-  border-width: 29.6875vw 50vw;
   border-style: solid;
   border-color: transparent;
   border-bottom-color: white;
@@ -222,12 +222,12 @@ p {
   margin-top: 82.29166667vw;
 }
 .shoes:before {
+  border-width: 50vw;
   content: "";
   display: block;
   z-index: -1;
   width: 0;
   height: 0;
-  border-width: 50vw;
   border-style: solid;
   border-color: transparent;
   border-bottom-color: #c76591;
@@ -239,12 +239,12 @@ p {
   top: 0%;
 }
 .shoes:after {
+  border-width: 28.64583333vw 50vw;
   content: "";
   display: block;
   z-index: -1;
   width: 0;
   height: 0;
-  border-width: 28.64583333vw 50vw;
   border-style: solid;
   border-color: transparent;
   border-top-color: #c76591;
