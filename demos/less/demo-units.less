@@ -1,4 +1,7 @@
-@import "../../less/uniform.less";
+@import "../../uniform";
+.activate-component-breakpoints();
+
+
 
 .pixel-based {
 	font-size: 16px;
@@ -19,8 +22,8 @@
 	border:2*@p solid black;
 }
 .uniform-component {
-	font-size: 16rem;
-	width: 320rem;
-	padding: 20rem;
-	border:2rem solid black;
+	font-size: 16*@cp;
+	width: 320*@cp;
+	padding: 20*@cp;
+	border:2*@cp solid black;
 }

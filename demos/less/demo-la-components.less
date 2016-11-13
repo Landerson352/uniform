@@ -1,12 +1,14 @@
-@import "../../less/uniform.less"; // Variables
+@import "../../uniform";
 
+// Variables
 @yellow: #fbd240;
 @dk-yellow: #deab11;
 @gray: #333;
 @lt-yellow: mix(@yellow, white, 45%);
 @font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial,sans-serif;
 @heading-font-family: "museo-slab", "Helvetica Neue", Helvetica, Arial,sans-serif;
-@regular:100 @semibold: 300;
+@regular:100;
+@semibold: 300;
 @bold: 500;
 
 
@@ -65,9 +67,9 @@ a{
   margin: 107*@p 0 295*@p;
   position: relative;
 
-  @media @xs {
-    margin-bottom: 360*@xsp;
-  }
+  .xs({
+    margin-bottom: 360*@rp;
+  });
 
   .number {
     position: absolute;
@@ -110,7 +112,7 @@ a{
 
     // this is complicated..
     bottom: -220*@p; // anchor to bottom of large number in layout
-    transform: translate(0, 200rem); // then offset the component
+    transform: translate(0, 200*@p); // then offset the component
   }
 }
 .handwritten1 {
@@ -129,19 +131,19 @@ a{
 .login{
   h2{
     font: @heading-font-family;
-    font-size: 60rem;
+    font-size: 60*@p;
     font-weight: 500;
     text-transform: lowercase;
   }
   form {
-    margin-top: -5rem;
-    margin-left: 20rem;
+    margin-top: -5*@p;
+    margin-left: 20*@p;
   }
   input[type="text"] {
     border-bottom: 2px solid #a1a1a1;
     background-color: rgba(255, 255, 255, 0);;
-    margin-bottom: 2rem;
-    margin-top: 17rem;
+    margin-bottom: 2*@p;
+    margin-top: 17*@p;
     width:100%;
   }
   input::input-placeholder {
@@ -153,12 +155,12 @@ a{
     color: #fff;
     padding: 6px 16px;
     position: relative;
-    top: 11rem;
-    left: 20rem;
+    top: 11*@p;
+    left: 20*@p;
   }
   .sign-up {
     display: inline-block;
-    margin-top: 10rem;
+    margin-top: 10*@p;
   }
 }
 .section-02 {
@@ -240,8 +242,8 @@ a{
   }
 }
 .card {
-  font-size: 25rem;
-  line-height: 32rem;
+  font-size: 25*@p;
+  line-height: 32*@p;
   text-align: center;
   position: relative;
   z-index: 10;
@@ -253,8 +255,8 @@ a{
 
   }
   .copy{
-    font-size: 16rem;
-    line-height: 25rem;
+    font-size: 16*@p;
+    line-height: 25*@p;
   }
 }
 .section-04 {}
@@ -264,22 +266,22 @@ a{
   margin-bottom: 20px;
 }
 .component {
-  width: 300rem;
+  width: 300*@p;
   // margin: 0px auto;
   // background-color: rgb(133, 242, 22)
 }
 .quote{
-  font-size: 25rem;
-  line-height: 32rem;
+  font-size: 25*@p;
+  line-height: 32*@p;
   text-align: center;
 
   .quotation{
     position: relative;
     z-index: -1;
     text-align:left;
-    margin-left:10rem;
+    margin-left:10*@p;
     img{
-      width: 237rem;
+      width: 237*@p;
       height: auto;
     }
   }
@@ -289,17 +291,17 @@ a{
   // }
   .section-content{
     position: relative;
-    width: 260rem;
-    top: -145rem;
-    left: 40rem;
+    width: 260*@p;
+    top: -145*@p;
+    left: 40*@p;
     font-family: @heading-font-family;
     font-weight: 300;
   }
 
   .author{
-    font-size: 12rem;
-    line-height: 15rem;
+    font-size: 12*@p;
+    line-height: 15*@p;
     text-align: right;
-    margin-top: 20rem;
+    margin-top: 20*@p;
   }
 }

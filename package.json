@@ -21,7 +21,7 @@
     "gulp-less": "^3.0.5",
     "gulp-replace": "^0.5.4",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-watch": "^4.3.5",
+    "gulp-watch": "^4.3.10",
     "less-plugin-autoprefix": "^1.5.1",
     "yargs": "^4.3.1"
   },

@@ -1,6 +1,5 @@
-@bootstrap-path: "bootstrap/";
-
-@font-size-base: 16rem;
+// IE rounds to only two decimal places, so we shim in a couple.
+@precision: 100;
 
 @screen-xs: 320px;
 @screen-sm: 640px;
@@ -9,8 +8,14 @@
 @screen-xl: 1920px;
 
 // Bootstrap filler
-@screen-xl-min: @screen-xl;
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-min: @screen-sm;
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-min: @screen-md;
+@screen-md-max: (@screen-lg-min - 1);
+@screen-lg-min: @screen-lg;
 @screen-lg-max: (@screen-xl-min - 1);
+@screen-xl-min: @screen-xl;
 
 @xs: ~"screen and (max-width:@{screen-xs-max})";
 @sm: ~"screen and (min-width:@{screen-sm}) and (max-width:@{screen-sm-max})";
@@ -31,5 +36,11 @@
 @lgp: unit(100/unit(@screen-lg), vw);
 @xlp: unit(100/unit(@screen-xl), vw);
 
-// default
+// default units people will actually use
 @p: @mdp;
+@cp: 1rem / @precision;
+
+@font-size-base: 16 *@cp;
+
+// we care more about decimal precision in IE than pixels.
+@line-height-base: 1.5;
