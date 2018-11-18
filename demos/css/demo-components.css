@@ -32,23 +32,18 @@ img {
 }
 .flex-grid,
 .flex-grid-left {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
 }
 .flex-grid-center {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .flex-grid-right {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
-  -webkit-box-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
 .page {
   min-height: 100%;
@@ -98,7 +93,6 @@ a :hover {
   display: inline-block;
   padding: 10px 20px;
   background-color: #fbd240;
-  -webkit-transition: all 0.18s ease-out;
   transition: all 0.18s ease-out;
 }
 .yellow-btn:hover {
@@ -206,7 +200,6 @@ a :hover {
   background-color: rgba(255, 255, 255, 0);
   margin-bottom: 0.20833333vw;
   margin-top: 1.77083333vw;
-  -webkit-transition: all 0.18s ease-out;
   transition: all 0.18s ease-out;
 }
 .page .login input[type="text"]:focus {
@@ -351,7 +344,6 @@ a :hover {
   }
 }
 .page .section-03 {
-  display: -webkit-box;
   display: flex;
   margin-top: 4.16666667vw;
 }
@@ -579,7 +571,6 @@ a :hover {
   border-bottom: 2px solid #a1a1a1;
   margin-bottom: 0.20833333vw;
   margin-top: 1.77083333vw;
-  -webkit-transition: all 0.18s ease-out;
   transition: all 0.18s ease-out;
 }
 .page .contact form input[type="text"]:focus {
@@ -589,7 +580,6 @@ a :hover {
   color: #000;
 }
 .page .contact form [placeholder]:focus::-webkit-input-placeholder {
-  -webkit-transition: opacity 0.5s 0.5s ease;
   transition: opacity 0.5s 0.5s ease;
   opacity: 0;
 }

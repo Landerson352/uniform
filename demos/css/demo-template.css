@@ -32,23 +32,18 @@ img {
 }
 .flex-grid,
 .flex-grid-left {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
 }
 .flex-grid-center {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
-  -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .flex-grid-right {
-  display: -webkit-box;
   display: flex;
   flex-flow: row wrap;
-  -webkit-box-pack: right;
-          justify-content: right;
+  justify-content: right;
 }
 .page {
   min-height: 100%;
