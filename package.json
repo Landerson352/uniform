@@ -13,7 +13,6 @@
   },
   "homepage": "https://github.com/Landerson352/uniform#readme",
   "devDependencies": {
-    "bootstrap": "3.3.6",
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-batch": "^1.0.5",
