@@ -23,16 +23,16 @@ Say we designed a layout on a 960px wide canvas. There is a block element in the
 
 ```css
 .block {
-	width: 500*@p;
+  width: 500*@p;
 }
 ```
 Additionally, we can add responsive design rules, such as making the block element 200px wide on extra-small (<639px) screens:
 
 ```css
 .block {
-	.xs({
-		width: 200*@rp;
-	});
+  .xs({
+    width: 200*@rp;
+  });
 }
 ```
 Note the use of `@rp` (responsive pixels) in this case.
@@ -51,7 +51,7 @@ Note the use of `@rp` (responsive pixels) in this case.
 
 ### Browser support
 
-Like Bootstrap 3, Uniform supports latest versions of all major browsers. **However, it does NOT support Internet Explorer 8.**
+Uniform supports latest versions of all major browsers. **Note: It does NOT support Internet Explorer 8.**
 
 ## Contributing
 
